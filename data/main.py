@@ -48,7 +48,12 @@ def get_subscribe_links():
     raise ValueError("未配置订阅链接，请设置 SUBSCRIBE_LINKS 或 CONFIG_URL 环境变量")
 
 # 使用函数获取链接
-links = get_subscribe_links()
+try:
+    links = get_subscribe_links()
+    print(f"成功获取 {len(links)} 个订阅链接")
+except ValueError as e:
+    print(f"错误: {e}")
+    exit(1)
 
 # 支持的协议类型列表
 SUPPORTED_PROTOCOLS = [
@@ -1659,7 +1664,12 @@ def main():
         
         print(f"已将 {len(valid_uris)} 个有效节点以base64编码保存到 v2ray.txt 文件")
         
-        with open('v2ray_raw.txt', 'w', encoding='utf-8')
+        # 修复：完整写入 v2ray_raw.txt
+        with open('v2ray_raw.txt', 'w', encoding='utf-8') as f:
+            f.write(uri_content)
+        print(f"同时保存了原始文本版本到 v2ray_raw.txt 文件")
+    else:
+        print("\n未找到有效节点，不生成文件")
 
 if __name__ == '__main__':
     main()
