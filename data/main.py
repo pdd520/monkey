@@ -16,13 +16,39 @@ import io
 from datetime import datetime
 from urllib.parse import urlparse, parse_qs, unquote
 from concurrent.futures import ThreadPoolExecutor, as_completed
-# 订阅链接列表
-links = [
-    "https://raw.githubusercontent.com/WLget/V2Ray_configs_64/master/ConfigSub_list.txt",    
-    "https://raw.githubusercontent.com/jianguogongyong/ssr_subscrible_tool/refs/heads/master/node.txt", 
-    "https://raw.githubusercontent.com/jgchengxin/ssr_subscrible_tool/refs/heads/master/node.txt",
-    "https://raw.githubusercontent.com/dl250/dl250/refs/heads/master/node.txt",  
-]
+
+# 订阅链接列表 - 从环境变量或外部URL获取
+def get_subscribe_links():
+    """从环境变量或外部URL获取订阅链接"""
+    # 方法1: 从环境变量获取
+    links_env = os.environ.get('SUBSCRIBE_LINKS', '')
+    
+    if links_env:
+        links = [link.strip() for link in links_env.split(';') if link.strip()]
+        print(f"从环境变量获取到 {len(links)} 个订阅链接")
+        return links
+    
+    # 方法2: 从外部URL获取配置
+    config_url = os.environ.get('CONFIG_URL', '')
+    if config_url:
+        try:
+            print(f"从外部配置URL获取订阅链接: {config_url}")
+            response = requests.get(config_url, timeout=30)
+            if response.status_code == 200:
+                content = response.text.strip()
+                links = [link.strip() for link in content.split('\n') if link.strip() and not link.startswith('#')]
+                print(f"从外部配置获取到 {len(links)} 个订阅链接")
+                return links
+            else:
+                print(f"外部配置URL请求失败: {response.status_code}")
+        except Exception as e:
+            print(f"从外部URL获取配置失败: {e}")
+    
+    # 如果没有配置任何链接，抛出异常
+    raise ValueError("未配置订阅链接，请设置 SUBSCRIBE_LINKS 或 CONFIG_URL 环境变量")
+
+# 使用函数获取链接
+links = get_subscribe_links()
 
 # 支持的协议类型列表
 SUPPORTED_PROTOCOLS = [
@@ -40,7 +66,6 @@ SUPPORTED_PROTOCOLS = [
 ]
 
 # 测速相关配置
-# 测试URL列表
 TEST_URLS = [
     "http://www.gstatic.com/generate_204",  # Google测试
 ]
@@ -87,8 +112,7 @@ def get_github_filename(github_url, file_suffix):
             branch = branch.split('refs/heads/')[1]
         
         # 提取文件路径 - 忽略仓库信息和{x}部分
-        # 例如：owner/repo/branch/path/to/directory/{x}.yaml -> path/to/directory
-        path_parts = '/'.join(url_parts[3:])  # 获取路径部分
+        path_parts = '/'.join(url_parts[3:])
         if '{x}' in path_parts:
             directory_path = path_parts.split('/{x}')[0]
         else:
@@ -120,14 +144,12 @@ def get_github_filename(github_url, file_suffix):
             
         if response.status_code != 200:
             print(f"GitHub API请求失败: {response.status_code} - {api_url}")
-            print(f"响应内容: {response.text[:200]}...")
             return None
         
         # 解析返回的JSON
         files = response.json()
         if not isinstance(files, list):
             print(f"GitHub API返回的不是文件列表: {type(files)}")
-            print(f"响应内容: {str(files)[:200]}...")
             return None
         
         print(f"在目录中找到{len(files)}个文件/目录")
@@ -136,10 +158,10 @@ def get_github_filename(github_url, file_suffix):
         matching_files = [f['name'] for f in files if f['name'].endswith(file_suffix)]
         
         if not matching_files:
-            print(f"未找到匹配{file_suffix}后缀的文件，目录包含: {[f['name'] for f in files][:10]}")
+            print(f"未找到匹配{file_suffix}后缀的文件")
             return None
         
-        # 排序并选择第一个匹配的文件（通常选择最近的文件）
+        # 排序并选择第一个匹配的文件
         matching_files.sort(reverse=True)
         selected_file = matching_files[0]
         print(f"选择文件: {selected_file}")
@@ -147,31 +169,23 @@ def get_github_filename(github_url, file_suffix):
         
     except Exception as e:
         print(f"获取GitHub文件列表出错: {str(e)}")
-        import traceback
-        traceback.print_exc()
         return None
 
 def format_current_date(url):
     """替换URL中的日期占位符和{x}占位符"""
-    # 定义和生成所有可能的日期格式变量
     now = datetime.now()
     date_vars = {
-        # 基本日期组件
-        'Y': now.strftime('%Y'),          # 年份，如2023
-        'm': now.strftime('%m'),          # 月份，如05
-        'd': now.strftime('%d'),          # 日期，如09
-        
-        # 组合日期格式
-        'Ymd': now.strftime('%Y%m%d'),    # 组合格式，如20230509
-        'Y-m-d': now.strftime('%Y-%m-%d'), # 带连字符格式，如2023-05-09
-        'Y_m_d': now.strftime('%Y_%m_%d'), # 带下划线格式，如2023_05_09
-        
-        # 额外日期格式
-        'Y-m': now.strftime('%Y-%m'),     # 年月，如2023-05
-        'Y_m': now.strftime('%Y_%m'),     # 带下划线的年月，如2023_05
-        'md': now.strftime('%m%d'),       # 月日，如0509
-        'm-d': now.strftime('%m-%d'),     # 带连字符的月日，如05-09
-        'm_d': now.strftime('%m_%d'),     # 带下划线的月日，如05_09
+        'Y': now.strftime('%Y'),
+        'm': now.strftime('%m'),
+        'd': now.strftime('%d'),
+        'Ymd': now.strftime('%Y%m%d'),
+        'Y-m-d': now.strftime('%Y-%m-%d'),
+        'Y_m_d': now.strftime('%Y_%m_%d'),
+        'Y-m': now.strftime('%Y-%m'),
+        'Y_m': now.strftime('%Y_%m'),
+        'md': now.strftime('%m%d'),
+        'm-d': now.strftime('%m-%d'),
+        'm_d': now.strftime('%m_%d'),
     }
     
     # 处理日期占位符
@@ -179,18 +193,14 @@ def format_current_date(url):
         formatted_url = url.format(**date_vars)
     except KeyError as e:
         print(f"URL中包含未支持的日期格式占位符: {e}")
-        print(f"支持的日期占位符有: {', '.join(date_vars.keys())}")
-        return url  # 返回原始URL，让后续处理决定是否跳过
+        return url
     
     # 处理{x}占位符
     if '{x}' in formatted_url:
-        # 提取后缀
         file_suffix = extract_file_pattern(formatted_url)
         if file_suffix and is_github_raw_url(formatted_url):
-            # 获取GitHub中匹配的文件名
             filename = get_github_filename(formatted_url, file_suffix)
             if filename:
-                # 替换{x}占位符为实际文件名
                 pattern = r'\{x\}' + re.escape(file_suffix)
                 formatted_url = re.sub(pattern, filename, formatted_url)
             else:
@@ -201,28 +211,23 @@ def format_current_date(url):
 def fetch_content(url):
     """获取订阅内容"""
     try:
-        # 1. 首先替换日期相关的占位符
+        # 替换日期相关的占位符
         now = datetime.now()
         date_vars = {
-            # 基本日期组件
-            'Y': now.strftime('%Y'),          # 年份，如2023
-            'm': now.strftime('%m'),          # 月份，如05
-            'd': now.strftime('%d'),          # 日期，如09
-            
-            # 组合日期格式
-            'Ymd': now.strftime('%Y%m%d'),    # 组合格式，如20230509
-            'Y-m-d': now.strftime('%Y-%m-%d'), # 带连字符格式，如2023-05-09
-            'Y_m_d': now.strftime('%Y_%m_%d'), # 带下划线格式，如2023_05_09
-            
-            # 额外日期格式
-            'Y-m': now.strftime('%Y-%m'),     # 年月，如2023-05
-            'Y_m': now.strftime('%Y_%m'),     # 带下划线的年月，如2023_05
-            'md': now.strftime('%m%d'),       # 月日，如0509
-            'm-d': now.strftime('%m-%d'),     # 带连字符的月日，如05-09
-            'm_d': now.strftime('%m_%d'),     # 带下划线的月日，如05_09
+            'Y': now.strftime('%Y'),
+            'm': now.strftime('%m'),
+            'd': now.strftime('%d'),
+            'Ymd': now.strftime('%Y%m%d'),
+            'Y-m-d': now.strftime('%Y-%m-%d'),
+            'Y_m_d': now.strftime('%Y_%m_%d'),
+            'Y-m': now.strftime('%Y-%m'),
+            'Y_m': now.strftime('%Y_%m'),
+            'md': now.strftime('%m%d'),
+            'm-d': now.strftime('%m-%d'),
+            'm_d': now.strftime('%m_%d'),
         }
         
-        # 先将{x}占位符临时替换，以免被format误处理
+        # 先将{x}占位符临时替换
         temp_marker = "___X_PLACEHOLDER___"
         temporary_url = url.replace("{x}", temp_marker)
         
@@ -230,11 +235,7 @@ def fetch_content(url):
         try:
             formatted_url = temporary_url.format(**date_vars)
         except KeyError as e:
-            # 如果format失败，尝试手动替换
-            print(f"URL中包含未支持的日期格式占位符: {e}")
-            print(f"支持的日期占位符有: {', '.join(date_vars.keys())}")
             formatted_url = temporary_url
-            # 手动替换常见的日期占位符
             for pattern, replacement in [
                 ('{Y_m_d}', now.strftime('%Y_%m_%d')),
                 ('{Y-m-d}', now.strftime('%Y-%m-%d')),
@@ -245,12 +246,11 @@ def fetch_content(url):
             ]:
                 if pattern in formatted_url:
                     formatted_url = formatted_url.replace(pattern, replacement)
-                    print(f"手动替换日期占位符 {pattern} 为 {replacement}")
         
         # 将临时标记替换回{x}
         formatted_url = formatted_url.replace(temp_marker, "{x}")
         
-        # 2. 然后处理{x}占位符 - 现在日期占位符已经被替换
+        # 处理{x}占位符
         if '{x}' in formatted_url:
             file_suffix = extract_file_pattern(formatted_url)
             if file_suffix and is_github_raw_url(formatted_url):
@@ -260,14 +260,10 @@ def fetch_content(url):
                     pattern = r'\{x\}' + re.escape(file_suffix)
                     formatted_url = re.sub(pattern, filename, formatted_url)
                     print(f"成功替换{{x}}占位符为: {filename}")
-                else:
-                    print(f"警告: 未能获取匹配{file_suffix}的文件")
-            else:
-                print(f"警告: 无法处理{{x}}占位符，URL不是GitHub raw链接或找不到文件后缀")
         
         print(f"实际请求URL: {formatted_url}")
         
-        # 模拟Chrome浏览器请求头，与curl命令类似
+        # 模拟Chrome浏览器请求头
         headers = {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36',
             'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
@@ -276,93 +272,51 @@ def fetch_content(url):
             'DNT': '1',
             'Pragma': 'no-cache',
             'Upgrade-Insecure-Requests': '1',
-            'sec-ch-ua': '"Chromium";v="134", "Not:A-Brand";v="24", "Google Chrome";v="134"',
-            'sec-ch-ua-mobile': '?0',
-            'sec-ch-ua-platform': '"Windows"',
-            'sec-fetch-dest': 'document',
-            'sec-fetch-mode': 'navigate',
-            'sec-fetch-site': 'none',
-            'sec-fetch-user': '?1'
         }
         
-        # 特殊站点处理 - 对特定的站点使用不同的请求方式
+        # 特殊站点处理
         special_sites = ['igdux.top']
         use_session = any(site in formatted_url for site in special_sites)
         
         if use_session:
-            # 使用Session对象来保持cookie等状态
             session = requests.Session()
-            # 先发送一个HEAD请求，获取cookie等信息
             session.head(formatted_url, headers=headers, timeout=30)
             response = session.get(formatted_url, headers=headers, timeout=60, stream=True)
         else:
-            # 普通请求
             response = requests.get(formatted_url, headers=headers, timeout=60, stream=True)
         
         response.raise_for_status()
         
-        # 检查Content-Type，确保正确处理各种类型的内容
-        content_type = response.headers.get('Content-Type', '').lower()
-        # print(f"Content-Type: {content_type}")
-        
         # 处理不同内容类型
-        # 1. 处理二进制类型
+        content_type = response.headers.get('Content-Type', '').lower()
+        
         if 'application/octet-stream' in content_type or 'application/x-yaml' in content_type:
             content = response.content.decode('utf-8', errors='ignore')
-        # 2. 处理明确指定了UTF-8字符集的文本
         elif 'charset=utf-8' in content_type or 'text/plain' in content_type:
-            # 尝试多种解码方式
             encodings_to_try = ['utf-8', 'gbk', 'latin1', 'ascii', 'iso-8859-1']
             for encoding in encodings_to_try:
                 try:
                     content = response.content.decode(encoding, errors='ignore')
-                    # 检查解码是否成功 - 如果包含常见订阅指示符
                     if any(indicator in content for indicator in ['proxies:', 'vmess://', 'trojan://', 'ss://', 'vless://']):
-                        # print(f"使用 {encoding} 编码成功解码内容")
                         break
                 except UnicodeDecodeError:
                     continue
             else:
-                # 如果所有编码都失败，使用默认UTF-8
                 content = response.content.decode('utf-8', errors='ignore')
-                
-            # 如果网址是特殊站点但仍然得到乱码，尝试拆解HTML标记
-            if use_session and not any(indicator in content for indicator in ['proxies:', 'vmess://', 'trojan://', 'ss://', 'vless://']):
-                try:
-                    # 尝试解析HTML并提取内容
-                    from bs4 import BeautifulSoup
-                    soup = BeautifulSoup(response.content, 'html.parser')
-                    # 查找所有可能包含订阅信息的元素
-                    for element in soup.find_all(['pre', 'code', 'div', 'textarea']):
-                        element_text = element.get_text()
-                        if any(indicator in element_text for indicator in ['proxies:', 'vmess://', 'trojan://', 'ss://', 'vless://']):
-                            print(f"从HTML元素中提取到订阅内容")
-                            content = element_text
-                            break
-                except ImportError:
-                    print("未安装BeautifulSoup，跳过HTML解析")
-                except Exception as e:
-                    print(f"HTML解析错误: {str(e)}")
-        # 3. 处理可能是base64编码的内容
         elif 'text/base64' in content_type:
             content = response.content.decode('utf-8', errors='ignore')
-        # 4. 处理其他文本格式，如json
         elif 'application/json' in content_type or 'text/' in content_type:
             content = response.content.decode('utf-8', errors='ignore')
-        # 5. 默认情况
         else:
             content = response.text
         
         # 测试内容是否可能是Base64编码
         if not any(indicator in content for indicator in ['proxies:', 'vmess://', 'trojan://', 'ss://', 'vless://']):
             try:
-                # 移除空白字符，尝试base64解码
                 cleaned_content = re.sub(r'\s+', '', content)
-                # 添加适当的填充
                 padding = len(cleaned_content) % 4
                 if padding:
                     cleaned_content += '=' * (4 - padding)
-                # 尝试base64解码
                 decoded = base64.b64decode(cleaned_content)
                 decoded_text = decoded.decode('utf-8', errors='ignore')
                 
@@ -370,17 +324,11 @@ def fetch_content(url):
                     print("检测到Base64编码的订阅内容，已成功解码")
                     content = decoded_text
             except:
-                # 解码失败，继续使用原始内容
                 pass
             
         return content
-    except KeyError as e:
-        print(f"URL中包含未支持的占位符: {e}")
-        return None
     except Exception as e:
         print(f"Error fetching {url}: {str(e)}")
-        import traceback
-        traceback.print_exc()
         return None
 
 def parse_clash_yaml(content):
@@ -1658,9 +1606,7 @@ def main():
             print("获取失败，跳过该链接")
             continue
             
-        # 使用新的级联提取函数
         nodes = extract_nodes(content)
-        # print(f"成功提取 {len(nodes)} 个节点")
         all_nodes.extend(nodes)
     
     # 节点去重
@@ -1671,13 +1617,9 @@ def main():
     # 节点信息补全和标准化
     all_nodes = standardize_nodes(all_nodes)
 
-    # 暂时只测试获取节点信息
-    # return
-    
-    # 使用线程池并发测试节点延迟
+    # 测试节点延迟
     print(f"\n开始测试节点延迟...")
     valid_nodes = []
-    # 限制并发数量，避免资源耗尽
     with ThreadPoolExecutor(max_workers=MAX_CONCURRENT_TESTS) as executor:
         future_to_node = {executor.submit(process_node, node): node for node in all_nodes}
         for future in as_completed(future_to_node):
@@ -1689,16 +1631,13 @@ def main():
     
     # 收集所有有效节点的URI
     valid_uris = []
-    valid_uri_count = 0
     for node in valid_nodes:
-            uri = node_to_v2ray_uri(node)
-            if uri:
-                valid_uris.append(uri)
-                valid_uri_count += 1
+        uri = node_to_v2ray_uri(node)
+        if uri:
+            valid_uris.append(uri)
     
-    # 新增：保存所有去重合并后的节点到all.txt（原始格式）
+    # 保存所有节点到all.txt
     try:
-        print(f"准备写入 all.txt，当前工作目录: {os.getcwd()}")
         all_uris = []
         for node in all_nodes:
             uri = node_to_v2ray_uri(node)
@@ -1706,28 +1645,21 @@ def main():
                 all_uris.append(uri)
         with open('all.txt', 'w', encoding='utf-8') as f:
             f.write('\n'.join(all_uris))
-        print(f"\n已将所有去重合并后的节点保存到 all.txt 文件")
+        print(f"已将所有去重合并后的节点保存到 all.txt 文件")
     except Exception as e:
         print(f"保存all.txt失败: {e}")
-        print("请检查GitHub Actions是否有写入权限，或 workflow 是否将 all.txt 文件 git add 并提交。")
     
-    # 将所有URI合并为一个字符串，并进行base64编码
-    if valid_uri_count > 0:
+    # 保存有效节点
+    if valid_uris:
         uri_content = '\n'.join(valid_uris)
         base64_content = base64.b64encode(uri_content.encode('utf-8')).decode('utf-8')
         
-        # 将base64编码后的内容写入文件
         with open('v2ray.txt', 'w', encoding='utf-8') as f:
             f.write(base64_content)
         
-        print(f"\n已将 {valid_uri_count} 个有效节点以base64编码保存到 v2ray.txt 文件")
+        print(f"已将 {len(valid_uris)} 个有效节点以base64编码保存到 v2ray.txt 文件")
         
-        # 同时保存一个原始文本版本，方便查看
-        with open('v2ray_raw.txt', 'w', encoding='utf-8') as f:
-            f.write(uri_content)
-        print(f"同时保存了原始文本版本到 v2ray_raw.txt 文件")
-    else:
-        print("\n未找到有效节点，不生成文件")
+        with open('v2ray_raw.txt', 'w', encoding='utf-8')
 
 if __name__ == '__main__':
     main()
