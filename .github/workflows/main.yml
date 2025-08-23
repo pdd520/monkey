@@ -11,6 +11,9 @@ on:
 jobs:
   run_demo_actions:
     runs-on: ubuntu-latest
+    env:
+      SUBSCRIBE_LINKS: ${{ secrets.SUBSCRIBE_LINKS }}
+      CONFIG_URL: ${{ secrets.CONFIG_URL }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
