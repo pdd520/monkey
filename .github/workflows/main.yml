@@ -34,14 +34,23 @@ jobs:
 
       - name: Commit and push file
         run: |
-          set +e
+          # 检查文件是否生成
+          ls -la *.txt 2>/dev/null || echo "No txt files in root directory"
+          ls -la data/*.txt 2>/dev/null || echo "No txt files in data directory"
+          
+          # 设置git配置
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/v2ray.txt data/all.txt data/v2ray_raw.txt
-          git commit -m "update" || echo "No changes to commit"
-          git pull --rebase
-          if [ $? -ne 0 ]; then
-            git rebase --abort
-            echo "rebase failed, will force push"
+          
+          # 添加所有可能位置的文件
+          git add *.txt data/*.txt 2>/dev/null || true
+          
+          # 检查是否有文件需要提交
+          if git status --porcelain | grep -q '^[MAD]'; then
+            git commit -m "update node files"
+            git pull --rebase
+            git push https://${{ secrets.BOT }}:x-oauth-basic@github.com/${GITHUB_REPOSITORY}.git HEAD:master
+            echo "Files committed and pushed successfully"
+          else
+            echo "No changes to commit"
           fi
-          git push --force https://${{ secrets.BOT }}:x-oauth-basic@github.com/${GITHUB_REPOSITORY}.git
