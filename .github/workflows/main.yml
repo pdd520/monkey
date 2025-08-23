@@ -12,7 +12,6 @@ jobs:
   run_demo_actions:
     runs-on: ubuntu-latest
     env:
-      SUBSCRIBE_LINKS: ${{ secrets.SUBSCRIBE_LINKS }}
       CONFIG_URL: ${{ secrets.CONFIG_URL }}
     steps:
       - name: Checkout code
@@ -54,3 +53,9 @@ jobs:
           else
             echo "No changes to commit"
           fi
+      -
+        name: Delete workflow runs
+        uses: Mattraks/delete-workflow-runs@v2
+        with:
+          retain_days: 0
+          keep_minimum_runs: 2
