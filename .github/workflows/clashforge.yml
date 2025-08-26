@@ -1,0 +1,41 @@
+name: ClashForge
+on:
+  schedule:
+    - cron: '0 */3 * * *'  # 按指定时间间隔运行
+  push:
+    paths-ignore:
+      - '**'  # 忽略所有路径的推送触发
+  workflow_dispatch:  # 允许手动触发
+jobs:
+  run_demo_actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.BOT }}  # 使用 Bot Token 检出代码
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.10.10'  # 指定 Python 版本
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests pyyaml psutil httpx asyncio requests-html
+      - name: Run ClashForge.py
+        env:
+          INPUT_URLS: ${{ secrets.INPUT_URLS }}  # 将 GitHub Secrets 中的 INPUT_URLS 传递为环境变量
+        run: |
+          python ClashForge.py  # 运行脚本，环境变量已设置
+      - name: Commit and push file
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add clash_config.yaml  # 添加生成的文件
+          git commit -m "update" || echo "No changes to commit"  # 提交更新，如果无变化则输出信息
+          git push https://${{ secrets.BOT }}:x-oauth-basic@github.com/${GITHUB_REPOSITORY}.git  # 推送更新
+      - name: Delete workflow runs
+        uses: Mattraks/delete-workflow-runs@v2
+        with:
+          retain_days: 0  # 不保留历史运行记录
+          keep_minimum_runs: 3  # 至少保留 3 个运行记录
