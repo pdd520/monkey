@@ -56,682 +56,157 @@ proxies:
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
-- name: 🇺🇸US-104.238.162.76-0203 | 109.923MB
-  server: 104.238.162.76
-  port: 20086
-  type: vmess
-  uuid: 6cf93fe6-0062-4212-95aa-2aabca8b11bf
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇺🇸US-37.19.198.243-0224 | 85.14MB
+- name: 🇺🇸US-37.19.198.243-0190 | 129.328MB
   server: 37.19.198.243
   port: 443
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
-- name: 🇺🇸US-156.146.38.170-0206 | 83.212MB
+- name: 🇺🇸US-156.146.38.170-0191 | 81.83MB
   server: 156.146.38.170
   port: 443
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
-- name: 🇺🇸US-156.146.38.168-0204 | 83.123MB
-  server: 156.146.38.168
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇺🇸US-156.146.38.167-0205 | 76.427MB
+- name: 🇺🇸US-156.146.38.167-0193 | 80.214MB
   server: 156.146.38.167
   port: 443
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
-- name: 🇺🇸US-64.74.163.130-0210 | 61.372MB
-  server: 64.74.163.130
-  port: 990
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: f8f7aCzcPKbsF8p3
-- name: 🇺🇸US-138.197.5.103-0214 | 53.144MB
-  server: us.blazeppn.info
-  port: 443
-  type: trojan
-  password: xxoo
-  sni: us.blazeppn.info
-  skip-cert-verify: false
-- name: 🇺🇸US-156.146.38.169-0209 | 51.742MB
+- name: 🇺🇸US-156.146.38.169-0198 | 80.13MB
   server: 156.146.38.169
   port: 443
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
-- name: 🇺🇸US-173.244.56.9-0207 | 47.389MB
+- name: 🇺🇸US-156.146.38.168-0192 | 77.631MB
+  server: 156.146.38.168
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸US-173.244.56.9-0199 | 59.419MB
   server: 173.244.56.9
   port: 443
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
-- name: 🇨🇦CA-79.127.233.170-0199 | 45.795MB
-  server: 79.127.233.170
-  port: 990
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: f8f7aCzcPKbsF8p3
-- name: 🇨🇦CA-79.127.233.170-0196 | 45.135MB
-  server: 79.127.233.170
-  port: 989
-  type: ss
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-- name: 🇺🇸US-212.102.47.130-0197 | 44.604MB
-  server: 212.102.47.130
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇺🇸US-212.102.47.131-0274 | 44.45MB
-  server: 212.102.47.131
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇺🇸US-212.102.47.132-0200 | 44.288MB
-  server: 212.102.47.132
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇺🇸US-23.251.121.242-0201 | 44.238MB
-  server: 23.251.121.242
-  port: 8080
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: LT-45.87.175.181-0361 | 44.128MB
-  server: 45.87.175.181
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: cvII85TrW6n0OGyfpHVS1u
-- name: LT-45.87.175.157-0325 | 44.094MB
-  server: 45.87.175.157
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: QCXDxuDlTTMD7jtgHUjIoj
-- name: LT-45.87.175.65-0317 | 44.069MB
-  server: 45.87.175.65
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: LT-45.87.175.164-0237 | 43.844MB
-  server: 45.87.175.164
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 1RWwXhwfAB5gAEozU4G2Pg
-- name: LT-45.87.175.188-0226 | 43.786MB
-  server: 45.87.175.188
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: cvII85TrW6n0OGyfpHVS1u
-- name: 🇳🇱NL-193.29.139.202-0326 | 43.728MB
-  server: 193.29.139.202
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: LT-45.87.175.166-0234 | 43.654MB
-  server: 45.87.175.166
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: cvII85TrW6n0OGyfpHVS1u
-- name: 🇫🇷FR-45.158.171.110-0257 | 43.539MB
-  server: 45.158.171.110
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: LT-45.87.175.35-0333 | 43.522MB
-  server: 45.87.175.35
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: AE-151.242.251.144-0225 | 43.473MB
-  server: 151.242.251.144
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 4a2rfixophdjffa8KVA4Aa
-- name: LT-45.87.175.171-0316 | 42.83MB
-  server: 45.87.175.171
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 1RWwXhwfAB5gAEozU4G2Pg
-- name: 🇳🇱NL-193.29.139.179-0321 | 42.067MB
-  server: 193.29.139.179
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: cvII85TrW6n0OGyfpHVS1u
-- name: 🇳🇱NL-193.29.139.235-0247 | 41.711MB
-  server: 193.29.139.235
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇫🇷FR-45.158.171.60-0323 | 41.681MB
-  server: 45.158.171.60
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: AE-151.242.251.131-0233 | 41.666MB
-  server: 151.242.251.131
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: QCXDxuDlTTMD7jtgHUjIoj
-- name: AE-151.242.251.153-0267 | 41.613MB
-  server: 151.242.251.153
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: QCXDxuDlTTMD7jtgHUjIoj
-- name: LT-45.87.175.28-0331 | 41.606MB
-  server: 45.87.175.28
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: LT-45.87.175.178-0236 | 41.591MB
-  server: 45.87.175.178
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: cvII85TrW6n0OGyfpHVS1u
-- name: 🇺🇸US-137.175.124.167-0282 | 41.045MB
-  server: 137.175.124.167
-  port: 20086
-  type: vmess
-  uuid: b4bce500-11fe-4f8f-a344-01ac247af9bd
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇫🇷FR-45.158.171.70-0310 | 40.642MB
-  server: 45.158.171.70
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: LT-45.87.175.58-0330 | 40.365MB
-  server: 45.87.175.58
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: LT-45.87.175.92-0299 | 40.155MB
-  server: 45.87.175.92
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇳🇱NL-193.29.139.240-0312 | 40.086MB
-  server: 193.29.139.240
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇫🇷FR-195.154.169.198-0230 | 39.831MB
-  server: 195.154.169.198
-  port: 989
-  type: ss
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-- name: AE-151.242.251.137-0219 | 39.403MB
-  server: beesyar.org
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 4a2rfixophdjffa8KVA4Aa
-- name: 🇳🇱NL-193.29.139.227-0245 | 39.31MB
-  server: 193.29.139.227
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: QCXDxuDlTTMD7jtgHUjIoj
-- name: CZ-195.181.160.6-0235 | 38.308MB
-  server: 195.181.160.6
-  port: 990
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: f8f7aCzcPKbsF8p3
-- name: 🇫🇷FR-45.158.171.66-0315 | 38.056MB
-  server: 45.158.171.66
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇬🇧GB-212.102.53.78-0242 | 37.95MB
-  server: 212.102.53.78
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇬🇧GB-212.102.53.194-0089 | 37.678MB
-  server: 212.102.53.194
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇬🇧GB-212.102.53.81-0255 | 37.55MB
-  server: 212.102.53.81
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇬🇧GB-212.102.53.196-0250 | 37.53MB
-  server: 212.102.53.196
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇬🇧GB-212.102.53.193-0253 | 37.386MB
-  server: 212.102.53.193
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇬🇧GB-212.102.53.198-0249 | 37.266MB
-  server: 212.102.53.198
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: AT-152.53.2.128-0278 | 36.821MB
-  server: 152.53.2.128
-  port: 34045
-  type: ss
-  cipher: aes-256-gcm
-  password: TG:@Enkelte_notif&&TG:@Notif_Chat
-- name: 🇬🇧GB-212.102.53.197-0252 | 36.739MB
-  server: 212.102.53.197
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇬🇧GB-212.102.53.195-0246 | 36.675MB
-  server: 212.102.53.195
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇬🇧GB-212.102.53.79-0243 | 36.577MB
-  server: 212.102.53.79
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: SK-156.146.40.194-0244 | 36.56MB
-  server: 156.146.40.194
-  port: 989
-  type: ss
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-- name: NO-185.213.23.226-0239 | 36.047MB
-  server: 185.213.23.226
-  port: 989
-  type: ss
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-- name: 🇳🇱NL-149.34.244.68-0254 | 36.002MB
-  server: 149.34.244.68
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇺🇸US-45.55.2.232-0211 | 35.658MB
-  server: 45.55.2.232
-  port: 14293
-  type: ss
-  cipher: aes-256-cfb
-  password: 2170f8
-- name: NO-185.213.23.226-0248 | 35.283MB
-  server: 185.213.23.226
-  port: 990
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: f8f7aCzcPKbsF8p3
-- name: 🇺🇸US-104.192.226.106-0215 | 34.696MB
+- name: 🇺🇸US-104.192.226.106-0254 | 52.186MB
   server: 104.192.226.106
   port: 990
   type: ss
   cipher: chacha20-ietf-poly1305
   password: f8f7aCzcPKbsF8p3
-- name: SE-121.127.46.147-0393 | 33.448MB
-  server: 121.127.46.147
-  port: 989
-  type: ss
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-- name: 🇺🇸US-104.192.226.106-0208 | 32.706MB
-  server: 104.192.226.106
-  port: 989
-  type: ss
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-- name: 🇳🇱NL-164.92.156.41-0263 | 32.6MB
-  server: 164.92.156.41
-  port: 24206
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: zI7kiNZ0UfV9cXB73a4nRD
-- name: 🇫🇷FR-195.154.185.174-0228 | 32.054MB
-  server: 195.154.185.174
-  port: 989
-  type: ss
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-- name: BG-37.19.203.147-0270 | 31.821MB
-  server: 37.19.203.147
-  port: 989
-  type: ss
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-- name: CH-156.146.62.162-0261 | 30.629MB
-  server: 156.146.62.162
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: CH-156.146.62.163-0260 | 30.111MB
-  server: 156.146.62.163
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇳🇱NL-193.29.139.217-0229 | 29.671MB
-  server: 193.29.139.217
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: QCXDxuDlTTMD7jtgHUjIoj
-- name: 🇬🇧GB-212.102.53.80-0251 | 29.333MB
-  server: 212.102.53.80
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: MD-185.153.197.5-4932 | 28.753MB
-  server: 185.153.197.5
-  port: 989
-  type: ss
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-- name: 🇳🇱NL-51.15.17.169-0221 | 24.255MB
-  server: 51.15.17.169
-  port: 989
-  type: ss
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-- name: AT-77.110.110.117-4911 | 24.033MB
-  server: 77.110.110.117
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 9JeYy8SkViXuSHVs9GFeSe
-- name: 🇬🇧GB-141.98.101.178-0281 | 23.334MB
-  server: 141.98.101.178
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: CH-156.146.62.161-0256 | 19.086MB
-  server: 156.146.62.161
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇫🇷FR-81.19.137.222-0266 | 19.01MB
-  server: 81.19.137.222
-  port: 57456
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: a58fa62b4944ddbf
-- name: CH-156.146.62.164-0259 | 18.043MB
-  server: 156.146.62.164
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇬🇧GB-212.102.53.197-0264 | 17.89MB
-  server: uk-dc1.yangon.club
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: AT-95.163.176.37-0301 | 15.825MB
-  server: 95.163.176.37
-  port: 8506
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: eUh4lSpi7nOYj0vSrqLUh0
-- name: 🇯🇵JP-149.22.87.204-0216 | 13.168MB
-  server: 149.22.87.204
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇨🇦CA-38.180.211.126-0268 | 12.764MB
-  server: 38.180.211.126
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: Kuiqk2cP0BMWrgme9IfEvp
-- name: 🇺🇸US-107.151.182.253-0202 | 10.296MB
+- name: 🇺🇸US-107.151.182.253-0286 | 50.162MB
   server: 107.151.182.253
   port: 8080
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: RO-185.126.237.38-0283 | 9.171MB
-  server: 185.126.237.38
+- name: 🇨🇦CA-79.127.233.170-0200 | 48.048MB
+  server: 79.127.233.170
   port: 990
   type: ss
   cipher: chacha20-ietf-poly1305
   password: f8f7aCzcPKbsF8p3
-- name: FI-37.143.129.230-0276 | 7.464MB
-  server: 37.143.129.230
+- name: 🇨🇦CA-79.127.233.170-0201 | 47.929MB
+  server: 79.127.233.170
   port: 989
   type: ss
   cipher: aes-256-cfb
   password: f8f7aCzcPKbsF8p3
-- name: VN-161.248.30.3-0275 | 5.811MB
-  server: 161.248.30.3
-  port: 20086
-  type: vmess
-  uuid: 1006a928-2021-4a3b-beb5-d5853c6281c5
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇩🇪DE-185.177.229.245-0286 | 5.611MB
-  server: 185.177.229.245
-  port: 1866
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oXGp1+ihlfKg826H
-- name: VN-103.163.218.2-0313 | 4.157MB
-  server: 103.163.218.2
+- name: 🇺🇸US-64.74.163.130-0195 | 47.623MB
+  server: 64.74.163.130
   port: 990
   type: ss
   cipher: chacha20-ietf-poly1305
   password: f8f7aCzcPKbsF8p3
-- name: VN-103.163.218.2-0297 | 3.472MB
-  server: 103.163.218.2
-  port: 989
+- name: 🇺🇸US-212.102.47.130-0203 | 46.795MB
+  server: 212.102.47.130
+  port: 443
   type: ss
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-- name: 🇩🇪DE-193.108.119.230-0298 | 3.299MB
-  server: 193.108.119.230
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸US-212.102.47.132-0205 | 46.757MB
+  server: 212.102.47.132
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸US-212.102.47.131-0204 | 46.244MB
+  server: 212.102.47.131
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: LT-45.87.175.181-0207 | 44.348MB
+  server: 45.87.175.181
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: cvII85TrW6n0OGyfpHVS1u
+- name: AE-151.242.251.153-0223 | 43.133MB
+  server: 151.242.251.153
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: QCXDxuDlTTMD7jtgHUjIoj
+- name: 🇺🇸US-23.251.121.242-0206 | 43.061MB
+  server: 23.251.121.242
   port: 8080
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇪🇸ES-45.154.206.192-0290 | 3.081MB
-  server: 45.154.206.192
-  port: 990
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: f8f7aCzcPKbsF8p3
-- name: CO-181.119.30.20-0291 | 3.055MB
-  server: 181.119.30.20
-  port: 990
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: f8f7aCzcPKbsF8p3
-- name: 🇩🇪DE-84.200.91.228-5034 | 2.977MB
-  server: 84.200.91.228
-  port: 1080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 5ZQh4pssSk4aK1JG1XhBRg
-- name: 🇵🇱PL-92.118.205.228-0320 | 2.686MB
-  server: 92.118.205.228
-  port: 990
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: f8f7aCzcPKbsF8p3
-- name: CH-204.136.10.115-0287 | 2.325MB
-  server: 204.136.10.115
-  port: 1866
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oXGp1+ihlfKg826H
-- name: PY-38.165.233.93-0293 | 1.892MB
-  server: 38.165.233.93
+- name: 🇳🇱NL-51.15.17.169-0271 | 42.917MB
+  server: 51.15.17.169
   port: 989
   type: ss
   cipher: aes-256-cfb
   password: f8f7aCzcPKbsF8p3
-- name: BE-192.71.249.78-0294 | 1.392MB
-  server: 192.71.249.78
-  port: 989
-  type: ss
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-- name: 🇩🇰DK-192.36.27.94-4076 | 1.339MB
-  server: 192.36.27.94
-  port: 989
-  type: ss
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-- name: RS-194.71.126.31-0295 | 1.319MB
-  server: 194.71.126.31
-  port: 989
-  type: ss
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-- name: 🇫🇷FR-51.195.119.47-0305 | 1.303MB
-  server: 51.195.119.47
-  port: 1080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: qXvO7zYU7KeaB0Md7DQLow
-- name: 🇫🇷FR-77.105.166.12-0296 | 1.091MB
-  server: 77.105.166.12
-  port: 8594
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: mSQiuT5jR17nyWgcXOPrTW
-- name: 🇰🇷KR-154.90.63.177-0307 | 1.048MB
-  server: 154.90.63.177
-  port: 989
-  type: ss
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-- name: CO-154.223.16.212-0306 | 1.007MB
-  server: 154.223.16.212
-  port: 989
-  type: ss
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-- name: 🇭🇰HK-116.49.109.153-0280 | 0.99MB
-  server: hkt.gotochinatown.net
-  port: 80
-  type: vmess
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hkt.gotochinatown.net
-- name: LT-45.87.175.154-0218 | 0.957MB
+- name: LT-45.87.175.154-0317 | 42.546MB
   server: 45.87.175.154
   port: 8080
   type: ss
   cipher: chacha20-ietf-poly1305
   password: QCXDxuDlTTMD7jtgHUjIoj
-- name: HR-46.183.184.60-0308 | 0.79MB
-  server: 46.183.184.60
-  port: 989
-  type: ss
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-- name: GR-192.71.166.102-3674 | 0.763MB
-  server: 192.71.166.102
-  port: 989
-  type: ss
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-- name: 🇩🇪DE-46.101.245.131-0314 | 0.688MB
-  server: 46.101.245.131
-  port: 44354
+- name: AE-151.242.251.131-0235 | 41.741MB
+  server: beesyar.org
+  port: 8080
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: 9RviNa4tscjcmCB408vLSg
-- name: BR-38.54.57.90-0344 | 0.652MB
-  server: 38.54.57.90
-  port: 989
-  type: ss
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-- name: AR-38.54.45.129-0311 | 0.599MB
-  server: 38.54.45.129
-  port: 990
+  password: 4a2rfixophdjffa8KVA4Aa
+- name: 🇳🇱NL-193.29.139.227-0236 | 41.221MB
+  server: 193.29.139.227
+  port: 8080
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: f8f7aCzcPKbsF8p3
-- name: 🇳🇱NL-92.112.126.90-0327 | 0.571MB
-  server: switcher-nick-croquet.freesocks.work
+  password: QCXDxuDlTTMD7jtgHUjIoj
+- name: 🇬🇧GB-212.102.53.196-0242 | 40.218MB
+  server: 212.102.53.196
   port: 443
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 9tqhMdIrTkgQ46PvhyAtMH
-- name: RELAY-172.67.131.27-0198 | 0.379MB
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇬🇧GB-212.102.53.193-0243 | 40.148MB
+  server: 212.102.53.193
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇬🇧GB-212.102.53.194-0081 | 39.872MB
+  server: 212.102.53.194
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇬🇧GB-212.102.53.198-0244 | 39.323MB
+  server: 212.102.53.198
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: RELAY-172.67.131.27-0329 | 39.29MB
   server: rak1ding.89060004.xyz
   port: 2083
   type: vmess
@@ -745,89 +220,119 @@ proxies:
     path: /
     headers:
       Host: rak1d3.988988.shop
-- name: LT-45.87.175.69-4918 | 0.368MB
-  server: 45.87.175.69
+- name: 🇬🇧GB-212.102.53.195-0247 | 39.177MB
+  server: 212.102.53.195
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇳🇱NL-193.29.139.138-0230 | 38.848MB
+  server: 193.29.139.138
   port: 8080
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇰🇷KR-154.90.62.168-0332 | 0.366MB
-  server: 154.90.62.168
+  password: QCXDxuDlTTMD7jtgHUjIoj
+- name: 🇫🇷FR-195.154.169.198-0234 | 38.169MB
+  server: 195.154.169.198
   port: 989
   type: ss
   cipher: aes-256-cfb
   password: f8f7aCzcPKbsF8p3
-- name: 🇮🇳IN-134.209.147.198-0328 | 0.324MB
-  server: 134.209.147.198
+- name: 🇬🇧GB-212.102.53.197-0246 | 38.062MB
+  server: 212.102.53.197
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇬🇧GB-212.102.53.197-0279 | 38.025MB
+  server: uk-dc1.yangon.club
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇫🇷FR-195.154.185.174-0259 | 38.0MB
+  server: 195.154.185.174
+  port: 989
+  type: ss
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: CZ-195.181.160.6-0237 | 37.981MB
+  server: 195.181.160.6
   port: 990
   type: ss
   cipher: chacha20-ietf-poly1305
   password: f8f7aCzcPKbsF8p3
-- name: LT-45.87.175.22-0322 | 0.324MB
-  server: 45.87.175.22
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇳🇱NL-103.104.247.47-0338 | 0.302MB
-  server: 103.104.247.47
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: PR-185.47.255.22-5045 | 0.298MB
-  server: 185.47.255.22
-  port: 990
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: f8f7aCzcPKbsF8p3
-- name: 🇳🇱NL-103.104.247.49-0329 | 0.256MB
-  server: 103.104.247.49
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇺🇸US-94.131.22.134-0300 | 0.254MB
-  server: imap.roomyinmita.name
-  port: 40565
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: MnEw5zo2ZhdS8Gy9fAMPfbhoguuv8biNYpoyHoNQLH2oZXWA4U4y6iNTYMexjaiBvQWv2N4b43gp9SVEG3nYvMf75p46K3He
-- name: 🇭🇰HK-154.197.26.237-5051 | 0.231MB
-  server: 154.197.26.237
-  port: 8388
-  type: ss
-  cipher: chacha20-ietf
-  password: asd123456
-- name: 🇮🇸IS-37.235.49.152-5010 | 0.201MB
-  server: 37.235.49.152
+- name: SK-156.146.40.194-0249 | 36.143MB
+  server: 156.146.40.194
   port: 989
   type: ss
   cipher: aes-256-cfb
   password: f8f7aCzcPKbsF8p3
-- name: MK-46.183.185.37-0335 | 0.199MB
-  server: 46.183.185.37
-  port: 989
+- name: 🇬🇧GB-212.102.53.80-0267 | 36.126MB
+  server: 212.102.53.80
+  port: 443
   type: ss
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-- name: ID-154.205.159.100-5084 | 0.173MB
-  server: 154.205.159.100
-  port: 990
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇳🇱NL-149.34.244.68-0251 | 36.07MB
+  server: 149.34.244.68
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: LT-45.87.175.178-0225 | 35.429MB
+  server: 45.87.175.178
+  port: 8080
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: f8f7aCzcPKbsF8p3
-- name: SI-192.71.244.150-0348 | 0.162MB
-  server: 192.71.244.150
+  password: cvII85TrW6n0OGyfpHVS1u
+- name: 🇳🇱NL-193.29.139.235-0220 | 35.424MB
+  server: 193.29.139.235
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: SE-121.127.46.147-0256 | 34.377MB
+  server: 121.127.46.147
   port: 989
   type: ss
   cipher: aes-256-cfb
   password: f8f7aCzcPKbsF8p3
-- name: 🇺🇸US-206.206.80.227-0353 | 0.13MB
-  server: 206.206.80.227
+- name: 🇬🇧GB-212.102.53.81-0241 | 34.164MB
+  server: 212.102.53.81
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇫🇷FR-45.158.171.110-0215 | 33.993MB
+  server: 45.158.171.110
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: CH-156.146.62.161-0276 | 33.482MB
+  server: 156.146.62.161
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: CH-156.146.62.164-0278 | 32.841MB
+  server: 156.146.62.164
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: BG-37.19.203.147-0260 | 32.683MB
+  server: 37.19.203.147
+  port: 989
+  type: ss
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: 🇺🇸US-137.175.124.167-0227 | 31.178MB
+  server: 137.175.124.167
   port: 20086
   type: vmess
-  uuid: 0abb7b9e-81ba-4336-8ca7-056866032ff3
+  uuid: b4bce500-11fe-4f8f-a344-01ac247af9bd
   alterId: 0
   cipher: auto
   tls: false
@@ -835,44 +340,373 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: SE-45.91.171.116-4967 | 0.128MB
-  server: 45.91.171.116
+- name: CH-156.146.62.163-0263 | 31.015MB
+  server: 156.146.62.163
   port: 443
-  type: trojan
-  password: 2ee85121-31de-4581-a492-eb00f606e392
-  sni: sto.freeguard.org
-  skip-cert-verify: false
-- name: 🇳🇱NL-213.109.147.242-0354 | 0.109MB
-  server: 213.109.147.242
-  port: 62685
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇬🇧GB-212.102.53.79-0248 | 30.874MB
+  server: 212.102.53.79
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: AE-151.242.251.131-0222 | 30.296MB
+  server: 151.242.251.131
+  port: 8080
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: VpKABcOpNNA0l5G2AVOmw8
-- name: SI-91.132.94.200-0345 | 0.056MB
-  server: 91.132.94.200
+  password: QCXDxuDlTTMD7jtgHUjIoj
+- name: AE-151.242.251.144-0217 | 30.025MB
+  server: 151.242.251.144
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 4a2rfixophdjffa8KVA4Aa
+- name: CH-156.146.62.162-0261 | 29.979MB
+  server: 156.146.62.162
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇳🇱NL-193.29.139.217-0264 | 29.955MB
+  server: 193.29.139.217
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: QCXDxuDlTTMD7jtgHUjIoj
+- name: MD-185.153.197.5-0268 | 27.615MB
+  server: 185.153.197.5
   port: 989
   type: ss
   cipher: aes-256-cfb
   password: f8f7aCzcPKbsF8p3
-- name: 🇨🇦CA-142.4.216.225-0342 | 0.05MB
+- name: 🇺🇸US-45.55.2.232-0252 | 26.146MB
+  server: 45.55.2.232
+  port: 14293
+  type: ss
+  cipher: aes-256-cfb
+  password: 2170f8
+- name: 🇫🇷FR-81.19.137.222-0277 | 24.999MB
+  server: 81.19.137.222
+  port: 57456
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: a58fa62b4944ddbf
+- name: 🇨🇦CA-38.180.211.126-0284 | 20.854MB
+  server: 38.180.211.126
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: Kuiqk2cP0BMWrgme9IfEvp
+- name: 🇯🇵JP-149.22.87.204-0283 | 17.643MB
+  server: 149.22.87.204
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: PY-38.165.233.18-4958 | 16.773MB
+  server: 38.165.233.18
+  port: 990
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: f8f7aCzcPKbsF8p3
+- name: RO-185.126.237.38-0287 | 14.499MB
+  server: 185.126.237.38
+  port: 990
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: f8f7aCzcPKbsF8p3
+- name: NO-185.213.23.226-0250 | 13.033MB
+  server: 185.213.23.226
+  port: 989
+  type: ss
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: FI-37.143.129.230-0288 | 12.176MB
+  server: 37.143.129.230
+  port: 989
+  type: ss
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: NO-185.213.23.226-0253 | 12.129MB
+  server: 185.213.23.226
+  port: 990
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: f8f7aCzcPKbsF8p3
+- name: AT-152.53.2.128-0245 | 11.075MB
+  server: 152.53.2.128
+  port: 34045
+  type: ss
+  cipher: aes-256-gcm
+  password: TG:@Enkelte_notif&&TG:@Notif_Chat
+- name: AT-95.163.176.37-0281 | 9.973MB
+  server: 95.163.176.37
+  port: 8506
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: eUh4lSpi7nOYj0vSrqLUh0
+- name: 🇩🇪DE-46.101.245.131-0322 | 8.874MB
+  server: 46.101.245.131
+  port: 44354
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 9RviNa4tscjcmCB408vLSg
+- name: 🇩🇪DE-185.177.229.245-0292 | 6.484MB
+  server: 185.177.229.245
+  port: 1866
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oXGp1+ihlfKg826H
+- name: 🇬🇧GB-141.98.101.178-0273 | 5.887MB
+  server: 141.98.101.178
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇨🇦CA-142.4.216.225-0377 | 5.595MB
+  server: ca225.vpnbook.com
+  port: 80
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: JIhN6rBKkaEboLNXVSv5rq
+- name: CH-204.136.10.115-0302 | 3.781MB
+  server: 204.136.10.115
+  port: 1866
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oXGp1+ihlfKg826H
+- name: CO-181.119.30.20-0297 | 3.757MB
+  server: 181.119.30.20
+  port: 990
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: f8f7aCzcPKbsF8p3
+- name: LT-45.87.175.166-0214 | 3.058MB
+  server: 45.87.175.166
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: cvII85TrW6n0OGyfpHVS1u
+- name: 🇩🇰DK-192.36.27.94-0307 | 2.768MB
+  server: 192.36.27.94
+  port: 989
+  type: ss
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: PY-38.165.233.93-0303 | 2.464MB
+  server: 38.165.233.93
+  port: 989
+  type: ss
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: 🇨🇦CA-142.4.216.225-0367 | 2.284MB
   server: 142.4.216.225
   port: 80
   type: ss
   cipher: chacha20-ietf-poly1305
   password: JIhN6rBKkaEboLNXVSv5rq
-- name: VN-160.19.78.75-0343 | 0.041MB
-  server: arxfw2b78fi2q9hzylhn.freesocks.work
-  port: 443
+- name: 🇫🇷FR-77.105.166.12-0312 | 1.885MB
+  server: 77.105.166.12
+  port: 8594
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: Nk9asglDzHzjktVzTkvhaA
-- name: VN-160.19.78.75-0355 | 0.035MB
-  server: 160.19.78.75
-  port: 443
+  password: mSQiuT5jR17nyWgcXOPrTW
+- name: VN-103.163.218.2-0293 | 1.851MB
+  server: 103.163.218.2
+  port: 990
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: Nk9asglDzHzjktVzTkvhaA
-- name: 🇰🇷KR-183.109.131.75-0288 | 0.027MB
+  password: f8f7aCzcPKbsF8p3
+- name: RS-194.71.126.31-0308 | 1.46MB
+  server: 194.71.126.31
+  port: 989
+  type: ss
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: BE-192.71.249.78-0305 | 1.346MB
+  server: 192.71.249.78
+  port: 989
+  type: ss
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: 🇳🇱NL-193.29.139.202-0213 | 1.059MB
+  server: 193.29.139.202
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇺🇸US-94.131.22.134-0338 | 1.0MB
+  server: imap.roomyinmita.name
+  port: 40565
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: MnEw5zo2ZhdS8Gy9fAMPfbhoguuv8biNYpoyHoNQLH2oZXWA4U4y6iNTYMexjaiBvQWv2N4b43gp9SVEG3nYvMf75p46K3He
+- name: 🇫🇷FR-51.195.119.47-0309 | 0.981MB
+  server: 51.195.119.47
+  port: 1080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: qXvO7zYU7KeaB0Md7DQLow
+- name: 🇰🇷KR-154.90.62.168-0331 | 0.977MB
+  server: 154.90.62.168
+  port: 989
+  type: ss
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: 🇪🇸ES-45.154.206.192-0296 | 0.651MB
+  server: 45.154.206.192
+  port: 990
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: f8f7aCzcPKbsF8p3
+- name: 🇫🇷FR-45.158.171.66-0238 | 0.509MB
+  server: 45.158.171.66
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇳🇱NL-103.104.247.49-0337 | 0.495MB
+  server: 103.104.247.49
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: HR-46.183.184.60-0319 | 0.49MB
+  server: 46.183.184.60
+  port: 989
+  type: ss
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: 🇮🇳IN-103.111.114.29-4896 | 0.486MB
+  server: 103.111.114.29
+  port: 57456
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 360e21d21977dc11
+- name: 🇳🇱NL-103.104.247.47-0335 | 0.457MB
+  server: 103.104.247.47
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇺🇸US-104.238.162.76-0189 | 0.449MB
+  server: 104.238.162.76
+  port: 20086
+  type: vmess
+  uuid: 6cf93fe6-0062-4212-95aa-2aabca8b11bf
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇫🇷FR-45.158.171.60-0221 | 0.422MB
+  server: 45.158.171.60
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇨🇳TW-154.223.20.79-0384 | 0.42MB
+  server: 154.223.20.79
+  port: 989
+  type: ss
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: CO-154.223.16.212-0314 | 0.418MB
+  server: 154.223.16.212
+  port: 989
+  type: ss
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: LT-45.87.175.92-0232 | 0.375MB
+  server: 45.87.175.92
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: PR-185.47.255.22-0336 | 0.368MB
+  server: 185.47.255.22
+  port: 990
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: f8f7aCzcPKbsF8p3
+- name: 🇫🇷FR-45.158.171.70-0229 | 0.345MB
+  server: 45.158.171.70
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇳🇱NL-193.29.139.240-0233 | 0.343MB
+  server: 193.29.139.240
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: LT-45.87.175.157-0209 | 0.337MB
+  server: 45.87.175.157
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: QCXDxuDlTTMD7jtgHUjIoj
+- name: 🇭🇰HK-18.162.146.85-5024 | 0.336MB
+  server: 18.162.146.85
+  port: 8319
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: ljqdalu13..
+- name: 🇭🇰HK-18.162.146.85-5022 | 0.336MB
+  server: 18.162.146.85
+  port: 8316
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: ljqdalu13..
+- name: 🇭🇰HK-18.162.146.85-5025 | 0.336MB
+  server: 18.162.146.85
+  port: 8313
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: ljqdalu13..
+- name: LT-45.87.175.69-0330 | 0.32MB
+  server: 45.87.175.69
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇮🇸IS-37.235.49.152-0340 | 0.317MB
+  server: 37.235.49.152
+  port: 989
+  type: ss
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: VN-103.163.218.2-0294 | 0.312MB
+  server: 103.163.218.2
+  port: 989
+  type: ss
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: 🇳🇱NL-193.29.139.251-4933 | 0.296MB
+  server: 193.29.139.251
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: AR-38.54.45.129-0325 | 0.29MB
+  server: 38.54.45.129
+  port: 990
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: f8f7aCzcPKbsF8p3
+- name: 🇭🇰HK-203.23.128.33-0383 | 0.277MB
+  server: 203.23.128.33
+  port: 990
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: f8f7aCzcPKbsF8p3
+- name: 🇰🇷KR-183.109.131.75-0371 | 0.27MB
   server: 183.109.131.75
   port: 20086
   type: vmess
@@ -884,61 +718,153 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇺🇸US-192.3.107.252-0346 | 0.0MB
+- name: 🇰🇷KR-154.90.63.177-0313 | 0.261MB
+  server: 154.90.63.177
+  port: 989
+  type: ss
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: 🇭🇰HK-112.118.114.43-0315 | 0.258MB
+  server: hkt.gotochinatown.net
+  port: 80
+  type: vmess
+  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hkt.gotochinatown.net
+- name: 🇳🇱NL-208.67.105.196-4960 | 0.202MB
+  server: 208.67.105.196
+  port: 42029
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: SjdGCHwafjktt1rzpGxTKYTvVBWb8Xa6E5DTr6MzbdHQSwvpLiDczj3n6MBjy2uyFSzgqgvCWsDQmpM4VQzfPzyGYF58wdyD
+- name: 🇵🇱PL-92.118.205.228-0300 | 0.191MB
+  server: 92.118.205.228
+  port: 990
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: f8f7aCzcPKbsF8p3
+- name: 🇳🇱NL-193.29.139.179-0219 | 0.186MB
+  server: 193.29.139.179
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: cvII85TrW6n0OGyfpHVS1u
+- name: LT-45.87.175.58-0231 | 0.18MB
+  server: 45.87.175.58
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇮🇸IS-37.235.49.168-0327 | 0.146MB
+  server: 37.235.49.168
+  port: 989
+  type: ss
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: 🇩🇪DE-193.108.119.230-0295 | 0.144MB
+  server: 193.108.119.230
+  port: 8080
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: LT-45.87.175.188-0212 | 0.131MB
+  server: 45.87.175.188
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: cvII85TrW6n0OGyfpHVS1u
+- name: LT-45.87.175.65-0210 | 0.117MB
+  server: 45.87.175.65
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: EC-185.47.253.227-4885 | 0.094MB
+  server: 185.47.253.227
+  port: 990
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: f8f7aCzcPKbsF8p3
+- name: LT-45.87.175.22-0334 | 0.082MB
+  server: 45.87.175.22
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: MK-46.183.185.15-0345 | 0.071MB
+  server: 46.183.185.15
+  port: 989
+  type: ss
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: BR-38.54.57.90-0323 | 0.062MB
+  server: 38.54.57.90
+  port: 989
+  type: ss
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: VN-160.19.78.75-0369 | 0.052MB
+  server: 160.19.78.75
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: Nk9asglDzHzjktVzTkvhaA
+- name: GR-192.71.166.102-0320 | 0.044MB
+  server: 192.71.166.102
+  port: 989
+  type: ss
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: 🇺🇸US-192.3.107.252-0374 | 0.044MB
   server: 192.3.107.252
   port: 443
   type: trojan
   password: 2ee85121-31de-4581-a492-eb00f606e392
   sni: rc8.freeguard.org
   skip-cert-verify: false
-- name: 🇰🇷KR-218.237.185.230-0341 | 0.0MB
-  server: 218.237.185.230
-  port: 4652
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-- name: 🇨🇦CA-142.4.216.225-0336 | 0.0MB
-  server: ca225.vpnbook.com
-  port: 80
+- name: 🇺🇸US-71.19.148.74-5044 | 0.043MB
+  server: hackney-latest-strike.freesocks.work
+  port: 443
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: JIhN6rBKkaEboLNXVSv5rq
-- name: TR-185.123.101.241-0350 | 0.0MB
+  password: XUMTygEM1jVYIvysXKqA5T
+- name: LT-45.87.175.28-0224 | 0.042MB
+  server: 45.87.175.28
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇭🇰HK-103.252.116.138-5028 | 0.034MB
+  server: 103.252.116.138
+  port: 443
+  type: trojan
+  password: 2ee85121-31de-4581-a492-eb00f606e392
+  sni: hk.freeguard.org
+  skip-cert-verify: false
+- name: LT-45.87.175.35-0216 | 0.027MB
+  server: 45.87.175.35
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: TR-185.123.101.241-0378 | 0.026MB
   server: 185.123.101.241
   port: 989
   type: ss
   cipher: aes-256-cfb
   password: f8f7aCzcPKbsF8p3
-- name: 🇳🇱NL-141.98.4.67-0351 | 0.0MB
-  server: exchange.gameaurela.click
-  port: 52952
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: LMSNh21TrXjR2ok25Q2nE8ENT2zoBmPvka3RCCUAHZELCnWoekVjvaf89qwcRkdbxEfep2bc2aUtmnxqvF1ayQRez1JHjULj
-- name: 🇩🇪DE-185.208.207.217-4968 | 0.0MB
-  server: 185.208.207.217
-  port: 443
-  type: trojan
-  password: 2ee85121-31de-4581-a492-eb00f606e392
-  sni: dus.freeguard.org
-  skip-cert-verify: false
-- name: 🇭🇰HK-203.23.128.33-0352 | 0.0MB
-  server: 203.23.128.33
-  port: 990
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: f8f7aCzcPKbsF8p3
-- name: 🇨🇳TW-154.223.20.79-0356 | 0.0MB
-  server: 154.223.20.79
-  port: 989
-  type: ss
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-- name: 🇨🇳TW-103.61.139.137-5077 | 0.0MB
-  server: 103.61.139.137
-  port: 20521
+- name: 🇺🇸US-206.206.80.227-0357 | 0.025MB
+  server: 206.206.80.227
+  port: 20086
   type: vmess
-  uuid: f8d93cfb-3d5d-447c-a697-16496dd74697
+  uuid: 0abb7b9e-81ba-4336-8ca7-056866032ff3
   alterId: 0
   cipher: auto
   tls: false
@@ -946,18 +872,42 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇺🇸US-94.131.21.174-5036 | 0.0MB
-  server: beta.mattenadene.org
-  port: 54075
+- name: 🇳🇱NL-141.98.4.67-0380 | 0.022MB
+  server: exchange.gameaurela.click
+  port: 52952
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: o38yuvzSe3m5aDNpHtUPH1zGwbGEXXMDsGwVaub2SYEmHUa2WGZUjiezX3Vvva9CCzpjxYtuJLgKsSnsyKBf9ciPVba3y4o3
-- name: AE-151.242.251.147-0232 | 0.0MB
-  server: 151.242.251.147
+  password: LMSNh21TrXjR2ok25Q2nE8ENT2zoBmPvka3RCCUAHZELCnWoekVjvaf89qwcRkdbxEfep2bc2aUtmnxqvF1ayQRez1JHjULj
+- name: VN-160.19.78.75-0368 | 0.019MB
+  server: arxfw2b78fi2q9hzylhn.freesocks.work
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: Nk9asglDzHzjktVzTkvhaA
+- name: 🇺🇸US-207.174.28.20-0202 | 0.0MB
+  server: 207.174.28.20
+  port: 20086
+  type: vmess
+  uuid: c6e3e775-ea56-4dcd-950b-c323117367f4
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+- name: LT-45.87.175.199-0226 | 0.0MB
+  server: 45.87.175.199
   port: 8080
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: QCXDxuDlTTMD7jtgHUjIoj
+  password: 4a2rfixophdjffa8KVA4Aa
+- name: 🇬🇧GB-212.102.53.78-0239 | 0.0MB
+  server: 212.102.53.78
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
 - name: 🇭🇰 香港6|@stairnode
   server: 3.112.225.166
   port: 443
@@ -1382,19 +1332,6 @@ proxies:
     path: /Telegram🇨🇳
     headers:
       Host: sg.laoyoutiao.link
-  udp: true
-- name: NL_39495_0045
-  server: 5.61.50.192
-  port: 34045
-  type: vless
-  uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
-  reality-opts:
-    public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
-    short-id: e8ab71d0
   udp: true
 - name: NZ_39495_0046
   server: 114.129.43.251
@@ -2074,24 +2011,18 @@ proxies:
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: 🇳🇱NL-193.29.139.251-0201
-  server: 193.29.139.251
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
 - name: 🇳🇱NL-193.29.139.157-0203
   server: 193.29.139.157
   port: 8080
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 4a2rfixophdjffa8KVA4Aa
-- name: 🇺🇸US-71.19.148.74-0284
-  server: hackney-latest-strike.freesocks.work
-  port: 443
+- name: 🇦🇪AE-151.242.251.147-0230
+  server: 151.242.251.147
+  port: 8080
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: XUMTygEM1jVYIvysXKqA5T
+  password: QCXDxuDlTTMD7jtgHUjIoj
 - name: 🇨🇦CA-45.154.204.13-0285
   server: ssca.irundns.net
   port: 443
@@ -2102,12 +2033,18 @@ proxies:
   obfs: http_post
   protocol-param: ''
   obfs-param: ''
-- name: 🇮🇳IN-103.111.114.29-0320
-  server: 103.111.114.29
-  port: 57456
+- name: 🇵🇱PL-217.30.10.18-0296
+  server: 217.30.10.18
+  port: 9019
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 360e21d21977dc11
+  cipher: aes-256-cfb
+  password: GA9KzeEgvfxNrgmM
+- name: 🇵🇱PL-217.30.10.18-0301
+  server: 217.30.10.18
+  port: 9033
+  type: ss
+  cipher: aes-256-cfb
+  password: UTJA57ypk2XKQpnm
 - name: 🇭🇰HK-150.107.46.21-0321
   server: 150.107.46.21
   port: 8083
@@ -2118,12 +2055,43 @@ proxies:
   obfs: tls1.2_ticket_auth
   protocol-param: ''
   obfs-param: ''
-- name: 🇭🇰HK-103.252.116.138-0344
-  server: 103.252.116.138
+- name: 🇩🇪DE-84.200.91.228-0322
+  server: 84.200.91.228
+  port: 1080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 5ZQh4pssSk4aK1JG1XhBRg
+- name: 🇮🇳IN-134.209.147.198-0327
+  server: 134.209.147.198
+  port: 990
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: f8f7aCzcPKbsF8p3
+- name: 🇮🇩ID-154.205.159.100-0351
+  server: 154.205.159.100
+  port: 990
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: f8f7aCzcPKbsF8p3
+- name: 🇬🇷GR-192.71.166.100-0365
+  server: 192.71.166.100
+  port: 989
+  type: ss
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: 🇸🇪SE-45.91.171.116-0366
+  server: 45.91.171.116
   port: 443
   type: trojan
   password: 2ee85121-31de-4581-a492-eb00f606e392
-  sni: hk.freeguard.org
+  sni: sto.freeguard.org
+  skip-cert-verify: false
+- name: 🇩🇪DE-185.208.207.217-0369
+  server: 185.208.207.217
+  port: 443
+  type: trojan
+  password: 2ee85121-31de-4581-a492-eb00f606e392
+  sni: dus.freeguard.org
   skip-cert-verify: false
 - name: 🇫🇮FI-81.177.214.214-0524
   server: 81.177.214.214
@@ -3559,20 +3527,6 @@ proxies:
     path: Telegram🇨🇳
     headers:
       Host: ttfang.fange.me
-- name: 🇺🇸US-216.24.57.214-0952
-  server: 216.24.57.214
-  port: 8880
-  type: vmess
-  uuid: d1b75cc3-e618-37c4-9c55-ff11b4ed493b
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
-    headers:
-      Host: TG.WangCai2.s4.db-link02.top
 - name: 🏁RELAY-104.21.21.192-0966
   server: b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top
   port: 443
@@ -3587,20 +3541,6 @@ proxies:
     path: /azumase.ren
     headers:
       Host: b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top
-- name: 🇺🇸US-199.34.229.212-0990
-  server: 199.34.229.212
-  port: 8880
-  type: vmess
-  uuid: b209dfbf-6bb0-30b2-a77a-286e230466b5
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
-    headers:
-      Host: TG.WangCai2.s4.db-link02.top
 - name: 🇭🇰HK-45.149.92.71-1866
   server: pt.mjt000.com
   port: 443
@@ -3634,12 +3574,6 @@ proxies:
   type: trojan
   password: af4d2493-9156-4514-9f6b-ee5d1a1e4713
   skip-cert-verify: false
-- name: 🇪🇸ES-5.188.181.201-4817
-  server: 5.188.181.201
-  port: 9000
-  type: ss
-  cipher: aes-256-cfb
-  password: a3GFYt36Sm82Vys9
 - name: 🇺🇸US-43.162.125.204-4822
   server: myvps.lol
   port: 443
@@ -3696,12 +3630,6 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: QCXDxuDlTTMD7jtgHUjIoj
-- name: 🇵🇾PY-38.165.233.18-4934
-  server: 38.165.233.18
-  port: 990
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: f8f7aCzcPKbsF8p3
 - name: 🇺🇸US-94.131.20.3-4950
   server: cache-giver-wife.stark-industries.solutions
   port: 443
@@ -3876,36 +3804,24 @@ proxies:
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇭🇰HK-18.162.146.85-4998
-  server: 18.162.146.85
-  port: 8316
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: ljqdalu13..
-- name: 🇭🇰HK-18.162.146.85-5000
-  server: 18.162.146.85
-  port: 8319
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: ljqdalu13..
-- name: 🇭🇰HK-18.162.146.85-5001
-  server: 18.162.146.85
-  port: 8313
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: ljqdalu13..
 - name: 🇯🇵JP-35.77.91.152-5007
   server: cgroup.node1.s2.nodelist-airport.com
   port: 51205
   type: ss
   cipher: aes-256-gcm
   password: 8f3a835c-8a45-480d-ae35-1deb2c52dcae
-- name: 🇳🇱NL-51.15.23.63-5014
-  server: 51.15.23.63
-  port: 989
-  type: ss
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
+- name: 🇺🇸US-2.58.87.221-5025
+  server: 2.58.87.221
+  port: 12269
+  type: vmess
+  uuid: db85ff0e-c33f-401d-c415-4c7cce135704
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
 - name: 🇻🇳VN-103.186.155.22-5037
   server: 103.186.155.22
   port: 38388
@@ -4169,18 +4085,6 @@ proxies:
         like Gecko) Chrome/70.0.3538.102 Safari/537.36
     path: /8.222.243.73-26385
   xudp: true
-- down: ''
-  fingerprint: ''
-  name: 🇺🇸US_18 |1.8MB/s|GPT|NF|32%
-  obfs: ''
-  obfs-password: ''
-  password: 5CBqBh6MeDq6GajcilBiDg==
-  port: '61001'
-  server: 192.227.152.86
-  skip-cert-verify: true
-  sni: 192-227-152-86.nip.io
-  type: hysteria2
-  up: ''
 - name: 🇺🇸US_20 |1.7MB/s|NF|D+
   network: ws
   port: 8880
@@ -4436,23 +4340,6 @@ proxies:
   type: vless
   udp: true
   uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
-  xudp: true
-- client-fingerprint: chrome
-  name: 🇺🇸US_34 |2.3MB/s|GPT|NF|D+
-  network: ws
-  port: '443'
-  server: 104.24.71.251
-  servername: hai.gdz.buzz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8f7fe273-e06d-47d5-9deb-d7b3c95dc573
-  ws-opts:
-    headers:
-      Host: hai.gdz.buzz
-      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; vivo 1603 Build/MMB29M) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/58.0.3029.83 Mobile Safari/537.36
-    path: /
   xudp: true
 - name: 🇺🇸US_40 |3.6MB/s|NF
   network: ws
@@ -5941,553 +5828,541 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 🇺🇸US-15.197.162.184-2518
-  - FR_39495_0011
-  - 🇺🇸US-37.19.198.243-0224 | 85.14MB
-  - 🇺🇸 us-newjersey
-  - 🇮🇹IT_1 |1.1MB/s|NF
+  - 🇺🇸US_86 |1.4MB/s|NF|D+
+  - 🇺🇸US_92 |1.3MB/s|NF|D+
+  - 🇺🇸US-156.146.38.167-0193 | 80.214MB
+  - 🇺🇸US-156.146.38.168-0192 | 77.631MB
+  - 🇺🇸US-104.238.162.76-0189 | 0.449MB
+  - 🇺🇸US-156.146.38.169-0198 | 80.13MB
+  - 🇯🇵JP_3 |3.2MB/s|NF|D+
   - 🇺🇸US_54 |1.3MB/s|NF
-  - 🇸🇬SG_11 |1.8MB/s|NF|D+
-  - 🇺🇸US_96 |4.1MB/s|NF|D+
+  - 🇸🇬SG_10 |2.5MB/s|NF|D+
+  - 🇸🇬SG_5 |1.4MB/s|NF|D+
+  - 🇺🇸US_40 |3.6MB/s|NF
+  - 🇺🇸US-156.146.38.170-0191 | 81.83MB
+  - 🇺🇸US_42 |4.1MB/s|NF|D+
+  - 🇺🇸US_56 |1.6MB/s|NF|D+|0%
+  - RU_39495_0055
+  - 🇸🇬SG_1 |1.1MB/s|GPT|D+|23%
+  - LU_39495_0041
+  - US_39495_0084
   - 🇺🇸US_53 |2.7MB/s|NF|D+
-  - 🇺🇸US-198.71.189.194-0601
-  - 🏁RELAY-194.59.5.194-0616
-  - US_39495_0070
-  - RU_39495_0053
-  - 🇯🇵JP_4 |2.2MB/s|NF
-  - 🇯🇵JP_7 |1.9MB/s|NF|D+
-  - 🇺🇸US_111 |2.8MB/s
-  - 🇺🇸US_43 |4.7MB/s|NF|D+
-  - 🏁RELAY-185.158.133.194-0665
-  - 🏁RELAY-185.193.31.194-0652
-  - US_39495_0085
-  - 🇰🇷KR_3 |2.6MB/s|NF
-  - 🇺🇸US_108 |3.8MB/s
-  - 🇯🇵JP_8 |2.0MB/s|NF|D+
-  - 🏁RELAY-181.214.1.194-0681
-  - 🏁RELAY-185.238.228.194-0646
-  - 🇺🇸US_9 |1.9MB/s|NF|D+
-  - 🇺🇸US_87 |1.7MB/s|GPT|NF|D+
-  - 🇺🇸US_76 |1.6MB/s|NF|D+
-  - 🇸🇬SG_9 |4.2MB/s|NF|D+
-  - 🇺🇸US_29 |1.1MB/s|NF
-  - 🇰🇷KR_1 |2.3MB/s|NF|D+
-  - 🏁RELAY-167.68.11.194-0687
-  - 🇺🇸US_21 |3.3MB/s
   - 🇸🇬SG_13 |4.0MB/s|NF
-  - DE_39495_0008
+  - RU_39495_0057
+  - RU_39495_0054
+  - 🇰🇷KR_3 |2.6MB/s|NF
+  - GB_39495_0016
+  - LT_39495_0036
+  - RU_39495_0062
+  - 🇺🇸US_28 |2.6MB/s|GPT
+  - ❓Other_7 |1.3MB/s
+  - GB_39495_0013
+  - 🇺🇸US_48 |4.2MB/s
+  - LT_39495_0038
+  - 🇺🇸US_62 |1.4MB/s|GPT|NF|D+|0%
+  - 🇺🇸US_107 |1.9MB/s|NF
+  - SI_39495_0067
+  - 🇺🇸US_7 |1.8MB/s|NF
+  - 🇨🇦CA-38.180.211.126-0284 | 20.854MB
+  - 🇯🇵JP_7 |1.9MB/s|NF|D+
+  - ❓Other_8 |1.3MB/s
+  - 🇺🇸US_5 |2.0MB/s
+  - 🇺🇸US-37.19.198.243-0190 | 129.328MB
+  - 🇺🇸US_9 |1.9MB/s|NF|D+
+  - 🇺🇸US-64.74.163.130-0195 | 47.623MB
+  - 🇺🇸US_47 |2.7MB/s|NF|D+
+  - 🇺🇸US_77 |1.1MB/s|D+
+  - GB_39495_0021
+  - 🇺🇸US_80 |1.3MB/s|GPT|NF
+  - 🇺🇸US_24 |3.3MB/s|GPT
+  - US_39495_0073
+  - US_39495_0080
+  - NZ_39495_0047
+  - GB_39495_0030
+  - 🇸🇬SG_6 |1.1MB/s|NF
+  - RU_39495_0059
+  - 🇺🇸US_83 |1.6MB/s|NF
+  - 🇺🇸US_82 |2.2MB/s|NF|D+
+  - 🇰🇷KR_1 |2.3MB/s|NF|D+
+  - 🇯🇵JP_4 |2.2MB/s|NF
+  - 🇫🇮FI_1 |2.2MB/s|NF|D+|33%
+  - 🇨🇦CA-142.4.216.225-0367 | 2.284MB
+  - 🇺🇸US_13 |1.7MB/s|NF
+  - 🇯🇵JP_9 |4.6MB/s|NF
+  - 🇺🇸US_26 |4.3MB/s
+  - 🇺🇸US_63 |1.1MB/s|NF|D+
+  - 🇺🇸US_95 |2.0MB/s|NF|D+|5%
+  - 🇮🇹IT_1 |1.1MB/s|NF
+  - 🇺🇸US_61 |2.5MB/s|NF|D+
+  - US_39495_0077
+  - US_39495_0087
+  - RU_39495_0063
+  - RU_39495_0049
+  - 🇸🇬SG_2 |1.2MB/s|GPT
+  - 🇺🇸US_115 |3.0MB/s|NF|0%
+  - RU_39495_0051
+  - 🇺🇸US_108 |3.8MB/s
+  - US_39495_0071
+  - ❓Other_6 |2.0MB/s
+  - 🇺🇸US_51 |3.8MB/s
+  - 🇺🇸US-107.151.182.253-0286 | 50.162MB
+  - 🇺🇸US_104 |3.8MB/s
+  - 🇺🇸US_30 |2.4MB/s
   - 🇸🇬SG_3 |1.1MB/s|GPT|NF|D+|23%
-  - LT_39495_0039
+  - 🏁RELAY-193.124.18.194-0621
+  - US_39495_0083
+  - US_39495_0078
   - 🇺🇸US-192.169.221.194-0626
   - 🇺🇸US_118 |1.2MB/s|NF|D+
-  - 🇯🇵JP_3 |3.2MB/s|NF|D+
-  - 🇺🇸US-199.34.229.194-0592
-  - 🇯🇵JP_6 |1.4MB/s|NF
-  - KZ_39495_0035
-  - 🇺🇸US_86 |1.4MB/s|NF|D+
-  - 🇺🇸US_62 |1.4MB/s|GPT|NF|D+|0%
-  - GB_39495_0017
-  - US_39495_0073
-  - ❓Other_1 |2.0MB/s
-  - 🇺🇸US_31 |4.3MB/s|D+
-  - 🏁RELAY-185.156.19.194-0666
-  - ❓Other_8 |1.3MB/s
-  - US_39495_0084
-  - 🇺🇸US_94 |1.8MB/s|50%
-  - 🏁RELAY-185.18.250.194-0675
-  - RU_39495_0057
-  - 🇺🇸US_7 |1.8MB/s|NF
-  - 🇯🇵JP_2 |1.0MB/s|NF|D+
-  - 🏁RELAY-185.170.166.194-0659
-  - 🇺🇸US-166.62.108.194-0697
-  - 🏁RELAY-192.65.217.194-0628
-  - 🇺🇸US_80 |1.3MB/s|GPT|NF
-  - NZ_39495_0046
-  - US_39495_0080
-  - 🏁RELAY-198.177.57.194-0595
-  - 🏁RELAY-185.59.218.194-0674
-  - RU_39495_0062
-  - RU_39495_0050
-  - 🇺🇸US_115 |3.0MB/s|NF|0%
-  - US_39495_0083
-  - 🇺🇸US_28 |2.6MB/s|GPT
-  - 🏁RELAY-185.7.240.194-0678
-  - 🏁RELAY-195.13.54.194-0611
-  - 🏁RELAY-185.176.26.194-0656
-  - 🇯🇵JP_5 |1.6MB/s|NF|D+
-  - 🏁RELAY-185.148.107.194-0668
-  - 🇺🇸US_74 |1.2MB/s|NF|D+|5%
-  - DE_39495_0007
-  - 🏁RELAY-194.36.55.194-0618
-  - 🏁RELAY-185.162.228.194-0663
-  - NZ_39495_0047
-  - 🏁RELAY-170.114.45.194-0684
-  - 🏁RELAY-188.164.159.194-0637
-  - 🏁RELAY-195.245.221.194-0606
-  - 🇺🇸US-199.34.230.194-0591
-  - 🇺🇸US_63 |1.1MB/s|NF|D+
-  - 🇸🇬SG_10 |2.5MB/s|NF|D+
-  - GB_39495_0013
-  - RU_39495_0056
-  - LT_39495_0040
-  - 🏁RELAY-185.174.138.194-0658
-  - 🇨🇦CA_1 |2.9MB/s|NF|D+
-  - 🏁RELAY-193.124.18.194-0621
-  - 🇸🇬SG_4 |1.3MB/s
-  - 🏁RELAY-213.241.198.194-0582
-  - 🏁RELAY-198.202.211.194-0594
-  - 🇺🇸US_60 |1.9MB/s|NF|D+
-  - 🏁RELAY-185.207.198.194-0649
-  - 🇫🇷FR-185.16.110.194-0677
-  - 🇯🇵JP_9 |4.6MB/s|NF
-  - 🏁RELAY-204.93.210.194-0588
-  - 🏁RELAY-188.42.145.194-0639
-  - 🇺🇸US_61 |2.5MB/s|NF|D+
-  - LT_39495_0036
-  - 🇺🇸US_57 |1.2MB/s|NF|5%
-  - 🇺🇸US-64.74.163.130-0210 | 61.372MB
-  - 🏁RELAY-167.68.4.194-0689
-  - ❓Other_5 |1.5MB/s|NF|D+
-  - 🇺🇸US_101 |1.6MB/s|NF|D+
-  - 🇺🇸US_109 |3.0MB/s|NF
-  - 🇺🇸US_4 |1.2MB/s|NF|D+
-  - 🏁RELAY-188.164.158.194-0638
-  - 🇺🇸US-184.168.47.194-0680
-  - 🏁RELAY-185.193.30.194-0653
-  - 🇺🇸US_95 |2.0MB/s|NF|D+|5%
-  - US_39495_0075
-  - 🇺🇸US_106 |4.2MB/s|NF
-  - 🇺🇸US-166.62.107.194-0698
-  - 🇺🇸US_72 |1.1MB/s|GPT|NF
-  - GB_39495_0012
-  - 🇺🇸US-192.169.220.194-0627
-  - 🏁RELAY-193.124.224.194-0620
-  - 🏁RELAY-216.205.52.194-0580
-  - 🇺🇸US-192.200.160.194-0623
-  - RU_39495_0060
-  - 🏁RELAY-185.148.104.194-0671
-  - 🇭🇰HK_2 |5.7MB/s
-  - RU_39495_0065
-  - ❓Other_7 |1.3MB/s
-  - 🇺🇸US_98 |1.6MB/s|NF|D+
-  - 🇺🇸US_85 |1.4MB/s|GPT|D+
-  - 🏁RELAY-185.251.81.194-0644
-  - 🇸🇬SG_6 |1.1MB/s|NF
-  - US_39495_0088
-  - 🇺🇸US_13 |1.7MB/s|NF
-  - SI_39495_0067
-  - 🏁RELAY-185.251.83.194-0642
-  - LU_39495_0041
-  - 🏁RELAY-188.244.122.194-0635
-  - 🇺🇸US-198.12.144.194-0605
-  - 🏁RELAY-167.68.42.194-0686
-  - 🏁RELAY-185.251.80.194-0645
-  - 🇺🇸US_59 |1.3MB/s|NF|D+
-  - 🏁RELAY-167.68.5.194-0688
-  - 🏁RELAY-209.46.30.194-0586
-  - 🇺🇸US_47 |2.7MB/s|NF|D+
-  - 🇸🇬SG_5 |1.4MB/s|NF|D+
-  - 🏁RELAY-205.233.181.194-0587
-  - 🇺🇸US-166.62.115.194-0690
-  - 🇺🇸US_65 |1.0MB/s|NF|D+
-  - US_39495_0091
-  - 🇺🇸US_58 |2.1MB/s
-  - 🇺🇸US_107 |1.9MB/s|NF
-  - 🇺🇸US-198.71.233.194-0597
-  - SI_39495_0068
-  - 🇺🇸US_42 |4.1MB/s|NF|D+
-  - 🇺🇸US-199.34.228.194-0593
-  - 🇺🇸US-166.62.112.194-0693
-  - 🇺🇸US_114 |4.4MB/s|NF
-  - 🇺🇸US_48 |4.2MB/s
-  - 🇺🇸US-166.62.109.194-0696
-  - ❓Other_6 |2.0MB/s
-  - RU_39495_0055
-  - 🏁RELAY-185.162.229.194-0662
-  - 🏁RELAY-185.159.247.194-0664
-  - 🏁RELAY-185.162.231.194-0660
-  - 🇺🇸US-216.24.57.194-0581
-  - LT_39495_0038
-  - 🏁RELAY-198.177.56.194-0596
-  - 🇺🇸US_26 |4.3MB/s
-  - 🏁RELAY-194.152.44.194-0614
-  - 🏁RELAY-195.13.55.194-0610
-  - 🇺🇸US-209.94.90.194-0585
-  - 🇺🇸US_55 |1.9MB/s|NF
-  - 🏁RELAY-188.164.248.194-0636
-  - 🏁RELAY-190.93.247.194-0631
-  - 🏁RELAY-185.148.105.194-0670
-  - 🏁RELAY-185.18.184.194-0676
-  - 🇺🇸US-166.62.113.194-0692
-  - 🇺🇸US_70 |1.1MB/s|NF|D+
-  - 🇺🇸US_30 |2.4MB/s
-  - 🇺🇸US_24 |3.3MB/s|GPT
-  - BG_39495_0002
-  - 🏁RELAY-185.207.196.194-0651
-  - 🇺🇸US-166.62.111.194-0694
-  - US_39495_0089
-  - 🇺🇸US_51 |3.8MB/s
-  - 🏁RELAY-190.93.245.194-0633
-  - RU_39495_0051
-  - 🏁RELAY-170.114.46.194-0683
-  - 🇸🇬SG_1 |1.1MB/s|GPT|D+|23%
-  - RU_39495_0063
-  - 🏁RELAY-184.174.80.194-0679
-  - GB_39495_0016
-  - 🇺🇸US-166.62.114.194-0691
-  - 🇺🇸US_52 |4.6MB/s|NF
-  - 🏁RELAY-176.124.223.194-0682
-  - US_39495_0086
-  - 🏁RELAY-185.207.199.194-0648
-  - 🏁RELAY-188.42.89.194-0640
-  - 🇨🇦CA-142.4.216.225-0342 | 0.05MB
-  - 🇭🇰HK_3 |1.1MB/s|NF
-  - 🇺🇸US-198.62.62.194-0603
-  - US_39495_0082
-  - 🇰🇿KZ-194.76.18.194-0615
-  - 🏁RELAY-185.162.230.194-0661
-  - 🇺🇸US-198.71.188.194-0602
-  - 🇺🇸US-192.0.63.194-0629
-  - 🇺🇸US_83 |1.6MB/s|NF
-  - 🇺🇸US_67 |3.0MB/s|NF|D+
-  - CA_39495_0004
-  - 🏁RELAY-185.135.9.194-0672
-  - RU_39495_0061
-  - 🇺🇸US_77 |1.1MB/s|D+
-  - 🇺🇸US_73 |1.1MB/s|NF|D+|5%
-  - 🇺🇸US_66 |3.2MB/s|NF|D+
-  - NL_39495_0043
-  - 🇺🇸US_68 |1.6MB/s|NF
-  - 🏁RELAY-193.9.49.194-0622
-  - LT_39495_0037
-  - US_39495_0090
-  - GB_39495_0030
-  - 🇺🇸US-198.71.190.194-0600
-  - 🇺🇸US_44 |3.6MB/s|D+|5%
-  - 🇺🇸US_92 |1.3MB/s|NF|D+
-  - 🏁RELAY-195.26.229.194-0609
-  - 🏁RELAY-195.85.59.194-0607
-  - 🇺🇸US_5 |2.0MB/s
-  - RU_39495_0052
-  - KZ_39495_0034
-  - 🏁RELAY-185.221.160.194-0647
-  - 🇺🇸US_75 |2.3MB/s|NF|D+
-  - 🇸🇬SG_2 |1.2MB/s|GPT
-  - GB_39495_0021
-  - 🇺🇸US-198.71.232.194-0598
-  - 🏁RELAY-168.100.6.194-0685
-  - 🇺🇸US-166.62.110.194-0695
-  - 🇺🇸US-198.71.191.194-0599
-  - 🏁RELAY-185.149.135.194-0667
-  - US_39495_0079
-  - 🏁RELAY-185.193.28.194-0655
-  - 🇺🇸US-192.0.54.194-0630
-  - 🇺🇸US-192.169.222.194-0625
-  - GB_39495_0019
-  - GB_39495_0027
-  - 🇺🇸US_20 |1.7MB/s|NF|D+
-  - AE_39495_0001
-  - 🏁RELAY-199.181.197.194-0589
-  - 🇺🇸US_6 |1.3MB/s|NF
-  - 🇸🇬SG_12 |2.1MB/s|GPT|NF|23%
-  - 🇺🇸US_122 |3.3MB/s|NF|D+
-  - DE_39495_0006
-  - 🇺🇸US-198.12.145.194-0604
-  - 🇺🇸US_93 |1.4MB/s|NF
-  - RU_39495_0048
-  - 🏁RELAY-185.176.24.194-0657
-  - 🇺🇸US_97 |2.6MB/s
-  - 🏁RELAY-185.251.82.194-0643
-  - 🇺🇸US_89 |3.9MB/s|NF|D+
-  - 🏁RELAY-195.13.45.194-0612
-  - US_39495_0076
-  - US_39495_0078
-  - RU_39495_0054
-  - 🏁RELAY-195.85.23.194-0608
-  - RU_39495_0059
-  - 🏁RELAY-185.148.106.194-0669
-  - 🇧🇷BR-185.133.35.194-0673
-  - 🏁RELAY-195.13.44.194-0613
-  - 🇺🇸US_104 |3.8MB/s
-  - 🇺🇸US_71 |1.2MB/s|D+
-  - ❓Other_4 |3.3MB/s|GPT|NF|D+
-  - US_39495_0092
-  - FR_39495_0010
-  - 🇺🇸US-104.238.162.76-0203 | 109.923MB
-  - 🇺🇸US_113 |4.2MB/s
-  - 🇺🇸US_12 |1.1MB/s|NF|D+
-  - 🇫🇮FI_1 |2.2MB/s|NF|D+|33%
-  - 🏁RELAY-190.93.246.194-0632
-  - US_39495_0071
   - 🇺🇸US_32 |3.6MB/s
-  - 🏁RELAY-193.227.99.194-0619
-  - 🇺🇸US_103 |4.0MB/s
-  - RU_39495_0049
-  - 🏁RELAY-185.207.197.194-0650
+  - 🇺🇸US_94 |1.8MB/s|50%
+  - 🇺🇸US_60 |1.9MB/s|NF|D+
+  - LT_39495_0037
+  - 🇺🇸US_74 |1.2MB/s|NF|D+|5%
+  - 🇧🇷BR-185.133.35.194-0673
+  - RU_39495_0048
+  - 🇯🇵JP_8 |2.0MB/s|NF|D+
+  - 🇺🇸US-198.71.191.194-0599
   - 🇺🇸US_2 |1.0MB/s|NF|D+
-  - US_39495_0087
-  - US_39495_0069
-  - US_39495_0077
   - US_39495_0072
-  - 🏁RELAY-188.42.88.194-0641
-  - 🏁RELAY-213.182.199.194-0583
-  - 🏁RELAY-194.53.53.194-0617
-  - 🇺🇸US-156.146.38.167-0205 | 76.427MB
-  - US_39495_0081
-  - 🇺🇸US-156.146.38.169-0209 | 51.742MB
-  - 🇺🇸US_56 |1.6MB/s|NF|D+|0%
-  - 🇺🇸US-156.146.38.168-0204 | 83.123MB
-  - 🇺🇸US-156.146.38.170-0206 | 83.212MB
-  - 🇺🇸US_40 |3.6MB/s|NF
-  - 🇨🇦CA-38.180.211.126-0268 | 12.764MB
-  - 🇦🇹AT-212.183.88.194-0584
-  - 🇰🇷KR_2 |1.2MB/s
-  - 🇺🇸US_119 |1.1MB/s|NF|D+
-  - 🇺🇸US-192.169.223.194-0624
-  - 🇺🇸US_69 |1.4MB/s|GPT|NF|0%
-  - 🇺🇸US_105 |4.7MB/s|NF|50%
-  - 🇺🇸US_99 |1.1MB/s|NF|D+
+  - RU_39495_0050
+  - RU_39495_0060
+  - 🇺🇸US-166.62.112.194-0693
   - BG_39495_0003
-  - 🇺🇸US_82 |2.2MB/s|NF|D+
-  - 🏁RELAY-190.93.244.194-0634
-  - RU_39495_0066
-  - 🇺🇸US_84 |2.9MB/s|GPT|D+|50%
-  - 🇺🇸US_100 |4.3MB/s|NF
-  - 🇺🇸US_64 |2.5MB/s|D+
-  - 🇺🇸US-199.68.156.194-0590
-  - 🇺🇸US-107.151.182.253-0202 | 10.296MB
-  - 🇺🇸US-104.192.226.106-0208 | 32.706MB
-  - 🇺🇸US_81 |2.2MB/s|GPT|D+
-  - 🇺🇸US_88 |2.6MB/s|GPT|NF|D+|50%
-  - 🇺🇸US_8 |1.8MB/s|NF|D+
-  - 🇺🇸US_102 |3.7MB/s|NF
-  - 🇺🇸US-104.192.226.106-0215 | 34.696MB
-  - 🇺🇸US_110 |4.2MB/s|GPT
-  - US_39495_0093
-  - 🇺🇸US-212.102.47.132-0200 | 44.288MB
-  - 🇺🇸US-212.102.47.131-0274 | 44.45MB
-  - 🇺🇸US-45.55.2.232-0211 | 35.658MB
-  - 🇺🇸US-173.244.56.9-0207 | 47.389MB
-  - 🇺🇸US_46 |3.6MB/s
-  - 🇺🇸US_34 |2.3MB/s|GPT|NF|D+
-  - 🇺🇸US-212.102.47.130-0197 | 44.604MB
-  - CO-154.223.16.212-0306 | 1.007MB
-  - 🇺🇸US_45 |3.4MB/s|NF
+  - CA_39495_0004
+  - 🇺🇸US_93 |1.4MB/s|NF
+  - 🇺🇸US_44 |3.6MB/s|D+|5%
+  - 🇺🇸US-166.62.109.194-0696
+  - 🏁RELAY-198.177.57.194-0595
+  - 🏁RELAY-167.68.4.194-0689
+  - 🏁RELAY-190.93.245.194-0633
+  - 🇺🇸US_66 |3.2MB/s|NF|D+
+  - DE_39495_0008
+  - 🏁RELAY-216.205.52.194-0580
+  - US_39495_0079
+  - 🏁RELAY-195.26.229.194-0609
+  - NZ_39495_0046
+  - 🇺🇸US_111 |2.8MB/s
+  - 🇰🇿KZ-194.76.18.194-0615
+  - 🏁RELAY-185.207.199.194-0648
+  - 🇺🇸US_96 |4.1MB/s|NF|D+
+  - 🇺🇸US-199.34.230.194-0591
+  - 🇺🇸US_52 |4.6MB/s|NF
+  - 🇺🇸US_20 |1.7MB/s|NF|D+
+  - 🏁RELAY-194.59.5.194-0616
+  - 🇺🇸US-192.169.222.194-0625
+  - 🏁RELAY-194.36.55.194-0618
+  - 🏁RELAY-213.182.199.194-0583
+  - 🏁RELAY-167.68.42.194-0686
+  - 🇺🇸US_73 |1.1MB/s|NF|D+|5%
+  - 🇺🇸US-198.71.188.194-0602
+  - 🇺🇸US-45.55.2.232-0252 | 26.146MB
+  - 🏁RELAY-185.251.80.194-0645
+  - 🇺🇸US_6 |1.3MB/s|NF
+  - 🏁RELAY-184.174.80.194-0679
+  - 🏁RELAY-185.7.240.194-0678
+  - 🏁RELAY-185.174.138.194-0658
+  - 🏁RELAY-185.251.81.194-0644
+  - 🏁RELAY-209.46.30.194-0586
+  - 🇺🇸US-198.12.145.194-0604
+  - 🏁RELAY-185.148.107.194-0668
   - 🇺🇸US-15.197.162.184-3365
-  - 🇨🇦CA-79.127.233.170-0199 | 45.795MB
-  - 🇨🇦CA-79.127.233.170-0196 | 45.135MB
-  - 🇬🇧GB-212.102.53.195-0246 | 36.675MB
-  - 🇺🇸US_79 |1.3MB/s|NF|D+
-  - 🇬🇧GB-212.102.53.81-0255 | 37.55MB
-  - 🇬🇧GB-212.102.53.80-0251 | 29.333MB
-  - 🇬🇧GB-212.102.53.198-0249 | 37.266MB
-  - 🇬🇧GB-212.102.53.197-0252 | 36.739MB
-  - 🇳🇱NL-193.29.139.240-0312 | 40.086MB
-  - 🇬🇧GB-212.102.53.79-0243 | 36.577MB
-  - 🇬🇧GB-212.102.53.78-0242 | 37.95MB
-  - 🇬🇧GB-212.102.53.194-0089 | 37.678MB
-  - 🇬🇧GB-212.102.53.193-0253 | 37.386MB
-  - 🇪🇸ES-5.188.181.201-4817
-  - 🇬🇧GB-212.102.53.196-0250 | 37.53MB
-  - 🇳🇱NL-149.34.244.68-0254 | 36.002MB
-  - 🇩🇪DE-185.177.229.245-0286 | 5.611MB
-  - 🇳🇱 nl
-  - 🇺🇸US-23.251.121.242-0201 | 44.238MB
-  - 🇳🇱NL-193.29.139.227-0245 | 39.31MB
-  - 🇺🇸US_33 |2.5MB/s|GPT|NF|D+|33%
-  - 🇫🇷FR-195.154.185.174-0228 | 32.054MB
-  - 🏁RELAY-185.193.29.194-0654
-  - AE-151.242.251.131-0233 | 41.666MB
-  - 🇺🇸US_27 |2.8MB/s|NF
-  - CH-156.146.62.162-0261 | 30.629MB
-  - 🇩🇪DE-84.200.91.228-5034 | 2.977MB
-  - 🇬🇧GB-141.98.101.178-0281 | 23.334MB
-  - CH-156.146.62.164-0259 | 18.043MB
-  - CH-156.146.62.163-0260 | 30.111MB
-  - 🇫🇷FR-51.195.119.47-0305 | 1.303MB
-  - 🇫🇷FR-195.154.169.198-0230 | 39.831MB
-  - 🇳🇱NL-193.29.139.217-0229 | 29.671MB
+  - 🇺🇸US-212.102.47.130-0203 | 46.795MB
+  - 🇭🇰HK_3 |1.1MB/s|NF
+  - 🏁RELAY-185.193.30.194-0653
+  - 🏁RELAY-167.68.11.194-0687
+  - 🇭🇰HK_2 |5.7MB/s
+  - 🇺🇸US_64 |2.5MB/s|D+
+  - 🇸🇬SG_9 |4.2MB/s|NF|D+
+  - US_39495_0088
+  - 🇺🇸US-104.192.226.106-0254 | 52.186MB
+  - 🇺🇸US-166.62.114.194-0691
+  - US_39495_0089
+  - 🏁RELAY-185.176.26.194-0656
+  - DE_39495_0007
+  - 🏁RELAY-190.93.244.194-0634
+  - 🏁RELAY-195.245.221.194-0606
+  - 🇺🇸US_68 |1.6MB/s|NF
+  - 🇺🇸US-198.71.190.194-0600
+  - US_39495_0086
   - ❓Other_3 |2.4MB/s|NF|D+
-  - 🇫🇷FR-45.158.171.66-0315 | 38.056MB
-  - 🇫🇷FR-45.158.171.70-0310 | 40.642MB
-  - 🇫🇷FR-45.158.171.60-0323 | 41.681MB
-  - LT-45.87.175.65-0317 | 44.069MB
-  - CH-156.146.62.161-0256 | 19.086MB
-  - 🇳🇱NL-51.15.17.169-0221 | 24.255MB
-  - LT-45.87.175.58-0330 | 40.365MB
+  - 🇺🇸US_98 |1.6MB/s|NF|D+
+  - 🇺🇸US_29 |1.1MB/s|NF
+  - FR_39495_0011
+  - 🏁RELAY-168.100.6.194-0685
+  - 🇺🇸US_65 |1.0MB/s|NF|D+
+  - 🇺🇸US-166.62.107.194-0698
+  - 🇺🇸 us-newjersey
+  - US_39495_0082
+  - BG_39495_0002
+  - 🇯🇵JP_6 |1.4MB/s|NF
+  - 🇺🇸US-212.102.47.131-0204 | 46.244MB
+  - GB_39495_0017
+  - 🇺🇸US_12 |1.1MB/s|NF|D+
+  - 🇺🇸US_57 |1.2MB/s|NF|5%
+  - 🏁RELAY-188.164.248.194-0636
+  - 🇺🇸US-192.0.63.194-0629
+  - 🏁RELAY-185.149.135.194-0667
+  - 🏁RELAY-185.59.218.194-0674
+  - 🏁RELAY-185.221.160.194-0647
+  - 🏁RELAY-193.227.99.194-0619
+  - 🏁RELAY-185.207.197.194-0650
+  - 🇺🇸US-166.62.115.194-0690
+  - 🏁RELAY-193.9.49.194-0622
+  - 🏁RELAY-195.13.44.194-0613
+  - 🏁RELAY-185.158.133.194-0665
+  - 🇺🇸US-166.62.113.194-0692
+  - 🇺🇸US-198.12.144.194-0605
+  - GB_39495_0019
+  - 🏁RELAY-185.176.24.194-0657
+  - 🇺🇸US_76 |1.6MB/s|NF|D+
+  - 🇺🇸US_88 |2.6MB/s|GPT|NF|D+|50%
+  - 🏁RELAY-198.177.56.194-0596
+  - 🏁RELAY-185.162.229.194-0662
+  - 🇺🇸US_89 |3.9MB/s|NF|D+
+  - LT_39495_0040
+  - 🇺🇸US-192.169.220.194-0627
+  - US_39495_0081
+  - US_39495_0076
+  - 🏁RELAY-185.170.166.194-0659
+  - 🇺🇸US_55 |1.9MB/s|NF
+  - 🇺🇸US_71 |1.2MB/s|D+
+  - 🇸🇬SG_4 |1.3MB/s
+  - GB_39495_0012
+  - 🏁RELAY-199.181.197.194-0589
+  - 🇺🇸US-198.62.62.194-0603
+  - 🇺🇸US-166.62.108.194-0697
+  - 🏁RELAY-185.162.231.194-0660
+  - 🏁RELAY-190.93.247.194-0631
+  - US_39495_0092
+  - 🏁RELAY-185.156.19.194-0666
+  - 🏁RELAY-205.233.181.194-0587
+  - 🇫🇷FR-185.16.110.194-0677
+  - 🏁RELAY-188.42.145.194-0639
+  - 🇺🇸US-209.94.90.194-0585
+  - 🇺🇸US-184.168.47.194-0680
+  - AE_39495_0001
+  - 🏁RELAY-185.193.28.194-0655
+  - 🇺🇸US_102 |3.7MB/s|NF
+  - RU_39495_0056
+  - 🇺🇸US_109 |3.0MB/s|NF
+  - 🏁RELAY-195.85.59.194-0607
+  - DE_39495_0006
+  - RU_39495_0053
+  - 🏁RELAY-185.18.250.194-0675
+  - KZ_39495_0034
+  - 🇺🇸US_75 |2.3MB/s|NF|D+
+  - FR_39495_0010
+  - 🏁RELAY-167.68.5.194-0688
+  - 🇯🇵JP_2 |1.0MB/s|NF|D+
+  - US_39495_0090
+  - 🇺🇸US_85 |1.4MB/s|GPT|D+
+  - 🇺🇸US-199.34.229.194-0592
+  - SI_39495_0068
+  - 🇯🇵JP_5 |1.6MB/s|NF|D+
+  - 🇺🇸US-166.62.111.194-0694
+  - 🇺🇸US_4 |1.2MB/s|NF|D+
+  - 🏁RELAY-195.13.54.194-0611
+  - 🏁RELAY-185.148.105.194-0670
+  - 🇺🇸US_113 |4.2MB/s
+  - 🇨🇦CA-79.127.233.170-0201 | 47.929MB
+  - US_39495_0085
+  - 🏁RELAY-181.214.1.194-0681
+  - 🇺🇸US_110 |4.2MB/s|GPT
+  - 🏁RELAY-194.152.44.194-0614
+  - 🏁RELAY-192.65.217.194-0628
+  - 🇺🇸US-192.200.160.194-0623
+  - 🇺🇸US_84 |2.9MB/s|GPT|D+|50%
+  - 🇺🇸US_114 |4.4MB/s|NF
+  - 🏁RELAY-185.135.9.194-0672
+  - 🇺🇸US-199.68.156.194-0590
+  - 🏁RELAY-188.164.158.194-0638
+  - 🏁RELAY-195.13.55.194-0610
+  - 🇺🇸US-199.34.228.194-0593
+  - 🇺🇸US_87 |1.7MB/s|GPT|NF|D+
+  - 🇺🇸US-198.71.189.194-0601
+  - 🏁RELAY-170.114.46.194-0683
+  - 🇺🇸US_58 |2.1MB/s
+  - 🇺🇸US_67 |3.0MB/s|NF|D+
+  - 🏁RELAY-185.238.228.194-0646
+  - 🏁RELAY-193.124.224.194-0620
+  - NL_39495_0043
+  - US_39495_0069
+  - 🇰🇷KR_2 |1.2MB/s
+  - 🇺🇸US-198.71.232.194-0598
+  - 🏁RELAY-213.241.198.194-0582
+  - 🇺🇸US-212.102.47.132-0205 | 46.757MB
+  - 🏁RELAY-195.13.45.194-0612
   - 🇺🇸US_78 |1.4MB/s|NF|D+
-  - CH-204.136.10.115-0287 | 2.325MB
-  - 🇳🇱NL-103.104.247.47-0338 | 0.302MB
-  - 🇪🇸ES-45.154.206.192-0290 | 3.081MB
-  - LT-45.87.175.22-0322 | 0.324MB
-  - 🇫🇷FR-81.19.137.222-0266 | 19.01MB
-  - 🇳🇱NL-103.104.247.49-0329 | 0.256MB
-  - CZ-195.181.160.6-0235 | 38.308MB
-  - 🇳🇱NL-193.29.139.202-0326 | 43.728MB
-  - NO-185.213.23.226-0248 | 35.283MB
-  - SE-121.127.46.147-0393 | 33.448MB
-  - 🇳🇱NL-193.29.139.251-0201
-  - AT-95.163.176.37-0301 | 15.825MB
-  - 🇫🇷FR-77.105.166.12-0296 | 1.091MB
-  - 🇩🇪DE-46.101.245.131-0314 | 0.688MB
-  - 🇺🇸US-137.175.124.167-0282 | 41.045MB
-  - AE-151.242.251.153-0267 | 41.613MB
-  - uk_manchester
-  - LT-45.87.175.166-0234 | 43.654MB
-  - FI-37.143.129.230-0276 | 7.464MB
-  - AT-152.53.2.128-0278 | 36.821MB
-  - BG-37.19.203.147-0270 | 31.821MB
-  - 🇩🇰DK-192.36.27.94-4076 | 1.339MB
-  - LT-45.87.175.171-0316 | 42.83MB
-  - 🇳🇱NL-213.109.147.242-0354 | 0.109MB
-  - SK-156.146.40.194-0244 | 36.56MB
-  - LT-45.87.175.92-0299 | 40.155MB
-  - LT-45.87.175.181-0361 | 44.128MB
-  - 🇺🇸US_49 |1.6MB/s|NF
+  - 🏁RELAY-185.251.83.194-0642
+  - 🏁RELAY-176.124.223.194-0682
+  - US_39495_0075
+  - 🇺🇸US_72 |1.1MB/s|GPT|NF
+  - 🏁RELAY-198.202.211.194-0594
+  - 🏁RELAY-185.18.184.194-0676
+  - 🇺🇸US_21 |3.3MB/s
+  - 🇺🇸US-173.244.56.9-0199 | 59.419MB
+  - 🏁RELAY-185.193.31.194-0652
+  - 🏁RELAY-188.42.88.194-0641
+  - 🇺🇸US-192.169.223.194-0624
+  - US_39495_0093
+  - 🏁RELAY-185.162.228.194-0663
+  - 🏁RELAY-188.164.159.194-0637
+  - 🇺🇸US-23.251.121.242-0206 | 43.061MB
+  - 🇺🇸US_99 |1.1MB/s|NF|D+
+  - US_39495_0070
+  - 🇺🇸US-192.0.54.194-0630
+  - 🇺🇸US_59 |1.3MB/s|NF|D+
+  - 🏁RELAY-185.148.104.194-0671
+  - 🇺🇸US_70 |1.1MB/s|NF|D+
+  - 🇺🇸US_100 |4.3MB/s|NF
+  - 🇦🇹AT-212.183.88.194-0584
+  - 🏁RELAY-185.251.82.194-0643
+  - 🏁RELAY-195.85.23.194-0608
+  - 🏁RELAY-188.42.89.194-0640
+  - 🇨🇦CA-79.127.233.170-0200 | 48.048MB
+  - 🇺🇸US-166.62.110.194-0695
+  - 🏁RELAY-194.53.53.194-0617
+  - 🇺🇸US-198.71.233.194-0597
+  - US_39495_0091
+  - 🇺🇸US_106 |4.2MB/s|NF
+  - 🇺🇸US_97 |2.6MB/s
+  - KZ_39495_0035
+  - 🇺🇸US_122 |3.3MB/s|NF|D+
+  - 🏁RELAY-185.162.230.194-0661
+  - ❓Other_1 |2.0MB/s
+  - 🏁RELAY-188.244.122.194-0635
+  - 🏁RELAY-185.148.106.194-0669
+  - RU_39495_0061
+  - 🇸🇬SG_11 |1.8MB/s|NF|D+
+  - 🇺🇸US_119 |1.1MB/s|NF|D+
+  - 🏁RELAY-185.193.29.194-0654
+  - 🏁RELAY-185.207.198.194-0649
+  - 🏁RELAY-185.207.196.194-0651
+  - 🇺🇸US_46 |3.6MB/s
+  - 🇺🇸US_79 |1.3MB/s|NF|D+
+  - 🇨🇦CA_1 |2.9MB/s|NF|D+
+  - 🇺🇸US_31 |4.3MB/s|D+
+  - 🇺🇸US_101 |1.6MB/s|NF|D+
+  - 🇸🇬SG_12 |2.1MB/s|GPT|NF|23%
+  - 🇺🇸US_43 |4.7MB/s|NF|D+
+  - 🇺🇸US-216.24.57.194-0581
+  - 🇺🇸US_105 |4.7MB/s|NF|50%
+  - 🇺🇸US_81 |2.2MB/s|GPT|D+
+  - ❓Other_4 |3.3MB/s|GPT|NF|D+
+  - RU_39495_0065
+  - 🇬🇧GB-212.102.53.193-0243 | 40.148MB
   - 🇺🇸US_91 |1.1MB/s|NF
-  - AE-151.242.251.144-0225 | 43.473MB
-  - AE-151.242.251.147-0232 | 0.0MB
-  - 🇬🇧GB-212.102.53.197-0264 | 17.89MB
-  - LT-45.87.175.188-0226 | 43.786MB
-  - 🇨🇦CA-142.4.216.225-0336 | 0.0MB
-  - CO-181.119.30.20-0291 | 3.055MB
-  - 🇮🇸IS-37.235.49.152-5010 | 0.201MB
-  - LT-45.87.175.178-0236 | 41.591MB
-  - 🇫🇷FR-51.195.202.129-4852
-  - MD-185.153.197.5-4932 | 28.753MB
-  - 🇨🇦CA-45.154.204.13-0285
-  - 🇯🇵JP-149.22.87.204-0216 | 13.168MB
-  - 🇯🇵 japan
-  - 🇳🇱NL-51.15.23.63-5014
-  - 🇨🇦CA-148.113.207.224-4830
-  - 🇫🇮FI-81.177.214.214-0524
-  - NO-185.213.23.226-0239 | 36.047MB
-  - 🇩🇪DE-51.195.101.222-4853
-  - LT-45.87.175.157-0325 | 44.094MB
-  - 🇳🇱NL-193.29.139.157-0203
-  - 🇮🇳IN-103.111.114.29-0320
-  - 🇵🇾PY-38.165.233.18-4934
-  - 🇺🇸US-43.162.125.204-4822
-  - 🇺🇸US_16 |1.1MB/s|NF
-  - RS-194.71.126.31-0295 | 1.319MB
-  - LT-45.87.175.35-0333 | 43.522MB
-  - 🇳🇱NL-193.29.139.179-0321 | 42.067MB
-  - AR-38.54.45.129-0311 | 0.599MB
+  - 🇺🇸US_69 |1.4MB/s|GPT|NF|0%
+  - 🏁RELAY-170.114.45.194-0684
+  - 🇬🇧GB-212.102.53.198-0244 | 39.323MB
+  - 🇬🇧GB-212.102.53.81-0241 | 34.164MB
+  - GB_39495_0027
+  - 🇬🇧GB-212.102.53.195-0247 | 39.177MB
+  - 🇬🇧GB-212.102.53.197-0246 | 38.062MB
+  - 🇬🇧GB-212.102.53.79-0248 | 30.874MB
+  - 🇬🇧GB-212.102.53.196-0242 | 40.218MB
+  - 🇬🇧GB-212.102.53.194-0081 | 39.872MB
+  - 🇳🇱NL-149.34.244.68-0251 | 36.07MB
+  - 🇺🇸US_22 |3.3MB/s|GPT|NF|46%
+  - 🏁RELAY-190.93.246.194-0632
+  - 🇬🇧GB-212.102.53.80-0267 | 36.126MB
+  - 🇳🇱NL-51.15.17.169-0271 | 42.917MB
+  - 🇫🇷FR-45.158.171.70-0229 | 0.345MB
+  - 🇬🇧GB-212.102.53.78-0239 | 0.0MB
+  - LT-45.87.175.92-0232 | 0.375MB
+  - 🇳🇱NL-193.29.139.202-0213 | 1.059MB
+  - 🇳🇱 nl
+  - 🇫🇷FR-45.158.171.66-0238 | 0.509MB
+  - 🇺🇸US_8 |1.8MB/s|NF|D+
+  - 🇳🇱NL-193.29.139.240-0233 | 0.343MB
+  - 🇫🇷FR-45.158.171.60-0221 | 0.422MB
+  - CO-154.223.16.212-0314 | 0.418MB
   - 🇺🇸US_1 |1.3MB/s|GPT|NF|40%
-  - RO-185.126.237.38-0283 | 9.171MB
-  - 🇺🇸US-71.19.148.74-0284
-  - 🇭🇰HK-18.162.146.85-5000
-  - 🇭🇰HK-18.162.146.85-5001
-  - 🇫🇷FR-51.178.42.187-4958
-  - SI-192.71.244.150-0348 | 0.162MB
-  - 🇩🇪DE-193.108.119.230-0298 | 3.299MB
+  - 🇳🇱NL-103.104.247.49-0337 | 0.495MB
+  - 🇦🇪AE-151.242.251.147-0230
+  - 🇫🇷FR-195.154.185.174-0259 | 38.0MB
+  - RU_39495_0066
+  - ❓Other_5 |1.5MB/s|NF|D+
+  - LT-45.87.175.65-0210 | 0.117MB
+  - 🇺🇸US_27 |2.8MB/s|NF
+  - 🇺🇸US_103 |4.0MB/s
+  - 🇳🇱NL-193.29.139.251-4933 | 0.296MB
+  - LT_39495_0039
+  - RU_39495_0052
+  - 🇳🇱NL-103.104.247.47-0335 | 0.457MB
+  - LT-45.87.175.199-0226 | 0.0MB
+  - 🇫🇷FR-195.154.169.198-0234 | 38.169MB
+  - 🏁RELAY-204.93.210.194-0588
+  - 🇩🇪DE-185.177.229.245-0292 | 6.484MB
+  - LT-45.87.175.69-0330 | 0.32MB
+  - CH-156.146.62.161-0276 | 33.482MB
+  - CH-156.146.62.163-0263 | 31.015MB
+  - 🇳🇱NL-193.29.139.217-0264 | 29.955MB
+  - LT-45.87.175.188-0212 | 0.131MB
+  - CH-156.146.62.162-0261 | 29.979MB
+  - CH-156.146.62.164-0278 | 32.841MB
+  - AT-95.163.176.37-0281 | 9.973MB
+  - AE-151.242.251.153-0223 | 43.133MB
+  - 🇨🇦CA-45.154.204.13-0285
+  - 🇯🇵JP-149.22.87.204-0283 | 17.643MB
+  - 🇯🇵 japan
+  - LT-45.87.175.58-0231 | 0.18MB
+  - 🇫🇷FR-77.105.166.12-0312 | 1.885MB
+  - 🇫🇷FR-81.19.137.222-0277 | 24.999MB
+  - 🇫🇷FR-51.195.119.47-0309 | 0.981MB
+  - 🇺🇸US_49 |1.6MB/s|NF
+  - 🇩🇪DE-46.101.245.131-0322 | 8.874MB
+  - 🇺🇸US-43.162.125.204-4822
+  - CZ-195.181.160.6-0237 | 37.981MB
+  - SE-121.127.46.147-0256 | 34.377MB
+  - BE-192.71.249.78-0305 | 1.346MB
+  - FI-37.143.129.230-0288 | 12.176MB
+  - CH-204.136.10.115-0302 | 3.781MB
+  - 🇵🇱PL-92.118.205.228-0300 | 0.191MB
+  - AT-152.53.2.128-0245 | 11.075MB
+  - LT-45.87.175.178-0225 | 35.429MB
+  - LT-45.87.175.35-0216 | 0.027MB
+  - AE-151.242.251.131-0222 | 30.296MB
+  - 🇫🇷FR-45.158.171.146-4882
+  - 🇪🇸ES-45.154.206.192-0296 | 0.651MB
+  - 🇺🇸US-71.19.148.74-5044 | 0.043MB
+  - 🇳🇱NL-193.29.139.157-0203
+  - uk_manchester
+  - SK-156.146.40.194-0249 | 36.143MB
+  - 🇺🇸US_45 |3.4MB/s|NF
+  - 🇬🇧GB-141.98.101.178-0273 | 5.887MB
+  - BG-37.19.203.147-0260 | 32.683MB
+  - 🇳🇱NL-193.29.139.227-0236 | 41.221MB
+  - BR-38.54.57.90-0323 | 0.062MB
+  - 🇳🇱NL-193.29.139.179-0219 | 0.186MB
+  - 🇨🇦CA-148.113.207.224-4830
+  - 🇺🇸US-2.58.87.221-5025
+  - 🇩🇰DK-192.36.27.94-0307 | 2.768MB
+  - 🇺🇸US-15.197.162.184-2518
+  - AR-38.54.45.129-0325 | 0.29MB
+  - CO-181.119.30.20-0297 | 3.757MB
+  - 🇭🇰HK-18.162.146.85-5025 | 0.336MB
+  - 🇭🇰HK-18.162.146.85-5024 | 0.336MB
+  - 🇭🇰HK-18.162.146.85-5022 | 0.336MB
+  - RS-194.71.126.31-0308 | 1.46MB
+  - LT-45.87.175.22-0334 | 0.082MB
+  - RO-185.126.237.38-0287 | 14.499MB
+  - 🇺🇸US_33 |2.5MB/s|GPT|NF|D+|33%
   - 🇩🇪DE-139.59.209.171-4828
-  - 🇫🇷FR_1 |1.0MB/s|GPT|0%
+  - NO-185.213.23.226-0250 | 13.033MB
+  - LT-45.87.175.157-0209 | 0.337MB
+  - 🇺🇸US-137.175.124.167-0227 | 31.178MB
+  - PY-38.165.233.18-4958 | 16.773MB
   - 🇸🇬 新加坡3|@stairnode
-  - 🇭🇰HK-154.197.26.237-5051 | 0.231MB
-  - 🇭🇰HK-203.23.128.33-0352 | 0.0MB
-  - 🇳🇱NL-92.112.126.90-0327 | 0.571MB
-  - 🇺🇸US-94.131.20.3-4950
-  - BR-38.54.57.90-0344 | 0.652MB
-  - HR-46.183.184.60-0308 | 0.79MB
-  - 🇫🇷FR-45.158.171.110-0257 | 43.539MB
-  - 🇰🇷KR-154.90.63.177-0307 | 1.048MB
-  - 🇻🇳VN-103.186.155.25-4987
-  - AE-151.242.251.137-0219 | 39.403MB
-  - 🇰🇷KR-218.237.185.230-0341 | 0.0MB
-  - 🇻🇳VN-103.186.155.18-5038
-  - 🇭🇰HK-18.162.146.85-4998
-  - 🇻🇳VN-103.186.154.38-4965
-  - 🇻🇳VN-103.186.154.37-4960
+  - PY-38.165.233.93-0303 | 2.464MB
+  - LT-45.87.175.154-0317 | 42.546MB
+  - NO-185.213.23.226-0253 | 12.129MB
+  - 🇸🇪SE-45.91.171.116-0366
+  - 🇬🇧GB-212.102.53.197-0279 | 38.025MB
+  - 🇮🇸IS-37.235.49.168-0327 | 0.146MB
+  - HR-46.183.184.60-0319 | 0.49MB
+  - MD-185.153.197.5-0268 | 27.615MB
+  - 🇻🇳VN-103.186.154.29-4978
+  - 🇻🇳VN-103.186.155.23-4986
+  - 🇻🇳VN-103.186.155.24-4971
+  - 🇻🇳VN-103.186.154.33-4980
   - 🇻🇳VN-103.186.154.31-4961
-  - VN_39495_0096
-  - 🇻🇳VN-103.186.155.19-4983
-  - 🇺🇸US-94.131.20.3-4953
-  - 🇰🇷KR-154.90.62.168-0332 | 0.366MB
-  - 🇻🇳VN-103.186.155.20-4972
-  - 🇻🇳VN-103.186.154.25-4981
-  - 🇻🇳VN-103.186.154.21-4964
-  - 🇻🇳VN-103.186.154.18-4975
-  - RELAY-172.67.131.27-0198 | 0.379MB
   - 🇻🇳VN-103.186.155.30-5040
-  - 🇻🇳VN-103.186.154.22-4962
-  - 🇻🇳VN_1 |2.2MB/s|GPT|0%
-  - 🇻🇳VN-103.186.154.27-4985
-  - 🇻🇳VN-103.186.154.24-4959
-  - VN_39495_0097
-  - 🇻🇳VN-103.186.154.23-4994
   - 🇻🇳VN-103.186.154.19-4967
+  - 🇻🇳VN-103.186.154.24-4959
+  - 🇻🇳VN-103.186.154.37-4960
+  - 🇻🇳VN-103.186.154.18-4975
+  - 🇻🇳VN-103.186.154.27-4985
+  - 🇻🇳VN-103.186.155.133-4982
+  - 🇻🇳VN-103.186.155.18-5038
+  - VN_39495_0096
+  - 🇻🇳VN_1 |2.2MB/s|GPT|0%
+  - 🇻🇳VN-103.186.155.25-4987
   - 🇻🇳VN-103.186.154.26-4970
+  - 🇻🇳VN-103.186.154.30-4973
+  - VN_39495_0099
+  - VN_39495_0098
+  - VN_39495_0095
+  - 🇻🇳VN-103.186.155.19-4983
+  - LT-45.87.175.181-0207 | 44.348MB
+  - 🇻🇳VN-103.186.155.20-4972
   - 🇻🇳VN-103.186.155.22-5037
   - 🇻🇳VN-103.186.154.35-4963
-  - 🇻🇳VN-103.186.154.29-4978
-  - 🇻🇳VN-103.186.155.133-4982
-  - VN_39495_0099
-  - VN_39495_0095
-  - VN_39495_0098
-  - 🇻🇳VN-103.186.154.30-4973
-  - 🇻🇳VN-103.186.154.33-4980
-  - 🇳🇱NL-134.209.90.171-4990
-  - 🇻🇳VN-103.186.155.23-4986
-  - GR-192.71.166.102-3674 | 0.763MB
-  - 🇻🇳VN-103.186.155.24-4971
-  - 🇭🇰HK-103.252.116.138-0344
-  - 🇰🇷KR-183.109.131.75-0288 | 0.027MB
-  - 🇺🇸US_18 |1.8MB/s|GPT|NF|32%
-  - 🇵🇱PL-92.118.205.228-0320 | 2.686MB
-  - VN-160.19.78.75-0355 | 0.035MB
-  - 🇮🇳IN-134.209.147.198-0328 | 0.324MB
-  - 🇫🇷FR-45.158.171.146-4882
-  - IR_39495_0032
-  - 🇨🇳TW-154.223.20.79-0356 | 0.0MB
-  - 🇳🇱NL-141.98.4.67-0351 | 0.0MB
+  - 🇻🇳VN-103.186.154.22-4962
+  - VN_39495_0097
   - 🇯🇵JP-35.77.91.152-5007
-  - NL_39495_0045
-  - SI-91.132.94.200-0345 | 0.056MB
-  - VN-161.248.30.3-0275 | 5.811MB
-  - 🏁RELAY-104.21.21.192-0966
-  - MK-46.183.185.37-0335 | 0.199MB
-  - 🇺🇸US-94.131.21.174-5036 | 0.0MB
-  - VN-160.19.78.75-0343 | 0.041MB
-  - 🇺🇸US-94.131.22.134-0300 | 0.254MB
-  - ID-154.205.159.100-5084 | 0.173MB
-  - 🇳🇱NL-193.29.139.235-0247 | 41.711MB
-  - BE-192.71.249.78-0294 | 1.392MB
-  - 🇭🇰 香港6|@stairnode
-  - 🇭🇰HK-116.49.109.153-0280 | 0.99MB
-  - 🇷🇺RU_2 |1.2MB/s|0%
-  - 🇦🇺AU-209.38.20.147-4834
+  - 🇨🇳TW-154.223.20.79-0384 | 0.42MB
+  - 🇻🇳VN-103.186.154.25-4981
+  - 🇻🇳VN-103.186.154.23-4994
+  - 🇻🇳VN-103.186.154.21-4964
+  - 🇻🇳VN-103.186.154.38-4965
+  - 🇺🇸US_16 |1.1MB/s|NF
+  - 🇰🇷KR-183.109.131.75-0371 | 0.27MB
+  - 🇮🇳IN-103.111.114.29-4896 | 0.486MB
   - NL_39495_0042
-  - 🇺🇸US_22 |3.3MB/s|GPT|NF|46%
-  - LT-45.87.175.164-0237 | 43.844MB
-  - VN-103.163.218.2-0313 | 4.157MB
-  - VN-103.163.218.2-0297 | 3.472MB
-  - TR-185.123.101.241-0350 | 0.0MB
+  - 🇫🇷FR-51.195.202.129-4852
+  - PR-185.47.255.22-0336 | 0.368MB
+  - TR-185.123.101.241-0378 | 0.026MB
+  - 🇰🇷KR-154.90.62.168-0331 | 0.977MB
+  - 🇭🇰HK-203.23.128.33-0383 | 0.277MB
+  - 🇺🇸US-94.131.20.3-4953
+  - 🇩🇪DE-51.195.101.222-4853
+  - 🇺🇸US-207.174.28.20-0202 | 0.0MB
+  - 🇰🇷KR-154.90.63.177-0313 | 0.261MB
+  - 🇺🇸US-206.206.80.227-0357 | 0.025MB
+  - 🇺🇸US-94.131.20.3-4950
+  - 🇫🇷FR-51.178.42.187-4958
+  - 🇳🇱NL-141.98.4.67-0380 | 0.022MB
+  - 🏁RELAY-185.159.247.194-0664
+  - 🇩🇪DE-193.108.119.230-0295 | 0.144MB
+  - 🇬🇷GR-192.71.166.100-0365
+  - 🇮🇳IN-134.209.147.198-0327
+  - 🇭🇰 香港6|@stairnode
+  - AE-151.242.251.144-0217 | 30.025MB
+  - 🇦🇺AU-209.38.20.147-4834
+  - GR-192.71.166.102-0320 | 0.044MB
+  - LT-45.87.175.166-0214 | 3.058MB
+  - 🇫🇷FR_1 |1.0MB/s|GPT|0%
+  - 🇮🇩ID-154.205.159.100-0351
+  - 🇩🇪DE-185.208.207.217-0369
+  - VN-160.19.78.75-0368 | 0.019MB
+  - 🇳🇱NL-208.67.105.196-4960 | 0.202MB
+  - 🇷🇺RU_2 |1.2MB/s|0%
+  - 🏁RELAY-104.21.21.192-0966
+  - 🇺🇸US-94.131.22.134-0338 | 1.0MB
+  - 🇭🇰HK-103.252.116.138-5028 | 0.034MB
+  - 🇭🇰HK-45.149.92.71-4952
+  - VN-160.19.78.75-0369 | 0.052MB
+  - EC-185.47.253.227-4885 | 0.094MB
+  - IR_39495_0032
+  - AE-151.242.251.131-0235 | 41.741MB
+  - LT-45.87.175.28-0224 | 0.042MB
+  - 🇮🇸IS-37.235.49.152-0340 | 0.317MB
+  - MK-46.183.185.15-0345 | 0.071MB
+  - 🇵🇱PL-217.30.10.18-0296
   - US_39495_0074
-  - 🇳🇱NL-164.92.156.41-0263 | 32.6MB
-  - 🇭🇰HK-150.107.46.21-0321
-  - 🇺🇸US-192.3.107.252-0346 | 0.0MB
-  - AT-77.110.110.117-4911 | 24.033MB
-  - 🇩🇪DE-185.208.207.217-4968 | 0.0MB
   - IR_39495_0033
-  - PY-38.165.233.93-0293 | 1.892MB
-  - 🇭🇰HK-45.149.92.71-4951
-  - LT-45.87.175.28-0331 | 41.606MB
-  - 🇺🇸US-206.206.80.227-0353 | 0.13MB
+  - 🇩🇪DE-84.200.91.228-0322
+  - 🇨🇦CA-142.4.216.225-0377 | 5.595MB
+  - 🇳🇱NL-193.29.139.138-0230 | 38.848MB
+  - VN-103.163.218.2-0293 | 1.851MB
   - 🇸🇬SG-202.79.161.188-4842
-  - 🇨🇳TW-103.61.139.137-5077 | 0.0MB
-  - LT-45.87.175.154-0218 | 0.957MB
-  - SE-45.91.171.116-4967 | 0.128MB
+  - VN-103.163.218.2-0294 | 0.312MB
+  - 🇭🇰HK-45.149.92.71-4951
+  - 🇵🇱PL-217.30.10.18-0301
+  - RELAY-172.67.131.27-0329 | 39.29MB
   - 🇭🇰HK-45.149.92.71-1866
   - 🇭🇰HK-45.149.92.71-1882
-  - 🇭🇰HK-45.149.92.71-4954
-  - 🇭🇰HK-45.149.92.71-4952
-  - 🇺🇸US-138.197.5.103-0214 | 53.144MB
+  - 🇭🇰HK-112.118.114.43-0315 | 0.258MB
   - 🇭🇰HK-45.149.92.71-1867
-  - 🇺🇸US-199.34.229.212-0990
-  - PR-185.47.255.22-5045 | 0.298MB
-  - LT-45.87.175.69-4918 | 0.368MB
-  - 🇺🇸US-216.24.57.214-0952
+  - 🇭🇰HK-45.149.92.71-4954
+  - 🇫🇷FR-45.158.171.110-0215 | 33.993MB
+  - 🇭🇰HK-150.107.46.21-0321
+  - 🇳🇱NL-193.29.139.235-0220 | 35.424MB
+  - 🇺🇸US-192.3.107.252-0374 | 0.044MB
+  - 🇫🇮FI-81.177.214.214-0524
+  - 🇳🇱NL-134.209.90.171-4990
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
@@ -6495,1105 +6370,1081 @@ proxy-groups:
   type: fallback
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 🇺🇸US-15.197.162.184-2518
-  - FR_39495_0011
-  - 🇺🇸US-37.19.198.243-0224 | 85.14MB
-  - 🇺🇸 us-newjersey
-  - 🇮🇹IT_1 |1.1MB/s|NF
+  - 🇺🇸US_86 |1.4MB/s|NF|D+
+  - 🇺🇸US_92 |1.3MB/s|NF|D+
+  - 🇺🇸US-156.146.38.167-0193 | 80.214MB
+  - 🇺🇸US-156.146.38.168-0192 | 77.631MB
+  - 🇺🇸US-104.238.162.76-0189 | 0.449MB
+  - 🇺🇸US-156.146.38.169-0198 | 80.13MB
+  - 🇯🇵JP_3 |3.2MB/s|NF|D+
   - 🇺🇸US_54 |1.3MB/s|NF
-  - 🇸🇬SG_11 |1.8MB/s|NF|D+
-  - 🇺🇸US_96 |4.1MB/s|NF|D+
+  - 🇸🇬SG_10 |2.5MB/s|NF|D+
+  - 🇸🇬SG_5 |1.4MB/s|NF|D+
+  - 🇺🇸US_40 |3.6MB/s|NF
+  - 🇺🇸US-156.146.38.170-0191 | 81.83MB
+  - 🇺🇸US_42 |4.1MB/s|NF|D+
+  - 🇺🇸US_56 |1.6MB/s|NF|D+|0%
+  - RU_39495_0055
+  - 🇸🇬SG_1 |1.1MB/s|GPT|D+|23%
+  - LU_39495_0041
+  - US_39495_0084
   - 🇺🇸US_53 |2.7MB/s|NF|D+
-  - 🇺🇸US-198.71.189.194-0601
-  - 🏁RELAY-194.59.5.194-0616
-  - US_39495_0070
-  - RU_39495_0053
-  - 🇯🇵JP_4 |2.2MB/s|NF
-  - 🇯🇵JP_7 |1.9MB/s|NF|D+
-  - 🇺🇸US_111 |2.8MB/s
-  - 🇺🇸US_43 |4.7MB/s|NF|D+
-  - 🏁RELAY-185.158.133.194-0665
-  - 🏁RELAY-185.193.31.194-0652
-  - US_39495_0085
-  - 🇰🇷KR_3 |2.6MB/s|NF
-  - 🇺🇸US_108 |3.8MB/s
-  - 🇯🇵JP_8 |2.0MB/s|NF|D+
-  - 🏁RELAY-181.214.1.194-0681
-  - 🏁RELAY-185.238.228.194-0646
-  - 🇺🇸US_9 |1.9MB/s|NF|D+
-  - 🇺🇸US_87 |1.7MB/s|GPT|NF|D+
-  - 🇺🇸US_76 |1.6MB/s|NF|D+
-  - 🇸🇬SG_9 |4.2MB/s|NF|D+
-  - 🇺🇸US_29 |1.1MB/s|NF
-  - 🇰🇷KR_1 |2.3MB/s|NF|D+
-  - 🏁RELAY-167.68.11.194-0687
-  - 🇺🇸US_21 |3.3MB/s
   - 🇸🇬SG_13 |4.0MB/s|NF
-  - DE_39495_0008
+  - RU_39495_0057
+  - RU_39495_0054
+  - 🇰🇷KR_3 |2.6MB/s|NF
+  - GB_39495_0016
+  - LT_39495_0036
+  - RU_39495_0062
+  - 🇺🇸US_28 |2.6MB/s|GPT
+  - ❓Other_7 |1.3MB/s
+  - GB_39495_0013
+  - 🇺🇸US_48 |4.2MB/s
+  - LT_39495_0038
+  - 🇺🇸US_62 |1.4MB/s|GPT|NF|D+|0%
+  - 🇺🇸US_107 |1.9MB/s|NF
+  - SI_39495_0067
+  - 🇺🇸US_7 |1.8MB/s|NF
+  - 🇨🇦CA-38.180.211.126-0284 | 20.854MB
+  - 🇯🇵JP_7 |1.9MB/s|NF|D+
+  - ❓Other_8 |1.3MB/s
+  - 🇺🇸US_5 |2.0MB/s
+  - 🇺🇸US-37.19.198.243-0190 | 129.328MB
+  - 🇺🇸US_9 |1.9MB/s|NF|D+
+  - 🇺🇸US-64.74.163.130-0195 | 47.623MB
+  - 🇺🇸US_47 |2.7MB/s|NF|D+
+  - 🇺🇸US_77 |1.1MB/s|D+
+  - GB_39495_0021
+  - 🇺🇸US_80 |1.3MB/s|GPT|NF
+  - 🇺🇸US_24 |3.3MB/s|GPT
+  - US_39495_0073
+  - US_39495_0080
+  - NZ_39495_0047
+  - GB_39495_0030
+  - 🇸🇬SG_6 |1.1MB/s|NF
+  - RU_39495_0059
+  - 🇺🇸US_83 |1.6MB/s|NF
+  - 🇺🇸US_82 |2.2MB/s|NF|D+
+  - 🇰🇷KR_1 |2.3MB/s|NF|D+
+  - 🇯🇵JP_4 |2.2MB/s|NF
+  - 🇫🇮FI_1 |2.2MB/s|NF|D+|33%
+  - 🇨🇦CA-142.4.216.225-0367 | 2.284MB
+  - 🇺🇸US_13 |1.7MB/s|NF
+  - 🇯🇵JP_9 |4.6MB/s|NF
+  - 🇺🇸US_26 |4.3MB/s
+  - 🇺🇸US_63 |1.1MB/s|NF|D+
+  - 🇺🇸US_95 |2.0MB/s|NF|D+|5%
+  - 🇮🇹IT_1 |1.1MB/s|NF
+  - 🇺🇸US_61 |2.5MB/s|NF|D+
+  - US_39495_0077
+  - US_39495_0087
+  - RU_39495_0063
+  - RU_39495_0049
+  - 🇸🇬SG_2 |1.2MB/s|GPT
+  - 🇺🇸US_115 |3.0MB/s|NF|0%
+  - RU_39495_0051
+  - 🇺🇸US_108 |3.8MB/s
+  - US_39495_0071
+  - ❓Other_6 |2.0MB/s
+  - 🇺🇸US_51 |3.8MB/s
+  - 🇺🇸US-107.151.182.253-0286 | 50.162MB
+  - 🇺🇸US_104 |3.8MB/s
+  - 🇺🇸US_30 |2.4MB/s
   - 🇸🇬SG_3 |1.1MB/s|GPT|NF|D+|23%
-  - LT_39495_0039
+  - 🏁RELAY-193.124.18.194-0621
+  - US_39495_0083
+  - US_39495_0078
   - 🇺🇸US-192.169.221.194-0626
   - 🇺🇸US_118 |1.2MB/s|NF|D+
-  - 🇯🇵JP_3 |3.2MB/s|NF|D+
-  - 🇺🇸US-199.34.229.194-0592
-  - 🇯🇵JP_6 |1.4MB/s|NF
-  - KZ_39495_0035
-  - 🇺🇸US_86 |1.4MB/s|NF|D+
-  - 🇺🇸US_62 |1.4MB/s|GPT|NF|D+|0%
-  - GB_39495_0017
-  - US_39495_0073
-  - ❓Other_1 |2.0MB/s
-  - 🇺🇸US_31 |4.3MB/s|D+
-  - 🏁RELAY-185.156.19.194-0666
-  - ❓Other_8 |1.3MB/s
-  - US_39495_0084
-  - 🇺🇸US_94 |1.8MB/s|50%
-  - 🏁RELAY-185.18.250.194-0675
-  - RU_39495_0057
-  - 🇺🇸US_7 |1.8MB/s|NF
-  - 🇯🇵JP_2 |1.0MB/s|NF|D+
-  - 🏁RELAY-185.170.166.194-0659
-  - 🇺🇸US-166.62.108.194-0697
-  - 🏁RELAY-192.65.217.194-0628
-  - 🇺🇸US_80 |1.3MB/s|GPT|NF
-  - NZ_39495_0046
-  - US_39495_0080
-  - 🏁RELAY-198.177.57.194-0595
-  - 🏁RELAY-185.59.218.194-0674
-  - RU_39495_0062
-  - RU_39495_0050
-  - 🇺🇸US_115 |3.0MB/s|NF|0%
-  - US_39495_0083
-  - 🇺🇸US_28 |2.6MB/s|GPT
-  - 🏁RELAY-185.7.240.194-0678
-  - 🏁RELAY-195.13.54.194-0611
-  - 🏁RELAY-185.176.26.194-0656
-  - 🇯🇵JP_5 |1.6MB/s|NF|D+
-  - 🏁RELAY-185.148.107.194-0668
-  - 🇺🇸US_74 |1.2MB/s|NF|D+|5%
-  - DE_39495_0007
-  - 🏁RELAY-194.36.55.194-0618
-  - 🏁RELAY-185.162.228.194-0663
-  - NZ_39495_0047
-  - 🏁RELAY-170.114.45.194-0684
-  - 🏁RELAY-188.164.159.194-0637
-  - 🏁RELAY-195.245.221.194-0606
-  - 🇺🇸US-199.34.230.194-0591
-  - 🇺🇸US_63 |1.1MB/s|NF|D+
-  - 🇸🇬SG_10 |2.5MB/s|NF|D+
-  - GB_39495_0013
-  - RU_39495_0056
-  - LT_39495_0040
-  - 🏁RELAY-185.174.138.194-0658
-  - 🇨🇦CA_1 |2.9MB/s|NF|D+
-  - 🏁RELAY-193.124.18.194-0621
-  - 🇸🇬SG_4 |1.3MB/s
-  - 🏁RELAY-213.241.198.194-0582
-  - 🏁RELAY-198.202.211.194-0594
-  - 🇺🇸US_60 |1.9MB/s|NF|D+
-  - 🏁RELAY-185.207.198.194-0649
-  - 🇫🇷FR-185.16.110.194-0677
-  - 🇯🇵JP_9 |4.6MB/s|NF
-  - 🏁RELAY-204.93.210.194-0588
-  - 🏁RELAY-188.42.145.194-0639
-  - 🇺🇸US_61 |2.5MB/s|NF|D+
-  - LT_39495_0036
-  - 🇺🇸US_57 |1.2MB/s|NF|5%
-  - 🇺🇸US-64.74.163.130-0210 | 61.372MB
-  - 🏁RELAY-167.68.4.194-0689
-  - ❓Other_5 |1.5MB/s|NF|D+
-  - 🇺🇸US_101 |1.6MB/s|NF|D+
-  - 🇺🇸US_109 |3.0MB/s|NF
-  - 🇺🇸US_4 |1.2MB/s|NF|D+
-  - 🏁RELAY-188.164.158.194-0638
-  - 🇺🇸US-184.168.47.194-0680
-  - 🏁RELAY-185.193.30.194-0653
-  - 🇺🇸US_95 |2.0MB/s|NF|D+|5%
-  - US_39495_0075
-  - 🇺🇸US_106 |4.2MB/s|NF
-  - 🇺🇸US-166.62.107.194-0698
-  - 🇺🇸US_72 |1.1MB/s|GPT|NF
-  - GB_39495_0012
-  - 🇺🇸US-192.169.220.194-0627
-  - 🏁RELAY-193.124.224.194-0620
-  - 🏁RELAY-216.205.52.194-0580
-  - 🇺🇸US-192.200.160.194-0623
-  - RU_39495_0060
-  - 🏁RELAY-185.148.104.194-0671
-  - 🇭🇰HK_2 |5.7MB/s
-  - RU_39495_0065
-  - ❓Other_7 |1.3MB/s
-  - 🇺🇸US_98 |1.6MB/s|NF|D+
-  - 🇺🇸US_85 |1.4MB/s|GPT|D+
-  - 🏁RELAY-185.251.81.194-0644
-  - 🇸🇬SG_6 |1.1MB/s|NF
-  - US_39495_0088
-  - 🇺🇸US_13 |1.7MB/s|NF
-  - SI_39495_0067
-  - 🏁RELAY-185.251.83.194-0642
-  - LU_39495_0041
-  - 🏁RELAY-188.244.122.194-0635
-  - 🇺🇸US-198.12.144.194-0605
-  - 🏁RELAY-167.68.42.194-0686
-  - 🏁RELAY-185.251.80.194-0645
-  - 🇺🇸US_59 |1.3MB/s|NF|D+
-  - 🏁RELAY-167.68.5.194-0688
-  - 🏁RELAY-209.46.30.194-0586
-  - 🇺🇸US_47 |2.7MB/s|NF|D+
-  - 🇸🇬SG_5 |1.4MB/s|NF|D+
-  - 🏁RELAY-205.233.181.194-0587
-  - 🇺🇸US-166.62.115.194-0690
-  - 🇺🇸US_65 |1.0MB/s|NF|D+
-  - US_39495_0091
-  - 🇺🇸US_58 |2.1MB/s
-  - 🇺🇸US_107 |1.9MB/s|NF
-  - 🇺🇸US-198.71.233.194-0597
-  - SI_39495_0068
-  - 🇺🇸US_42 |4.1MB/s|NF|D+
-  - 🇺🇸US-199.34.228.194-0593
-  - 🇺🇸US-166.62.112.194-0693
-  - 🇺🇸US_114 |4.4MB/s|NF
-  - 🇺🇸US_48 |4.2MB/s
-  - 🇺🇸US-166.62.109.194-0696
-  - ❓Other_6 |2.0MB/s
-  - RU_39495_0055
-  - 🏁RELAY-185.162.229.194-0662
-  - 🏁RELAY-185.159.247.194-0664
-  - 🏁RELAY-185.162.231.194-0660
-  - 🇺🇸US-216.24.57.194-0581
-  - LT_39495_0038
-  - 🏁RELAY-198.177.56.194-0596
-  - 🇺🇸US_26 |4.3MB/s
-  - 🏁RELAY-194.152.44.194-0614
-  - 🏁RELAY-195.13.55.194-0610
-  - 🇺🇸US-209.94.90.194-0585
-  - 🇺🇸US_55 |1.9MB/s|NF
-  - 🏁RELAY-188.164.248.194-0636
-  - 🏁RELAY-190.93.247.194-0631
-  - 🏁RELAY-185.148.105.194-0670
-  - 🏁RELAY-185.18.184.194-0676
-  - 🇺🇸US-166.62.113.194-0692
-  - 🇺🇸US_70 |1.1MB/s|NF|D+
-  - 🇺🇸US_30 |2.4MB/s
-  - 🇺🇸US_24 |3.3MB/s|GPT
-  - BG_39495_0002
-  - 🏁RELAY-185.207.196.194-0651
-  - 🇺🇸US-166.62.111.194-0694
-  - US_39495_0089
-  - 🇺🇸US_51 |3.8MB/s
-  - 🏁RELAY-190.93.245.194-0633
-  - RU_39495_0051
-  - 🏁RELAY-170.114.46.194-0683
-  - 🇸🇬SG_1 |1.1MB/s|GPT|D+|23%
-  - RU_39495_0063
-  - 🏁RELAY-184.174.80.194-0679
-  - GB_39495_0016
-  - 🇺🇸US-166.62.114.194-0691
-  - 🇺🇸US_52 |4.6MB/s|NF
-  - 🏁RELAY-176.124.223.194-0682
-  - US_39495_0086
-  - 🏁RELAY-185.207.199.194-0648
-  - 🏁RELAY-188.42.89.194-0640
-  - 🇨🇦CA-142.4.216.225-0342 | 0.05MB
-  - 🇭🇰HK_3 |1.1MB/s|NF
-  - 🇺🇸US-198.62.62.194-0603
-  - US_39495_0082
-  - 🇰🇿KZ-194.76.18.194-0615
-  - 🏁RELAY-185.162.230.194-0661
-  - 🇺🇸US-198.71.188.194-0602
-  - 🇺🇸US-192.0.63.194-0629
-  - 🇺🇸US_83 |1.6MB/s|NF
-  - 🇺🇸US_67 |3.0MB/s|NF|D+
-  - CA_39495_0004
-  - 🏁RELAY-185.135.9.194-0672
-  - RU_39495_0061
-  - 🇺🇸US_77 |1.1MB/s|D+
-  - 🇺🇸US_73 |1.1MB/s|NF|D+|5%
-  - 🇺🇸US_66 |3.2MB/s|NF|D+
-  - NL_39495_0043
-  - 🇺🇸US_68 |1.6MB/s|NF
-  - 🏁RELAY-193.9.49.194-0622
-  - LT_39495_0037
-  - US_39495_0090
-  - GB_39495_0030
-  - 🇺🇸US-198.71.190.194-0600
-  - 🇺🇸US_44 |3.6MB/s|D+|5%
-  - 🇺🇸US_92 |1.3MB/s|NF|D+
-  - 🏁RELAY-195.26.229.194-0609
-  - 🏁RELAY-195.85.59.194-0607
-  - 🇺🇸US_5 |2.0MB/s
-  - RU_39495_0052
-  - KZ_39495_0034
-  - 🏁RELAY-185.221.160.194-0647
-  - 🇺🇸US_75 |2.3MB/s|NF|D+
-  - 🇸🇬SG_2 |1.2MB/s|GPT
-  - GB_39495_0021
-  - 🇺🇸US-198.71.232.194-0598
-  - 🏁RELAY-168.100.6.194-0685
-  - 🇺🇸US-166.62.110.194-0695
-  - 🇺🇸US-198.71.191.194-0599
-  - 🏁RELAY-185.149.135.194-0667
-  - US_39495_0079
-  - 🏁RELAY-185.193.28.194-0655
-  - 🇺🇸US-192.0.54.194-0630
-  - 🇺🇸US-192.169.222.194-0625
-  - GB_39495_0019
-  - GB_39495_0027
-  - 🇺🇸US_20 |1.7MB/s|NF|D+
-  - AE_39495_0001
-  - 🏁RELAY-199.181.197.194-0589
-  - 🇺🇸US_6 |1.3MB/s|NF
-  - 🇸🇬SG_12 |2.1MB/s|GPT|NF|23%
-  - 🇺🇸US_122 |3.3MB/s|NF|D+
-  - DE_39495_0006
-  - 🇺🇸US-198.12.145.194-0604
-  - 🇺🇸US_93 |1.4MB/s|NF
-  - RU_39495_0048
-  - 🏁RELAY-185.176.24.194-0657
-  - 🇺🇸US_97 |2.6MB/s
-  - 🏁RELAY-185.251.82.194-0643
-  - 🇺🇸US_89 |3.9MB/s|NF|D+
-  - 🏁RELAY-195.13.45.194-0612
-  - US_39495_0076
-  - US_39495_0078
-  - RU_39495_0054
-  - 🏁RELAY-195.85.23.194-0608
-  - RU_39495_0059
-  - 🏁RELAY-185.148.106.194-0669
-  - 🇧🇷BR-185.133.35.194-0673
-  - 🏁RELAY-195.13.44.194-0613
-  - 🇺🇸US_104 |3.8MB/s
-  - 🇺🇸US_71 |1.2MB/s|D+
-  - ❓Other_4 |3.3MB/s|GPT|NF|D+
-  - US_39495_0092
-  - FR_39495_0010
-  - 🇺🇸US-104.238.162.76-0203 | 109.923MB
-  - 🇺🇸US_113 |4.2MB/s
-  - 🇺🇸US_12 |1.1MB/s|NF|D+
-  - 🇫🇮FI_1 |2.2MB/s|NF|D+|33%
-  - 🏁RELAY-190.93.246.194-0632
-  - US_39495_0071
   - 🇺🇸US_32 |3.6MB/s
-  - 🏁RELAY-193.227.99.194-0619
-  - 🇺🇸US_103 |4.0MB/s
-  - RU_39495_0049
-  - 🏁RELAY-185.207.197.194-0650
+  - 🇺🇸US_94 |1.8MB/s|50%
+  - 🇺🇸US_60 |1.9MB/s|NF|D+
+  - LT_39495_0037
+  - 🇺🇸US_74 |1.2MB/s|NF|D+|5%
+  - 🇧🇷BR-185.133.35.194-0673
+  - RU_39495_0048
+  - 🇯🇵JP_8 |2.0MB/s|NF|D+
+  - 🇺🇸US-198.71.191.194-0599
   - 🇺🇸US_2 |1.0MB/s|NF|D+
-  - US_39495_0087
-  - US_39495_0069
-  - US_39495_0077
   - US_39495_0072
-  - 🏁RELAY-188.42.88.194-0641
-  - 🏁RELAY-213.182.199.194-0583
-  - 🏁RELAY-194.53.53.194-0617
-  - 🇺🇸US-156.146.38.167-0205 | 76.427MB
-  - US_39495_0081
-  - 🇺🇸US-156.146.38.169-0209 | 51.742MB
-  - 🇺🇸US_56 |1.6MB/s|NF|D+|0%
-  - 🇺🇸US-156.146.38.168-0204 | 83.123MB
-  - 🇺🇸US-156.146.38.170-0206 | 83.212MB
-  - 🇺🇸US_40 |3.6MB/s|NF
-  - 🇨🇦CA-38.180.211.126-0268 | 12.764MB
-  - 🇦🇹AT-212.183.88.194-0584
-  - 🇰🇷KR_2 |1.2MB/s
-  - 🇺🇸US_119 |1.1MB/s|NF|D+
-  - 🇺🇸US-192.169.223.194-0624
-  - 🇺🇸US_69 |1.4MB/s|GPT|NF|0%
-  - 🇺🇸US_105 |4.7MB/s|NF|50%
-  - 🇺🇸US_99 |1.1MB/s|NF|D+
+  - RU_39495_0050
+  - RU_39495_0060
+  - 🇺🇸US-166.62.112.194-0693
   - BG_39495_0003
-  - 🇺🇸US_82 |2.2MB/s|NF|D+
-  - 🏁RELAY-190.93.244.194-0634
-  - RU_39495_0066
-  - 🇺🇸US_84 |2.9MB/s|GPT|D+|50%
-  - 🇺🇸US_100 |4.3MB/s|NF
-  - 🇺🇸US_64 |2.5MB/s|D+
-  - 🇺🇸US-199.68.156.194-0590
-  - 🇺🇸US-107.151.182.253-0202 | 10.296MB
-  - 🇺🇸US-104.192.226.106-0208 | 32.706MB
-  - 🇺🇸US_81 |2.2MB/s|GPT|D+
-  - 🇺🇸US_88 |2.6MB/s|GPT|NF|D+|50%
-  - 🇺🇸US_8 |1.8MB/s|NF|D+
-  - 🇺🇸US_102 |3.7MB/s|NF
-  - 🇺🇸US-104.192.226.106-0215 | 34.696MB
-  - 🇺🇸US_110 |4.2MB/s|GPT
-  - US_39495_0093
-  - 🇺🇸US-212.102.47.132-0200 | 44.288MB
-  - 🇺🇸US-212.102.47.131-0274 | 44.45MB
-  - 🇺🇸US-45.55.2.232-0211 | 35.658MB
-  - 🇺🇸US-173.244.56.9-0207 | 47.389MB
-  - 🇺🇸US_46 |3.6MB/s
-  - 🇺🇸US_34 |2.3MB/s|GPT|NF|D+
-  - 🇺🇸US-212.102.47.130-0197 | 44.604MB
-  - CO-154.223.16.212-0306 | 1.007MB
-  - 🇺🇸US_45 |3.4MB/s|NF
+  - CA_39495_0004
+  - 🇺🇸US_93 |1.4MB/s|NF
+  - 🇺🇸US_44 |3.6MB/s|D+|5%
+  - 🇺🇸US-166.62.109.194-0696
+  - 🏁RELAY-198.177.57.194-0595
+  - 🏁RELAY-167.68.4.194-0689
+  - 🏁RELAY-190.93.245.194-0633
+  - 🇺🇸US_66 |3.2MB/s|NF|D+
+  - DE_39495_0008
+  - 🏁RELAY-216.205.52.194-0580
+  - US_39495_0079
+  - 🏁RELAY-195.26.229.194-0609
+  - NZ_39495_0046
+  - 🇺🇸US_111 |2.8MB/s
+  - 🇰🇿KZ-194.76.18.194-0615
+  - 🏁RELAY-185.207.199.194-0648
+  - 🇺🇸US_96 |4.1MB/s|NF|D+
+  - 🇺🇸US-199.34.230.194-0591
+  - 🇺🇸US_52 |4.6MB/s|NF
+  - 🇺🇸US_20 |1.7MB/s|NF|D+
+  - 🏁RELAY-194.59.5.194-0616
+  - 🇺🇸US-192.169.222.194-0625
+  - 🏁RELAY-194.36.55.194-0618
+  - 🏁RELAY-213.182.199.194-0583
+  - 🏁RELAY-167.68.42.194-0686
+  - 🇺🇸US_73 |1.1MB/s|NF|D+|5%
+  - 🇺🇸US-198.71.188.194-0602
+  - 🇺🇸US-45.55.2.232-0252 | 26.146MB
+  - 🏁RELAY-185.251.80.194-0645
+  - 🇺🇸US_6 |1.3MB/s|NF
+  - 🏁RELAY-184.174.80.194-0679
+  - 🏁RELAY-185.7.240.194-0678
+  - 🏁RELAY-185.174.138.194-0658
+  - 🏁RELAY-185.251.81.194-0644
+  - 🏁RELAY-209.46.30.194-0586
+  - 🇺🇸US-198.12.145.194-0604
+  - 🏁RELAY-185.148.107.194-0668
   - 🇺🇸US-15.197.162.184-3365
-  - 🇨🇦CA-79.127.233.170-0199 | 45.795MB
-  - 🇨🇦CA-79.127.233.170-0196 | 45.135MB
-  - 🇬🇧GB-212.102.53.195-0246 | 36.675MB
-  - 🇺🇸US_79 |1.3MB/s|NF|D+
-  - 🇬🇧GB-212.102.53.81-0255 | 37.55MB
-  - 🇬🇧GB-212.102.53.80-0251 | 29.333MB
-  - 🇬🇧GB-212.102.53.198-0249 | 37.266MB
-  - 🇬🇧GB-212.102.53.197-0252 | 36.739MB
-  - 🇳🇱NL-193.29.139.240-0312 | 40.086MB
-  - 🇬🇧GB-212.102.53.79-0243 | 36.577MB
-  - 🇬🇧GB-212.102.53.78-0242 | 37.95MB
-  - 🇬🇧GB-212.102.53.194-0089 | 37.678MB
-  - 🇬🇧GB-212.102.53.193-0253 | 37.386MB
-  - 🇪🇸ES-5.188.181.201-4817
-  - 🇬🇧GB-212.102.53.196-0250 | 37.53MB
-  - 🇳🇱NL-149.34.244.68-0254 | 36.002MB
-  - 🇩🇪DE-185.177.229.245-0286 | 5.611MB
-  - 🇳🇱 nl
-  - 🇺🇸US-23.251.121.242-0201 | 44.238MB
-  - 🇳🇱NL-193.29.139.227-0245 | 39.31MB
-  - 🇺🇸US_33 |2.5MB/s|GPT|NF|D+|33%
-  - 🇫🇷FR-195.154.185.174-0228 | 32.054MB
-  - 🏁RELAY-185.193.29.194-0654
-  - AE-151.242.251.131-0233 | 41.666MB
-  - 🇺🇸US_27 |2.8MB/s|NF
-  - CH-156.146.62.162-0261 | 30.629MB
-  - 🇩🇪DE-84.200.91.228-5034 | 2.977MB
-  - 🇬🇧GB-141.98.101.178-0281 | 23.334MB
-  - CH-156.146.62.164-0259 | 18.043MB
-  - CH-156.146.62.163-0260 | 30.111MB
-  - 🇫🇷FR-51.195.119.47-0305 | 1.303MB
-  - 🇫🇷FR-195.154.169.198-0230 | 39.831MB
-  - 🇳🇱NL-193.29.139.217-0229 | 29.671MB
+  - 🇺🇸US-212.102.47.130-0203 | 46.795MB
+  - 🇭🇰HK_3 |1.1MB/s|NF
+  - 🏁RELAY-185.193.30.194-0653
+  - 🏁RELAY-167.68.11.194-0687
+  - 🇭🇰HK_2 |5.7MB/s
+  - 🇺🇸US_64 |2.5MB/s|D+
+  - 🇸🇬SG_9 |4.2MB/s|NF|D+
+  - US_39495_0088
+  - 🇺🇸US-104.192.226.106-0254 | 52.186MB
+  - 🇺🇸US-166.62.114.194-0691
+  - US_39495_0089
+  - 🏁RELAY-185.176.26.194-0656
+  - DE_39495_0007
+  - 🏁RELAY-190.93.244.194-0634
+  - 🏁RELAY-195.245.221.194-0606
+  - 🇺🇸US_68 |1.6MB/s|NF
+  - 🇺🇸US-198.71.190.194-0600
+  - US_39495_0086
   - ❓Other_3 |2.4MB/s|NF|D+
-  - 🇫🇷FR-45.158.171.66-0315 | 38.056MB
-  - 🇫🇷FR-45.158.171.70-0310 | 40.642MB
-  - 🇫🇷FR-45.158.171.60-0323 | 41.681MB
-  - LT-45.87.175.65-0317 | 44.069MB
-  - CH-156.146.62.161-0256 | 19.086MB
-  - 🇳🇱NL-51.15.17.169-0221 | 24.255MB
-  - LT-45.87.175.58-0330 | 40.365MB
+  - 🇺🇸US_98 |1.6MB/s|NF|D+
+  - 🇺🇸US_29 |1.1MB/s|NF
+  - FR_39495_0011
+  - 🏁RELAY-168.100.6.194-0685
+  - 🇺🇸US_65 |1.0MB/s|NF|D+
+  - 🇺🇸US-166.62.107.194-0698
+  - 🇺🇸 us-newjersey
+  - US_39495_0082
+  - BG_39495_0002
+  - 🇯🇵JP_6 |1.4MB/s|NF
+  - 🇺🇸US-212.102.47.131-0204 | 46.244MB
+  - GB_39495_0017
+  - 🇺🇸US_12 |1.1MB/s|NF|D+
+  - 🇺🇸US_57 |1.2MB/s|NF|5%
+  - 🏁RELAY-188.164.248.194-0636
+  - 🇺🇸US-192.0.63.194-0629
+  - 🏁RELAY-185.149.135.194-0667
+  - 🏁RELAY-185.59.218.194-0674
+  - 🏁RELAY-185.221.160.194-0647
+  - 🏁RELAY-193.227.99.194-0619
+  - 🏁RELAY-185.207.197.194-0650
+  - 🇺🇸US-166.62.115.194-0690
+  - 🏁RELAY-193.9.49.194-0622
+  - 🏁RELAY-195.13.44.194-0613
+  - 🏁RELAY-185.158.133.194-0665
+  - 🇺🇸US-166.62.113.194-0692
+  - 🇺🇸US-198.12.144.194-0605
+  - GB_39495_0019
+  - 🏁RELAY-185.176.24.194-0657
+  - 🇺🇸US_76 |1.6MB/s|NF|D+
+  - 🇺🇸US_88 |2.6MB/s|GPT|NF|D+|50%
+  - 🏁RELAY-198.177.56.194-0596
+  - 🏁RELAY-185.162.229.194-0662
+  - 🇺🇸US_89 |3.9MB/s|NF|D+
+  - LT_39495_0040
+  - 🇺🇸US-192.169.220.194-0627
+  - US_39495_0081
+  - US_39495_0076
+  - 🏁RELAY-185.170.166.194-0659
+  - 🇺🇸US_55 |1.9MB/s|NF
+  - 🇺🇸US_71 |1.2MB/s|D+
+  - 🇸🇬SG_4 |1.3MB/s
+  - GB_39495_0012
+  - 🏁RELAY-199.181.197.194-0589
+  - 🇺🇸US-198.62.62.194-0603
+  - 🇺🇸US-166.62.108.194-0697
+  - 🏁RELAY-185.162.231.194-0660
+  - 🏁RELAY-190.93.247.194-0631
+  - US_39495_0092
+  - 🏁RELAY-185.156.19.194-0666
+  - 🏁RELAY-205.233.181.194-0587
+  - 🇫🇷FR-185.16.110.194-0677
+  - 🏁RELAY-188.42.145.194-0639
+  - 🇺🇸US-209.94.90.194-0585
+  - 🇺🇸US-184.168.47.194-0680
+  - AE_39495_0001
+  - 🏁RELAY-185.193.28.194-0655
+  - 🇺🇸US_102 |3.7MB/s|NF
+  - RU_39495_0056
+  - 🇺🇸US_109 |3.0MB/s|NF
+  - 🏁RELAY-195.85.59.194-0607
+  - DE_39495_0006
+  - RU_39495_0053
+  - 🏁RELAY-185.18.250.194-0675
+  - KZ_39495_0034
+  - 🇺🇸US_75 |2.3MB/s|NF|D+
+  - FR_39495_0010
+  - 🏁RELAY-167.68.5.194-0688
+  - 🇯🇵JP_2 |1.0MB/s|NF|D+
+  - US_39495_0090
+  - 🇺🇸US_85 |1.4MB/s|GPT|D+
+  - 🇺🇸US-199.34.229.194-0592
+  - SI_39495_0068
+  - 🇯🇵JP_5 |1.6MB/s|NF|D+
+  - 🇺🇸US-166.62.111.194-0694
+  - 🇺🇸US_4 |1.2MB/s|NF|D+
+  - 🏁RELAY-195.13.54.194-0611
+  - 🏁RELAY-185.148.105.194-0670
+  - 🇺🇸US_113 |4.2MB/s
+  - 🇨🇦CA-79.127.233.170-0201 | 47.929MB
+  - US_39495_0085
+  - 🏁RELAY-181.214.1.194-0681
+  - 🇺🇸US_110 |4.2MB/s|GPT
+  - 🏁RELAY-194.152.44.194-0614
+  - 🏁RELAY-192.65.217.194-0628
+  - 🇺🇸US-192.200.160.194-0623
+  - 🇺🇸US_84 |2.9MB/s|GPT|D+|50%
+  - 🇺🇸US_114 |4.4MB/s|NF
+  - 🏁RELAY-185.135.9.194-0672
+  - 🇺🇸US-199.68.156.194-0590
+  - 🏁RELAY-188.164.158.194-0638
+  - 🏁RELAY-195.13.55.194-0610
+  - 🇺🇸US-199.34.228.194-0593
+  - 🇺🇸US_87 |1.7MB/s|GPT|NF|D+
+  - 🇺🇸US-198.71.189.194-0601
+  - 🏁RELAY-170.114.46.194-0683
+  - 🇺🇸US_58 |2.1MB/s
+  - 🇺🇸US_67 |3.0MB/s|NF|D+
+  - 🏁RELAY-185.238.228.194-0646
+  - 🏁RELAY-193.124.224.194-0620
+  - NL_39495_0043
+  - US_39495_0069
+  - 🇰🇷KR_2 |1.2MB/s
+  - 🇺🇸US-198.71.232.194-0598
+  - 🏁RELAY-213.241.198.194-0582
+  - 🇺🇸US-212.102.47.132-0205 | 46.757MB
+  - 🏁RELAY-195.13.45.194-0612
   - 🇺🇸US_78 |1.4MB/s|NF|D+
-  - CH-204.136.10.115-0287 | 2.325MB
-  - 🇳🇱NL-103.104.247.47-0338 | 0.302MB
-  - 🇪🇸ES-45.154.206.192-0290 | 3.081MB
-  - LT-45.87.175.22-0322 | 0.324MB
-  - 🇫🇷FR-81.19.137.222-0266 | 19.01MB
-  - 🇳🇱NL-103.104.247.49-0329 | 0.256MB
-  - CZ-195.181.160.6-0235 | 38.308MB
-  - 🇳🇱NL-193.29.139.202-0326 | 43.728MB
-  - NO-185.213.23.226-0248 | 35.283MB
-  - SE-121.127.46.147-0393 | 33.448MB
-  - 🇳🇱NL-193.29.139.251-0201
-  - AT-95.163.176.37-0301 | 15.825MB
-  - 🇫🇷FR-77.105.166.12-0296 | 1.091MB
-  - 🇩🇪DE-46.101.245.131-0314 | 0.688MB
-  - 🇺🇸US-137.175.124.167-0282 | 41.045MB
-  - AE-151.242.251.153-0267 | 41.613MB
-  - uk_manchester
-  - LT-45.87.175.166-0234 | 43.654MB
-  - FI-37.143.129.230-0276 | 7.464MB
-  - AT-152.53.2.128-0278 | 36.821MB
-  - BG-37.19.203.147-0270 | 31.821MB
-  - 🇩🇰DK-192.36.27.94-4076 | 1.339MB
-  - LT-45.87.175.171-0316 | 42.83MB
-  - 🇳🇱NL-213.109.147.242-0354 | 0.109MB
-  - SK-156.146.40.194-0244 | 36.56MB
-  - LT-45.87.175.92-0299 | 40.155MB
-  - LT-45.87.175.181-0361 | 44.128MB
-  - 🇺🇸US_49 |1.6MB/s|NF
+  - 🏁RELAY-185.251.83.194-0642
+  - 🏁RELAY-176.124.223.194-0682
+  - US_39495_0075
+  - 🇺🇸US_72 |1.1MB/s|GPT|NF
+  - 🏁RELAY-198.202.211.194-0594
+  - 🏁RELAY-185.18.184.194-0676
+  - 🇺🇸US_21 |3.3MB/s
+  - 🇺🇸US-173.244.56.9-0199 | 59.419MB
+  - 🏁RELAY-185.193.31.194-0652
+  - 🏁RELAY-188.42.88.194-0641
+  - 🇺🇸US-192.169.223.194-0624
+  - US_39495_0093
+  - 🏁RELAY-185.162.228.194-0663
+  - 🏁RELAY-188.164.159.194-0637
+  - 🇺🇸US-23.251.121.242-0206 | 43.061MB
+  - 🇺🇸US_99 |1.1MB/s|NF|D+
+  - US_39495_0070
+  - 🇺🇸US-192.0.54.194-0630
+  - 🇺🇸US_59 |1.3MB/s|NF|D+
+  - 🏁RELAY-185.148.104.194-0671
+  - 🇺🇸US_70 |1.1MB/s|NF|D+
+  - 🇺🇸US_100 |4.3MB/s|NF
+  - 🇦🇹AT-212.183.88.194-0584
+  - 🏁RELAY-185.251.82.194-0643
+  - 🏁RELAY-195.85.23.194-0608
+  - 🏁RELAY-188.42.89.194-0640
+  - 🇨🇦CA-79.127.233.170-0200 | 48.048MB
+  - 🇺🇸US-166.62.110.194-0695
+  - 🏁RELAY-194.53.53.194-0617
+  - 🇺🇸US-198.71.233.194-0597
+  - US_39495_0091
+  - 🇺🇸US_106 |4.2MB/s|NF
+  - 🇺🇸US_97 |2.6MB/s
+  - KZ_39495_0035
+  - 🇺🇸US_122 |3.3MB/s|NF|D+
+  - 🏁RELAY-185.162.230.194-0661
+  - ❓Other_1 |2.0MB/s
+  - 🏁RELAY-188.244.122.194-0635
+  - 🏁RELAY-185.148.106.194-0669
+  - RU_39495_0061
+  - 🇸🇬SG_11 |1.8MB/s|NF|D+
+  - 🇺🇸US_119 |1.1MB/s|NF|D+
+  - 🏁RELAY-185.193.29.194-0654
+  - 🏁RELAY-185.207.198.194-0649
+  - 🏁RELAY-185.207.196.194-0651
+  - 🇺🇸US_46 |3.6MB/s
+  - 🇺🇸US_79 |1.3MB/s|NF|D+
+  - 🇨🇦CA_1 |2.9MB/s|NF|D+
+  - 🇺🇸US_31 |4.3MB/s|D+
+  - 🇺🇸US_101 |1.6MB/s|NF|D+
+  - 🇸🇬SG_12 |2.1MB/s|GPT|NF|23%
+  - 🇺🇸US_43 |4.7MB/s|NF|D+
+  - 🇺🇸US-216.24.57.194-0581
+  - 🇺🇸US_105 |4.7MB/s|NF|50%
+  - 🇺🇸US_81 |2.2MB/s|GPT|D+
+  - ❓Other_4 |3.3MB/s|GPT|NF|D+
+  - RU_39495_0065
+  - 🇬🇧GB-212.102.53.193-0243 | 40.148MB
   - 🇺🇸US_91 |1.1MB/s|NF
-  - AE-151.242.251.144-0225 | 43.473MB
-  - AE-151.242.251.147-0232 | 0.0MB
-  - 🇬🇧GB-212.102.53.197-0264 | 17.89MB
-  - LT-45.87.175.188-0226 | 43.786MB
-  - 🇨🇦CA-142.4.216.225-0336 | 0.0MB
-  - CO-181.119.30.20-0291 | 3.055MB
-  - 🇮🇸IS-37.235.49.152-5010 | 0.201MB
-  - LT-45.87.175.178-0236 | 41.591MB
-  - 🇫🇷FR-51.195.202.129-4852
-  - MD-185.153.197.5-4932 | 28.753MB
-  - 🇨🇦CA-45.154.204.13-0285
-  - 🇯🇵JP-149.22.87.204-0216 | 13.168MB
-  - 🇯🇵 japan
-  - 🇳🇱NL-51.15.23.63-5014
-  - 🇨🇦CA-148.113.207.224-4830
-  - 🇫🇮FI-81.177.214.214-0524
-  - NO-185.213.23.226-0239 | 36.047MB
-  - 🇩🇪DE-51.195.101.222-4853
-  - LT-45.87.175.157-0325 | 44.094MB
-  - 🇳🇱NL-193.29.139.157-0203
-  - 🇮🇳IN-103.111.114.29-0320
-  - 🇵🇾PY-38.165.233.18-4934
-  - 🇺🇸US-43.162.125.204-4822
-  - 🇺🇸US_16 |1.1MB/s|NF
-  - RS-194.71.126.31-0295 | 1.319MB
-  - LT-45.87.175.35-0333 | 43.522MB
-  - 🇳🇱NL-193.29.139.179-0321 | 42.067MB
-  - AR-38.54.45.129-0311 | 0.599MB
+  - 🇺🇸US_69 |1.4MB/s|GPT|NF|0%
+  - 🏁RELAY-170.114.45.194-0684
+  - 🇬🇧GB-212.102.53.198-0244 | 39.323MB
+  - 🇬🇧GB-212.102.53.81-0241 | 34.164MB
+  - GB_39495_0027
+  - 🇬🇧GB-212.102.53.195-0247 | 39.177MB
+  - 🇬🇧GB-212.102.53.197-0246 | 38.062MB
+  - 🇬🇧GB-212.102.53.79-0248 | 30.874MB
+  - 🇬🇧GB-212.102.53.196-0242 | 40.218MB
+  - 🇬🇧GB-212.102.53.194-0081 | 39.872MB
+  - 🇳🇱NL-149.34.244.68-0251 | 36.07MB
+  - 🇺🇸US_22 |3.3MB/s|GPT|NF|46%
+  - 🏁RELAY-190.93.246.194-0632
+  - 🇬🇧GB-212.102.53.80-0267 | 36.126MB
+  - 🇳🇱NL-51.15.17.169-0271 | 42.917MB
+  - 🇫🇷FR-45.158.171.70-0229 | 0.345MB
+  - 🇬🇧GB-212.102.53.78-0239 | 0.0MB
+  - LT-45.87.175.92-0232 | 0.375MB
+  - 🇳🇱NL-193.29.139.202-0213 | 1.059MB
+  - 🇳🇱 nl
+  - 🇫🇷FR-45.158.171.66-0238 | 0.509MB
+  - 🇺🇸US_8 |1.8MB/s|NF|D+
+  - 🇳🇱NL-193.29.139.240-0233 | 0.343MB
+  - 🇫🇷FR-45.158.171.60-0221 | 0.422MB
+  - CO-154.223.16.212-0314 | 0.418MB
   - 🇺🇸US_1 |1.3MB/s|GPT|NF|40%
-  - RO-185.126.237.38-0283 | 9.171MB
-  - 🇺🇸US-71.19.148.74-0284
-  - 🇭🇰HK-18.162.146.85-5000
-  - 🇭🇰HK-18.162.146.85-5001
-  - 🇫🇷FR-51.178.42.187-4958
-  - SI-192.71.244.150-0348 | 0.162MB
-  - 🇩🇪DE-193.108.119.230-0298 | 3.299MB
+  - 🇳🇱NL-103.104.247.49-0337 | 0.495MB
+  - 🇦🇪AE-151.242.251.147-0230
+  - 🇫🇷FR-195.154.185.174-0259 | 38.0MB
+  - RU_39495_0066
+  - ❓Other_5 |1.5MB/s|NF|D+
+  - LT-45.87.175.65-0210 | 0.117MB
+  - 🇺🇸US_27 |2.8MB/s|NF
+  - 🇺🇸US_103 |4.0MB/s
+  - 🇳🇱NL-193.29.139.251-4933 | 0.296MB
+  - LT_39495_0039
+  - RU_39495_0052
+  - 🇳🇱NL-103.104.247.47-0335 | 0.457MB
+  - LT-45.87.175.199-0226 | 0.0MB
+  - 🇫🇷FR-195.154.169.198-0234 | 38.169MB
+  - 🏁RELAY-204.93.210.194-0588
+  - 🇩🇪DE-185.177.229.245-0292 | 6.484MB
+  - LT-45.87.175.69-0330 | 0.32MB
+  - CH-156.146.62.161-0276 | 33.482MB
+  - CH-156.146.62.163-0263 | 31.015MB
+  - 🇳🇱NL-193.29.139.217-0264 | 29.955MB
+  - LT-45.87.175.188-0212 | 0.131MB
+  - CH-156.146.62.162-0261 | 29.979MB
+  - CH-156.146.62.164-0278 | 32.841MB
+  - AT-95.163.176.37-0281 | 9.973MB
+  - AE-151.242.251.153-0223 | 43.133MB
+  - 🇨🇦CA-45.154.204.13-0285
+  - 🇯🇵JP-149.22.87.204-0283 | 17.643MB
+  - 🇯🇵 japan
+  - LT-45.87.175.58-0231 | 0.18MB
+  - 🇫🇷FR-77.105.166.12-0312 | 1.885MB
+  - 🇫🇷FR-81.19.137.222-0277 | 24.999MB
+  - 🇫🇷FR-51.195.119.47-0309 | 0.981MB
+  - 🇺🇸US_49 |1.6MB/s|NF
+  - 🇩🇪DE-46.101.245.131-0322 | 8.874MB
+  - 🇺🇸US-43.162.125.204-4822
+  - CZ-195.181.160.6-0237 | 37.981MB
+  - SE-121.127.46.147-0256 | 34.377MB
+  - BE-192.71.249.78-0305 | 1.346MB
+  - FI-37.143.129.230-0288 | 12.176MB
+  - CH-204.136.10.115-0302 | 3.781MB
+  - 🇵🇱PL-92.118.205.228-0300 | 0.191MB
+  - AT-152.53.2.128-0245 | 11.075MB
+  - LT-45.87.175.178-0225 | 35.429MB
+  - LT-45.87.175.35-0216 | 0.027MB
+  - AE-151.242.251.131-0222 | 30.296MB
+  - 🇫🇷FR-45.158.171.146-4882
+  - 🇪🇸ES-45.154.206.192-0296 | 0.651MB
+  - 🇺🇸US-71.19.148.74-5044 | 0.043MB
+  - 🇳🇱NL-193.29.139.157-0203
+  - uk_manchester
+  - SK-156.146.40.194-0249 | 36.143MB
+  - 🇺🇸US_45 |3.4MB/s|NF
+  - 🇬🇧GB-141.98.101.178-0273 | 5.887MB
+  - BG-37.19.203.147-0260 | 32.683MB
+  - 🇳🇱NL-193.29.139.227-0236 | 41.221MB
+  - BR-38.54.57.90-0323 | 0.062MB
+  - 🇳🇱NL-193.29.139.179-0219 | 0.186MB
+  - 🇨🇦CA-148.113.207.224-4830
+  - 🇺🇸US-2.58.87.221-5025
+  - 🇩🇰DK-192.36.27.94-0307 | 2.768MB
+  - 🇺🇸US-15.197.162.184-2518
+  - AR-38.54.45.129-0325 | 0.29MB
+  - CO-181.119.30.20-0297 | 3.757MB
+  - 🇭🇰HK-18.162.146.85-5025 | 0.336MB
+  - 🇭🇰HK-18.162.146.85-5024 | 0.336MB
+  - 🇭🇰HK-18.162.146.85-5022 | 0.336MB
+  - RS-194.71.126.31-0308 | 1.46MB
+  - LT-45.87.175.22-0334 | 0.082MB
+  - RO-185.126.237.38-0287 | 14.499MB
+  - 🇺🇸US_33 |2.5MB/s|GPT|NF|D+|33%
   - 🇩🇪DE-139.59.209.171-4828
-  - 🇫🇷FR_1 |1.0MB/s|GPT|0%
+  - NO-185.213.23.226-0250 | 13.033MB
+  - LT-45.87.175.157-0209 | 0.337MB
+  - 🇺🇸US-137.175.124.167-0227 | 31.178MB
+  - PY-38.165.233.18-4958 | 16.773MB
   - 🇸🇬 新加坡3|@stairnode
-  - 🇭🇰HK-154.197.26.237-5051 | 0.231MB
-  - 🇭🇰HK-203.23.128.33-0352 | 0.0MB
-  - 🇳🇱NL-92.112.126.90-0327 | 0.571MB
-  - 🇺🇸US-94.131.20.3-4950
-  - BR-38.54.57.90-0344 | 0.652MB
-  - HR-46.183.184.60-0308 | 0.79MB
-  - 🇫🇷FR-45.158.171.110-0257 | 43.539MB
-  - 🇰🇷KR-154.90.63.177-0307 | 1.048MB
-  - 🇻🇳VN-103.186.155.25-4987
-  - AE-151.242.251.137-0219 | 39.403MB
-  - 🇰🇷KR-218.237.185.230-0341 | 0.0MB
-  - 🇻🇳VN-103.186.155.18-5038
-  - 🇭🇰HK-18.162.146.85-4998
-  - 🇻🇳VN-103.186.154.38-4965
-  - 🇻🇳VN-103.186.154.37-4960
+  - PY-38.165.233.93-0303 | 2.464MB
+  - LT-45.87.175.154-0317 | 42.546MB
+  - NO-185.213.23.226-0253 | 12.129MB
+  - 🇸🇪SE-45.91.171.116-0366
+  - 🇬🇧GB-212.102.53.197-0279 | 38.025MB
+  - 🇮🇸IS-37.235.49.168-0327 | 0.146MB
+  - HR-46.183.184.60-0319 | 0.49MB
+  - MD-185.153.197.5-0268 | 27.615MB
+  - 🇻🇳VN-103.186.154.29-4978
+  - 🇻🇳VN-103.186.155.23-4986
+  - 🇻🇳VN-103.186.155.24-4971
+  - 🇻🇳VN-103.186.154.33-4980
   - 🇻🇳VN-103.186.154.31-4961
-  - VN_39495_0096
-  - 🇻🇳VN-103.186.155.19-4983
-  - 🇺🇸US-94.131.20.3-4953
-  - 🇰🇷KR-154.90.62.168-0332 | 0.366MB
-  - 🇻🇳VN-103.186.155.20-4972
-  - 🇻🇳VN-103.186.154.25-4981
-  - 🇻🇳VN-103.186.154.21-4964
-  - 🇻🇳VN-103.186.154.18-4975
-  - RELAY-172.67.131.27-0198 | 0.379MB
   - 🇻🇳VN-103.186.155.30-5040
-  - 🇻🇳VN-103.186.154.22-4962
-  - 🇻🇳VN_1 |2.2MB/s|GPT|0%
-  - 🇻🇳VN-103.186.154.27-4985
-  - 🇻🇳VN-103.186.154.24-4959
-  - VN_39495_0097
-  - 🇻🇳VN-103.186.154.23-4994
   - 🇻🇳VN-103.186.154.19-4967
+  - 🇻🇳VN-103.186.154.24-4959
+  - 🇻🇳VN-103.186.154.37-4960
+  - 🇻🇳VN-103.186.154.18-4975
+  - 🇻🇳VN-103.186.154.27-4985
+  - 🇻🇳VN-103.186.155.133-4982
+  - 🇻🇳VN-103.186.155.18-5038
+  - VN_39495_0096
+  - 🇻🇳VN_1 |2.2MB/s|GPT|0%
+  - 🇻🇳VN-103.186.155.25-4987
   - 🇻🇳VN-103.186.154.26-4970
+  - 🇻🇳VN-103.186.154.30-4973
+  - VN_39495_0099
+  - VN_39495_0098
+  - VN_39495_0095
+  - 🇻🇳VN-103.186.155.19-4983
+  - LT-45.87.175.181-0207 | 44.348MB
+  - 🇻🇳VN-103.186.155.20-4972
   - 🇻🇳VN-103.186.155.22-5037
   - 🇻🇳VN-103.186.154.35-4963
-  - 🇻🇳VN-103.186.154.29-4978
-  - 🇻🇳VN-103.186.155.133-4982
-  - VN_39495_0099
-  - VN_39495_0095
-  - VN_39495_0098
-  - 🇻🇳VN-103.186.154.30-4973
-  - 🇻🇳VN-103.186.154.33-4980
-  - 🇳🇱NL-134.209.90.171-4990
-  - 🇻🇳VN-103.186.155.23-4986
-  - GR-192.71.166.102-3674 | 0.763MB
-  - 🇻🇳VN-103.186.155.24-4971
-  - 🇭🇰HK-103.252.116.138-0344
-  - 🇰🇷KR-183.109.131.75-0288 | 0.027MB
-  - 🇺🇸US_18 |1.8MB/s|GPT|NF|32%
-  - 🇵🇱PL-92.118.205.228-0320 | 2.686MB
-  - VN-160.19.78.75-0355 | 0.035MB
-  - 🇮🇳IN-134.209.147.198-0328 | 0.324MB
-  - 🇫🇷FR-45.158.171.146-4882
-  - IR_39495_0032
-  - 🇨🇳TW-154.223.20.79-0356 | 0.0MB
-  - 🇳🇱NL-141.98.4.67-0351 | 0.0MB
+  - 🇻🇳VN-103.186.154.22-4962
+  - VN_39495_0097
   - 🇯🇵JP-35.77.91.152-5007
-  - NL_39495_0045
-  - SI-91.132.94.200-0345 | 0.056MB
-  - VN-161.248.30.3-0275 | 5.811MB
-  - 🏁RELAY-104.21.21.192-0966
-  - MK-46.183.185.37-0335 | 0.199MB
-  - 🇺🇸US-94.131.21.174-5036 | 0.0MB
-  - VN-160.19.78.75-0343 | 0.041MB
-  - 🇺🇸US-94.131.22.134-0300 | 0.254MB
-  - ID-154.205.159.100-5084 | 0.173MB
-  - 🇳🇱NL-193.29.139.235-0247 | 41.711MB
-  - BE-192.71.249.78-0294 | 1.392MB
-  - 🇭🇰 香港6|@stairnode
-  - 🇭🇰HK-116.49.109.153-0280 | 0.99MB
-  - 🇷🇺RU_2 |1.2MB/s|0%
-  - 🇦🇺AU-209.38.20.147-4834
+  - 🇨🇳TW-154.223.20.79-0384 | 0.42MB
+  - 🇻🇳VN-103.186.154.25-4981
+  - 🇻🇳VN-103.186.154.23-4994
+  - 🇻🇳VN-103.186.154.21-4964
+  - 🇻🇳VN-103.186.154.38-4965
+  - 🇺🇸US_16 |1.1MB/s|NF
+  - 🇰🇷KR-183.109.131.75-0371 | 0.27MB
+  - 🇮🇳IN-103.111.114.29-4896 | 0.486MB
   - NL_39495_0042
-  - 🇺🇸US_22 |3.3MB/s|GPT|NF|46%
-  - LT-45.87.175.164-0237 | 43.844MB
-  - VN-103.163.218.2-0313 | 4.157MB
-  - VN-103.163.218.2-0297 | 3.472MB
-  - TR-185.123.101.241-0350 | 0.0MB
+  - 🇫🇷FR-51.195.202.129-4852
+  - PR-185.47.255.22-0336 | 0.368MB
+  - TR-185.123.101.241-0378 | 0.026MB
+  - 🇰🇷KR-154.90.62.168-0331 | 0.977MB
+  - 🇭🇰HK-203.23.128.33-0383 | 0.277MB
+  - 🇺🇸US-94.131.20.3-4953
+  - 🇩🇪DE-51.195.101.222-4853
+  - 🇺🇸US-207.174.28.20-0202 | 0.0MB
+  - 🇰🇷KR-154.90.63.177-0313 | 0.261MB
+  - 🇺🇸US-206.206.80.227-0357 | 0.025MB
+  - 🇺🇸US-94.131.20.3-4950
+  - 🇫🇷FR-51.178.42.187-4958
+  - 🇳🇱NL-141.98.4.67-0380 | 0.022MB
+  - 🏁RELAY-185.159.247.194-0664
+  - 🇩🇪DE-193.108.119.230-0295 | 0.144MB
+  - 🇬🇷GR-192.71.166.100-0365
+  - 🇮🇳IN-134.209.147.198-0327
+  - 🇭🇰 香港6|@stairnode
+  - AE-151.242.251.144-0217 | 30.025MB
+  - 🇦🇺AU-209.38.20.147-4834
+  - GR-192.71.166.102-0320 | 0.044MB
+  - LT-45.87.175.166-0214 | 3.058MB
+  - 🇫🇷FR_1 |1.0MB/s|GPT|0%
+  - 🇮🇩ID-154.205.159.100-0351
+  - 🇩🇪DE-185.208.207.217-0369
+  - VN-160.19.78.75-0368 | 0.019MB
+  - 🇳🇱NL-208.67.105.196-4960 | 0.202MB
+  - 🇷🇺RU_2 |1.2MB/s|0%
+  - 🏁RELAY-104.21.21.192-0966
+  - 🇺🇸US-94.131.22.134-0338 | 1.0MB
+  - 🇭🇰HK-103.252.116.138-5028 | 0.034MB
+  - 🇭🇰HK-45.149.92.71-4952
+  - VN-160.19.78.75-0369 | 0.052MB
+  - EC-185.47.253.227-4885 | 0.094MB
+  - IR_39495_0032
+  - AE-151.242.251.131-0235 | 41.741MB
+  - LT-45.87.175.28-0224 | 0.042MB
+  - 🇮🇸IS-37.235.49.152-0340 | 0.317MB
+  - MK-46.183.185.15-0345 | 0.071MB
+  - 🇵🇱PL-217.30.10.18-0296
   - US_39495_0074
-  - 🇳🇱NL-164.92.156.41-0263 | 32.6MB
-  - 🇭🇰HK-150.107.46.21-0321
-  - 🇺🇸US-192.3.107.252-0346 | 0.0MB
-  - AT-77.110.110.117-4911 | 24.033MB
-  - 🇩🇪DE-185.208.207.217-4968 | 0.0MB
   - IR_39495_0033
-  - PY-38.165.233.93-0293 | 1.892MB
-  - 🇭🇰HK-45.149.92.71-4951
-  - LT-45.87.175.28-0331 | 41.606MB
-  - 🇺🇸US-206.206.80.227-0353 | 0.13MB
+  - 🇩🇪DE-84.200.91.228-0322
+  - 🇨🇦CA-142.4.216.225-0377 | 5.595MB
+  - 🇳🇱NL-193.29.139.138-0230 | 38.848MB
+  - VN-103.163.218.2-0293 | 1.851MB
   - 🇸🇬SG-202.79.161.188-4842
-  - 🇨🇳TW-103.61.139.137-5077 | 0.0MB
-  - LT-45.87.175.154-0218 | 0.957MB
-  - SE-45.91.171.116-4967 | 0.128MB
+  - VN-103.163.218.2-0294 | 0.312MB
+  - 🇭🇰HK-45.149.92.71-4951
+  - 🇵🇱PL-217.30.10.18-0301
+  - RELAY-172.67.131.27-0329 | 39.29MB
   - 🇭🇰HK-45.149.92.71-1866
   - 🇭🇰HK-45.149.92.71-1882
-  - 🇭🇰HK-45.149.92.71-4954
-  - 🇭🇰HK-45.149.92.71-4952
-  - 🇺🇸US-138.197.5.103-0214 | 53.144MB
+  - 🇭🇰HK-112.118.114.43-0315 | 0.258MB
   - 🇭🇰HK-45.149.92.71-1867
-  - 🇺🇸US-199.34.229.212-0990
-  - PR-185.47.255.22-5045 | 0.298MB
-  - LT-45.87.175.69-4918 | 0.368MB
-  - 🇺🇸US-216.24.57.214-0952
+  - 🇭🇰HK-45.149.92.71-4954
+  - 🇫🇷FR-45.158.171.110-0215 | 33.993MB
+  - 🇭🇰HK-150.107.46.21-0321
+  - 🇳🇱NL-193.29.139.235-0220 | 35.424MB
+  - 🇺🇸US-192.3.107.252-0374 | 0.044MB
+  - 🇫🇮FI-81.177.214.214-0524
+  - 🇳🇱NL-134.209.90.171-4990
   url: http://www.gstatic.com/generate_204
   interval: 300
 - name: 手动选择
   type: select
   proxies:
-  - 🇺🇸US-15.197.162.184-2518
-  - FR_39495_0011
-  - 🇺🇸US-37.19.198.243-0224 | 85.14MB
-  - 🇺🇸 us-newjersey
-  - 🇮🇹IT_1 |1.1MB/s|NF
+  - 🇺🇸US_86 |1.4MB/s|NF|D+
+  - 🇺🇸US_92 |1.3MB/s|NF|D+
+  - 🇺🇸US-156.146.38.167-0193 | 80.214MB
+  - 🇺🇸US-156.146.38.168-0192 | 77.631MB
+  - 🇺🇸US-104.238.162.76-0189 | 0.449MB
+  - 🇺🇸US-156.146.38.169-0198 | 80.13MB
+  - 🇯🇵JP_3 |3.2MB/s|NF|D+
   - 🇺🇸US_54 |1.3MB/s|NF
-  - 🇸🇬SG_11 |1.8MB/s|NF|D+
-  - 🇺🇸US_96 |4.1MB/s|NF|D+
+  - 🇸🇬SG_10 |2.5MB/s|NF|D+
+  - 🇸🇬SG_5 |1.4MB/s|NF|D+
+  - 🇺🇸US_40 |3.6MB/s|NF
+  - 🇺🇸US-156.146.38.170-0191 | 81.83MB
+  - 🇺🇸US_42 |4.1MB/s|NF|D+
+  - 🇺🇸US_56 |1.6MB/s|NF|D+|0%
+  - RU_39495_0055
+  - 🇸🇬SG_1 |1.1MB/s|GPT|D+|23%
+  - LU_39495_0041
+  - US_39495_0084
   - 🇺🇸US_53 |2.7MB/s|NF|D+
-  - 🇺🇸US-198.71.189.194-0601
-  - 🏁RELAY-194.59.5.194-0616
-  - US_39495_0070
-  - RU_39495_0053
-  - 🇯🇵JP_4 |2.2MB/s|NF
-  - 🇯🇵JP_7 |1.9MB/s|NF|D+
-  - 🇺🇸US_111 |2.8MB/s
-  - 🇺🇸US_43 |4.7MB/s|NF|D+
-  - 🏁RELAY-185.158.133.194-0665
-  - 🏁RELAY-185.193.31.194-0652
-  - US_39495_0085
-  - 🇰🇷KR_3 |2.6MB/s|NF
-  - 🇺🇸US_108 |3.8MB/s
-  - 🇯🇵JP_8 |2.0MB/s|NF|D+
-  - 🏁RELAY-181.214.1.194-0681
-  - 🏁RELAY-185.238.228.194-0646
-  - 🇺🇸US_9 |1.9MB/s|NF|D+
-  - 🇺🇸US_87 |1.7MB/s|GPT|NF|D+
-  - 🇺🇸US_76 |1.6MB/s|NF|D+
-  - 🇸🇬SG_9 |4.2MB/s|NF|D+
-  - 🇺🇸US_29 |1.1MB/s|NF
-  - 🇰🇷KR_1 |2.3MB/s|NF|D+
-  - 🏁RELAY-167.68.11.194-0687
-  - 🇺🇸US_21 |3.3MB/s
   - 🇸🇬SG_13 |4.0MB/s|NF
-  - DE_39495_0008
+  - RU_39495_0057
+  - RU_39495_0054
+  - 🇰🇷KR_3 |2.6MB/s|NF
+  - GB_39495_0016
+  - LT_39495_0036
+  - RU_39495_0062
+  - 🇺🇸US_28 |2.6MB/s|GPT
+  - ❓Other_7 |1.3MB/s
+  - GB_39495_0013
+  - 🇺🇸US_48 |4.2MB/s
+  - LT_39495_0038
+  - 🇺🇸US_62 |1.4MB/s|GPT|NF|D+|0%
+  - 🇺🇸US_107 |1.9MB/s|NF
+  - SI_39495_0067
+  - 🇺🇸US_7 |1.8MB/s|NF
+  - 🇨🇦CA-38.180.211.126-0284 | 20.854MB
+  - 🇯🇵JP_7 |1.9MB/s|NF|D+
+  - ❓Other_8 |1.3MB/s
+  - 🇺🇸US_5 |2.0MB/s
+  - 🇺🇸US-37.19.198.243-0190 | 129.328MB
+  - 🇺🇸US_9 |1.9MB/s|NF|D+
+  - 🇺🇸US-64.74.163.130-0195 | 47.623MB
+  - 🇺🇸US_47 |2.7MB/s|NF|D+
+  - 🇺🇸US_77 |1.1MB/s|D+
+  - GB_39495_0021
+  - 🇺🇸US_80 |1.3MB/s|GPT|NF
+  - 🇺🇸US_24 |3.3MB/s|GPT
+  - US_39495_0073
+  - US_39495_0080
+  - NZ_39495_0047
+  - GB_39495_0030
+  - 🇸🇬SG_6 |1.1MB/s|NF
+  - RU_39495_0059
+  - 🇺🇸US_83 |1.6MB/s|NF
+  - 🇺🇸US_82 |2.2MB/s|NF|D+
+  - 🇰🇷KR_1 |2.3MB/s|NF|D+
+  - 🇯🇵JP_4 |2.2MB/s|NF
+  - 🇫🇮FI_1 |2.2MB/s|NF|D+|33%
+  - 🇨🇦CA-142.4.216.225-0367 | 2.284MB
+  - 🇺🇸US_13 |1.7MB/s|NF
+  - 🇯🇵JP_9 |4.6MB/s|NF
+  - 🇺🇸US_26 |4.3MB/s
+  - 🇺🇸US_63 |1.1MB/s|NF|D+
+  - 🇺🇸US_95 |2.0MB/s|NF|D+|5%
+  - 🇮🇹IT_1 |1.1MB/s|NF
+  - 🇺🇸US_61 |2.5MB/s|NF|D+
+  - US_39495_0077
+  - US_39495_0087
+  - RU_39495_0063
+  - RU_39495_0049
+  - 🇸🇬SG_2 |1.2MB/s|GPT
+  - 🇺🇸US_115 |3.0MB/s|NF|0%
+  - RU_39495_0051
+  - 🇺🇸US_108 |3.8MB/s
+  - US_39495_0071
+  - ❓Other_6 |2.0MB/s
+  - 🇺🇸US_51 |3.8MB/s
+  - 🇺🇸US-107.151.182.253-0286 | 50.162MB
+  - 🇺🇸US_104 |3.8MB/s
+  - 🇺🇸US_30 |2.4MB/s
   - 🇸🇬SG_3 |1.1MB/s|GPT|NF|D+|23%
-  - LT_39495_0039
+  - 🏁RELAY-193.124.18.194-0621
+  - US_39495_0083
+  - US_39495_0078
   - 🇺🇸US-192.169.221.194-0626
   - 🇺🇸US_118 |1.2MB/s|NF|D+
-  - 🇯🇵JP_3 |3.2MB/s|NF|D+
-  - 🇺🇸US-199.34.229.194-0592
-  - 🇯🇵JP_6 |1.4MB/s|NF
-  - KZ_39495_0035
-  - 🇺🇸US_86 |1.4MB/s|NF|D+
-  - 🇺🇸US_62 |1.4MB/s|GPT|NF|D+|0%
-  - GB_39495_0017
-  - US_39495_0073
-  - ❓Other_1 |2.0MB/s
-  - 🇺🇸US_31 |4.3MB/s|D+
-  - 🏁RELAY-185.156.19.194-0666
-  - ❓Other_8 |1.3MB/s
-  - US_39495_0084
-  - 🇺🇸US_94 |1.8MB/s|50%
-  - 🏁RELAY-185.18.250.194-0675
-  - RU_39495_0057
-  - 🇺🇸US_7 |1.8MB/s|NF
-  - 🇯🇵JP_2 |1.0MB/s|NF|D+
-  - 🏁RELAY-185.170.166.194-0659
-  - 🇺🇸US-166.62.108.194-0697
-  - 🏁RELAY-192.65.217.194-0628
-  - 🇺🇸US_80 |1.3MB/s|GPT|NF
-  - NZ_39495_0046
-  - US_39495_0080
-  - 🏁RELAY-198.177.57.194-0595
-  - 🏁RELAY-185.59.218.194-0674
-  - RU_39495_0062
-  - RU_39495_0050
-  - 🇺🇸US_115 |3.0MB/s|NF|0%
-  - US_39495_0083
-  - 🇺🇸US_28 |2.6MB/s|GPT
-  - 🏁RELAY-185.7.240.194-0678
-  - 🏁RELAY-195.13.54.194-0611
-  - 🏁RELAY-185.176.26.194-0656
-  - 🇯🇵JP_5 |1.6MB/s|NF|D+
-  - 🏁RELAY-185.148.107.194-0668
-  - 🇺🇸US_74 |1.2MB/s|NF|D+|5%
-  - DE_39495_0007
-  - 🏁RELAY-194.36.55.194-0618
-  - 🏁RELAY-185.162.228.194-0663
-  - NZ_39495_0047
-  - 🏁RELAY-170.114.45.194-0684
-  - 🏁RELAY-188.164.159.194-0637
-  - 🏁RELAY-195.245.221.194-0606
-  - 🇺🇸US-199.34.230.194-0591
-  - 🇺🇸US_63 |1.1MB/s|NF|D+
-  - 🇸🇬SG_10 |2.5MB/s|NF|D+
-  - GB_39495_0013
-  - RU_39495_0056
-  - LT_39495_0040
-  - 🏁RELAY-185.174.138.194-0658
-  - 🇨🇦CA_1 |2.9MB/s|NF|D+
-  - 🏁RELAY-193.124.18.194-0621
-  - 🇸🇬SG_4 |1.3MB/s
-  - 🏁RELAY-213.241.198.194-0582
-  - 🏁RELAY-198.202.211.194-0594
-  - 🇺🇸US_60 |1.9MB/s|NF|D+
-  - 🏁RELAY-185.207.198.194-0649
-  - 🇫🇷FR-185.16.110.194-0677
-  - 🇯🇵JP_9 |4.6MB/s|NF
-  - 🏁RELAY-204.93.210.194-0588
-  - 🏁RELAY-188.42.145.194-0639
-  - 🇺🇸US_61 |2.5MB/s|NF|D+
-  - LT_39495_0036
-  - 🇺🇸US_57 |1.2MB/s|NF|5%
-  - 🇺🇸US-64.74.163.130-0210 | 61.372MB
-  - 🏁RELAY-167.68.4.194-0689
-  - ❓Other_5 |1.5MB/s|NF|D+
-  - 🇺🇸US_101 |1.6MB/s|NF|D+
-  - 🇺🇸US_109 |3.0MB/s|NF
-  - 🇺🇸US_4 |1.2MB/s|NF|D+
-  - 🏁RELAY-188.164.158.194-0638
-  - 🇺🇸US-184.168.47.194-0680
-  - 🏁RELAY-185.193.30.194-0653
-  - 🇺🇸US_95 |2.0MB/s|NF|D+|5%
-  - US_39495_0075
-  - 🇺🇸US_106 |4.2MB/s|NF
-  - 🇺🇸US-166.62.107.194-0698
-  - 🇺🇸US_72 |1.1MB/s|GPT|NF
-  - GB_39495_0012
-  - 🇺🇸US-192.169.220.194-0627
-  - 🏁RELAY-193.124.224.194-0620
-  - 🏁RELAY-216.205.52.194-0580
-  - 🇺🇸US-192.200.160.194-0623
-  - RU_39495_0060
-  - 🏁RELAY-185.148.104.194-0671
-  - 🇭🇰HK_2 |5.7MB/s
-  - RU_39495_0065
-  - ❓Other_7 |1.3MB/s
-  - 🇺🇸US_98 |1.6MB/s|NF|D+
-  - 🇺🇸US_85 |1.4MB/s|GPT|D+
-  - 🏁RELAY-185.251.81.194-0644
-  - 🇸🇬SG_6 |1.1MB/s|NF
-  - US_39495_0088
-  - 🇺🇸US_13 |1.7MB/s|NF
-  - SI_39495_0067
-  - 🏁RELAY-185.251.83.194-0642
-  - LU_39495_0041
-  - 🏁RELAY-188.244.122.194-0635
-  - 🇺🇸US-198.12.144.194-0605
-  - 🏁RELAY-167.68.42.194-0686
-  - 🏁RELAY-185.251.80.194-0645
-  - 🇺🇸US_59 |1.3MB/s|NF|D+
-  - 🏁RELAY-167.68.5.194-0688
-  - 🏁RELAY-209.46.30.194-0586
-  - 🇺🇸US_47 |2.7MB/s|NF|D+
-  - 🇸🇬SG_5 |1.4MB/s|NF|D+
-  - 🏁RELAY-205.233.181.194-0587
-  - 🇺🇸US-166.62.115.194-0690
-  - 🇺🇸US_65 |1.0MB/s|NF|D+
-  - US_39495_0091
-  - 🇺🇸US_58 |2.1MB/s
-  - 🇺🇸US_107 |1.9MB/s|NF
-  - 🇺🇸US-198.71.233.194-0597
-  - SI_39495_0068
-  - 🇺🇸US_42 |4.1MB/s|NF|D+
-  - 🇺🇸US-199.34.228.194-0593
-  - 🇺🇸US-166.62.112.194-0693
-  - 🇺🇸US_114 |4.4MB/s|NF
-  - 🇺🇸US_48 |4.2MB/s
-  - 🇺🇸US-166.62.109.194-0696
-  - ❓Other_6 |2.0MB/s
-  - RU_39495_0055
-  - 🏁RELAY-185.162.229.194-0662
-  - 🏁RELAY-185.159.247.194-0664
-  - 🏁RELAY-185.162.231.194-0660
-  - 🇺🇸US-216.24.57.194-0581
-  - LT_39495_0038
-  - 🏁RELAY-198.177.56.194-0596
-  - 🇺🇸US_26 |4.3MB/s
-  - 🏁RELAY-194.152.44.194-0614
-  - 🏁RELAY-195.13.55.194-0610
-  - 🇺🇸US-209.94.90.194-0585
-  - 🇺🇸US_55 |1.9MB/s|NF
-  - 🏁RELAY-188.164.248.194-0636
-  - 🏁RELAY-190.93.247.194-0631
-  - 🏁RELAY-185.148.105.194-0670
-  - 🏁RELAY-185.18.184.194-0676
-  - 🇺🇸US-166.62.113.194-0692
-  - 🇺🇸US_70 |1.1MB/s|NF|D+
-  - 🇺🇸US_30 |2.4MB/s
-  - 🇺🇸US_24 |3.3MB/s|GPT
-  - BG_39495_0002
-  - 🏁RELAY-185.207.196.194-0651
-  - 🇺🇸US-166.62.111.194-0694
-  - US_39495_0089
-  - 🇺🇸US_51 |3.8MB/s
-  - 🏁RELAY-190.93.245.194-0633
-  - RU_39495_0051
-  - 🏁RELAY-170.114.46.194-0683
-  - 🇸🇬SG_1 |1.1MB/s|GPT|D+|23%
-  - RU_39495_0063
-  - 🏁RELAY-184.174.80.194-0679
-  - GB_39495_0016
-  - 🇺🇸US-166.62.114.194-0691
-  - 🇺🇸US_52 |4.6MB/s|NF
-  - 🏁RELAY-176.124.223.194-0682
-  - US_39495_0086
-  - 🏁RELAY-185.207.199.194-0648
-  - 🏁RELAY-188.42.89.194-0640
-  - 🇨🇦CA-142.4.216.225-0342 | 0.05MB
-  - 🇭🇰HK_3 |1.1MB/s|NF
-  - 🇺🇸US-198.62.62.194-0603
-  - US_39495_0082
-  - 🇰🇿KZ-194.76.18.194-0615
-  - 🏁RELAY-185.162.230.194-0661
-  - 🇺🇸US-198.71.188.194-0602
-  - 🇺🇸US-192.0.63.194-0629
-  - 🇺🇸US_83 |1.6MB/s|NF
-  - 🇺🇸US_67 |3.0MB/s|NF|D+
-  - CA_39495_0004
-  - 🏁RELAY-185.135.9.194-0672
-  - RU_39495_0061
-  - 🇺🇸US_77 |1.1MB/s|D+
-  - 🇺🇸US_73 |1.1MB/s|NF|D+|5%
-  - 🇺🇸US_66 |3.2MB/s|NF|D+
-  - NL_39495_0043
-  - 🇺🇸US_68 |1.6MB/s|NF
-  - 🏁RELAY-193.9.49.194-0622
-  - LT_39495_0037
-  - US_39495_0090
-  - GB_39495_0030
-  - 🇺🇸US-198.71.190.194-0600
-  - 🇺🇸US_44 |3.6MB/s|D+|5%
-  - 🇺🇸US_92 |1.3MB/s|NF|D+
-  - 🏁RELAY-195.26.229.194-0609
-  - 🏁RELAY-195.85.59.194-0607
-  - 🇺🇸US_5 |2.0MB/s
-  - RU_39495_0052
-  - KZ_39495_0034
-  - 🏁RELAY-185.221.160.194-0647
-  - 🇺🇸US_75 |2.3MB/s|NF|D+
-  - 🇸🇬SG_2 |1.2MB/s|GPT
-  - GB_39495_0021
-  - 🇺🇸US-198.71.232.194-0598
-  - 🏁RELAY-168.100.6.194-0685
-  - 🇺🇸US-166.62.110.194-0695
-  - 🇺🇸US-198.71.191.194-0599
-  - 🏁RELAY-185.149.135.194-0667
-  - US_39495_0079
-  - 🏁RELAY-185.193.28.194-0655
-  - 🇺🇸US-192.0.54.194-0630
-  - 🇺🇸US-192.169.222.194-0625
-  - GB_39495_0019
-  - GB_39495_0027
-  - 🇺🇸US_20 |1.7MB/s|NF|D+
-  - AE_39495_0001
-  - 🏁RELAY-199.181.197.194-0589
-  - 🇺🇸US_6 |1.3MB/s|NF
-  - 🇸🇬SG_12 |2.1MB/s|GPT|NF|23%
-  - 🇺🇸US_122 |3.3MB/s|NF|D+
-  - DE_39495_0006
-  - 🇺🇸US-198.12.145.194-0604
-  - 🇺🇸US_93 |1.4MB/s|NF
-  - RU_39495_0048
-  - 🏁RELAY-185.176.24.194-0657
-  - 🇺🇸US_97 |2.6MB/s
-  - 🏁RELAY-185.251.82.194-0643
-  - 🇺🇸US_89 |3.9MB/s|NF|D+
-  - 🏁RELAY-195.13.45.194-0612
-  - US_39495_0076
-  - US_39495_0078
-  - RU_39495_0054
-  - 🏁RELAY-195.85.23.194-0608
-  - RU_39495_0059
-  - 🏁RELAY-185.148.106.194-0669
-  - 🇧🇷BR-185.133.35.194-0673
-  - 🏁RELAY-195.13.44.194-0613
-  - 🇺🇸US_104 |3.8MB/s
-  - 🇺🇸US_71 |1.2MB/s|D+
-  - ❓Other_4 |3.3MB/s|GPT|NF|D+
-  - US_39495_0092
-  - FR_39495_0010
-  - 🇺🇸US-104.238.162.76-0203 | 109.923MB
-  - 🇺🇸US_113 |4.2MB/s
-  - 🇺🇸US_12 |1.1MB/s|NF|D+
-  - 🇫🇮FI_1 |2.2MB/s|NF|D+|33%
-  - 🏁RELAY-190.93.246.194-0632
-  - US_39495_0071
   - 🇺🇸US_32 |3.6MB/s
-  - 🏁RELAY-193.227.99.194-0619
-  - 🇺🇸US_103 |4.0MB/s
-  - RU_39495_0049
-  - 🏁RELAY-185.207.197.194-0650
+  - 🇺🇸US_94 |1.8MB/s|50%
+  - 🇺🇸US_60 |1.9MB/s|NF|D+
+  - LT_39495_0037
+  - 🇺🇸US_74 |1.2MB/s|NF|D+|5%
+  - 🇧🇷BR-185.133.35.194-0673
+  - RU_39495_0048
+  - 🇯🇵JP_8 |2.0MB/s|NF|D+
+  - 🇺🇸US-198.71.191.194-0599
   - 🇺🇸US_2 |1.0MB/s|NF|D+
-  - US_39495_0087
-  - US_39495_0069
-  - US_39495_0077
   - US_39495_0072
-  - 🏁RELAY-188.42.88.194-0641
-  - 🏁RELAY-213.182.199.194-0583
-  - 🏁RELAY-194.53.53.194-0617
-  - 🇺🇸US-156.146.38.167-0205 | 76.427MB
-  - US_39495_0081
-  - 🇺🇸US-156.146.38.169-0209 | 51.742MB
-  - 🇺🇸US_56 |1.6MB/s|NF|D+|0%
-  - 🇺🇸US-156.146.38.168-0204 | 83.123MB
-  - 🇺🇸US-156.146.38.170-0206 | 83.212MB
-  - 🇺🇸US_40 |3.6MB/s|NF
-  - 🇨🇦CA-38.180.211.126-0268 | 12.764MB
-  - 🇦🇹AT-212.183.88.194-0584
-  - 🇰🇷KR_2 |1.2MB/s
-  - 🇺🇸US_119 |1.1MB/s|NF|D+
-  - 🇺🇸US-192.169.223.194-0624
-  - 🇺🇸US_69 |1.4MB/s|GPT|NF|0%
-  - 🇺🇸US_105 |4.7MB/s|NF|50%
-  - 🇺🇸US_99 |1.1MB/s|NF|D+
+  - RU_39495_0050
+  - RU_39495_0060
+  - 🇺🇸US-166.62.112.194-0693
   - BG_39495_0003
-  - 🇺🇸US_82 |2.2MB/s|NF|D+
-  - 🏁RELAY-190.93.244.194-0634
-  - RU_39495_0066
-  - 🇺🇸US_84 |2.9MB/s|GPT|D+|50%
-  - 🇺🇸US_100 |4.3MB/s|NF
-  - 🇺🇸US_64 |2.5MB/s|D+
-  - 🇺🇸US-199.68.156.194-0590
-  - 🇺🇸US-107.151.182.253-0202 | 10.296MB
-  - 🇺🇸US-104.192.226.106-0208 | 32.706MB
-  - 🇺🇸US_81 |2.2MB/s|GPT|D+
-  - 🇺🇸US_88 |2.6MB/s|GPT|NF|D+|50%
-  - 🇺🇸US_8 |1.8MB/s|NF|D+
-  - 🇺🇸US_102 |3.7MB/s|NF
-  - 🇺🇸US-104.192.226.106-0215 | 34.696MB
-  - 🇺🇸US_110 |4.2MB/s|GPT
-  - US_39495_0093
-  - 🇺🇸US-212.102.47.132-0200 | 44.288MB
-  - 🇺🇸US-212.102.47.131-0274 | 44.45MB
-  - 🇺🇸US-45.55.2.232-0211 | 35.658MB
-  - 🇺🇸US-173.244.56.9-0207 | 47.389MB
-  - 🇺🇸US_46 |3.6MB/s
-  - 🇺🇸US_34 |2.3MB/s|GPT|NF|D+
-  - 🇺🇸US-212.102.47.130-0197 | 44.604MB
-  - CO-154.223.16.212-0306 | 1.007MB
-  - 🇺🇸US_45 |3.4MB/s|NF
+  - CA_39495_0004
+  - 🇺🇸US_93 |1.4MB/s|NF
+  - 🇺🇸US_44 |3.6MB/s|D+|5%
+  - 🇺🇸US-166.62.109.194-0696
+  - 🏁RELAY-198.177.57.194-0595
+  - 🏁RELAY-167.68.4.194-0689
+  - 🏁RELAY-190.93.245.194-0633
+  - 🇺🇸US_66 |3.2MB/s|NF|D+
+  - DE_39495_0008
+  - 🏁RELAY-216.205.52.194-0580
+  - US_39495_0079
+  - 🏁RELAY-195.26.229.194-0609
+  - NZ_39495_0046
+  - 🇺🇸US_111 |2.8MB/s
+  - 🇰🇿KZ-194.76.18.194-0615
+  - 🏁RELAY-185.207.199.194-0648
+  - 🇺🇸US_96 |4.1MB/s|NF|D+
+  - 🇺🇸US-199.34.230.194-0591
+  - 🇺🇸US_52 |4.6MB/s|NF
+  - 🇺🇸US_20 |1.7MB/s|NF|D+
+  - 🏁RELAY-194.59.5.194-0616
+  - 🇺🇸US-192.169.222.194-0625
+  - 🏁RELAY-194.36.55.194-0618
+  - 🏁RELAY-213.182.199.194-0583
+  - 🏁RELAY-167.68.42.194-0686
+  - 🇺🇸US_73 |1.1MB/s|NF|D+|5%
+  - 🇺🇸US-198.71.188.194-0602
+  - 🇺🇸US-45.55.2.232-0252 | 26.146MB
+  - 🏁RELAY-185.251.80.194-0645
+  - 🇺🇸US_6 |1.3MB/s|NF
+  - 🏁RELAY-184.174.80.194-0679
+  - 🏁RELAY-185.7.240.194-0678
+  - 🏁RELAY-185.174.138.194-0658
+  - 🏁RELAY-185.251.81.194-0644
+  - 🏁RELAY-209.46.30.194-0586
+  - 🇺🇸US-198.12.145.194-0604
+  - 🏁RELAY-185.148.107.194-0668
   - 🇺🇸US-15.197.162.184-3365
-  - 🇨🇦CA-79.127.233.170-0199 | 45.795MB
-  - 🇨🇦CA-79.127.233.170-0196 | 45.135MB
-  - 🇬🇧GB-212.102.53.195-0246 | 36.675MB
-  - 🇺🇸US_79 |1.3MB/s|NF|D+
-  - 🇬🇧GB-212.102.53.81-0255 | 37.55MB
-  - 🇬🇧GB-212.102.53.80-0251 | 29.333MB
-  - 🇬🇧GB-212.102.53.198-0249 | 37.266MB
-  - 🇬🇧GB-212.102.53.197-0252 | 36.739MB
-  - 🇳🇱NL-193.29.139.240-0312 | 40.086MB
-  - 🇬🇧GB-212.102.53.79-0243 | 36.577MB
-  - 🇬🇧GB-212.102.53.78-0242 | 37.95MB
-  - 🇬🇧GB-212.102.53.194-0089 | 37.678MB
-  - 🇬🇧GB-212.102.53.193-0253 | 37.386MB
-  - 🇪🇸ES-5.188.181.201-4817
-  - 🇬🇧GB-212.102.53.196-0250 | 37.53MB
-  - 🇳🇱NL-149.34.244.68-0254 | 36.002MB
-  - 🇩🇪DE-185.177.229.245-0286 | 5.611MB
-  - 🇳🇱 nl
-  - 🇺🇸US-23.251.121.242-0201 | 44.238MB
-  - 🇳🇱NL-193.29.139.227-0245 | 39.31MB
-  - 🇺🇸US_33 |2.5MB/s|GPT|NF|D+|33%
-  - 🇫🇷FR-195.154.185.174-0228 | 32.054MB
-  - 🏁RELAY-185.193.29.194-0654
-  - AE-151.242.251.131-0233 | 41.666MB
-  - 🇺🇸US_27 |2.8MB/s|NF
-  - CH-156.146.62.162-0261 | 30.629MB
-  - 🇩🇪DE-84.200.91.228-5034 | 2.977MB
-  - 🇬🇧GB-141.98.101.178-0281 | 23.334MB
-  - CH-156.146.62.164-0259 | 18.043MB
-  - CH-156.146.62.163-0260 | 30.111MB
-  - 🇫🇷FR-51.195.119.47-0305 | 1.303MB
-  - 🇫🇷FR-195.154.169.198-0230 | 39.831MB
-  - 🇳🇱NL-193.29.139.217-0229 | 29.671MB
+  - 🇺🇸US-212.102.47.130-0203 | 46.795MB
+  - 🇭🇰HK_3 |1.1MB/s|NF
+  - 🏁RELAY-185.193.30.194-0653
+  - 🏁RELAY-167.68.11.194-0687
+  - 🇭🇰HK_2 |5.7MB/s
+  - 🇺🇸US_64 |2.5MB/s|D+
+  - 🇸🇬SG_9 |4.2MB/s|NF|D+
+  - US_39495_0088
+  - 🇺🇸US-104.192.226.106-0254 | 52.186MB
+  - 🇺🇸US-166.62.114.194-0691
+  - US_39495_0089
+  - 🏁RELAY-185.176.26.194-0656
+  - DE_39495_0007
+  - 🏁RELAY-190.93.244.194-0634
+  - 🏁RELAY-195.245.221.194-0606
+  - 🇺🇸US_68 |1.6MB/s|NF
+  - 🇺🇸US-198.71.190.194-0600
+  - US_39495_0086
   - ❓Other_3 |2.4MB/s|NF|D+
-  - 🇫🇷FR-45.158.171.66-0315 | 38.056MB
-  - 🇫🇷FR-45.158.171.70-0310 | 40.642MB
-  - 🇫🇷FR-45.158.171.60-0323 | 41.681MB
-  - LT-45.87.175.65-0317 | 44.069MB
-  - CH-156.146.62.161-0256 | 19.086MB
-  - 🇳🇱NL-51.15.17.169-0221 | 24.255MB
-  - LT-45.87.175.58-0330 | 40.365MB
+  - 🇺🇸US_98 |1.6MB/s|NF|D+
+  - 🇺🇸US_29 |1.1MB/s|NF
+  - FR_39495_0011
+  - 🏁RELAY-168.100.6.194-0685
+  - 🇺🇸US_65 |1.0MB/s|NF|D+
+  - 🇺🇸US-166.62.107.194-0698
+  - 🇺🇸 us-newjersey
+  - US_39495_0082
+  - BG_39495_0002
+  - 🇯🇵JP_6 |1.4MB/s|NF
+  - 🇺🇸US-212.102.47.131-0204 | 46.244MB
+  - GB_39495_0017
+  - 🇺🇸US_12 |1.1MB/s|NF|D+
+  - 🇺🇸US_57 |1.2MB/s|NF|5%
+  - 🏁RELAY-188.164.248.194-0636
+  - 🇺🇸US-192.0.63.194-0629
+  - 🏁RELAY-185.149.135.194-0667
+  - 🏁RELAY-185.59.218.194-0674
+  - 🏁RELAY-185.221.160.194-0647
+  - 🏁RELAY-193.227.99.194-0619
+  - 🏁RELAY-185.207.197.194-0650
+  - 🇺🇸US-166.62.115.194-0690
+  - 🏁RELAY-193.9.49.194-0622
+  - 🏁RELAY-195.13.44.194-0613
+  - 🏁RELAY-185.158.133.194-0665
+  - 🇺🇸US-166.62.113.194-0692
+  - 🇺🇸US-198.12.144.194-0605
+  - GB_39495_0019
+  - 🏁RELAY-185.176.24.194-0657
+  - 🇺🇸US_76 |1.6MB/s|NF|D+
+  - 🇺🇸US_88 |2.6MB/s|GPT|NF|D+|50%
+  - 🏁RELAY-198.177.56.194-0596
+  - 🏁RELAY-185.162.229.194-0662
+  - 🇺🇸US_89 |3.9MB/s|NF|D+
+  - LT_39495_0040
+  - 🇺🇸US-192.169.220.194-0627
+  - US_39495_0081
+  - US_39495_0076
+  - 🏁RELAY-185.170.166.194-0659
+  - 🇺🇸US_55 |1.9MB/s|NF
+  - 🇺🇸US_71 |1.2MB/s|D+
+  - 🇸🇬SG_4 |1.3MB/s
+  - GB_39495_0012
+  - 🏁RELAY-199.181.197.194-0589
+  - 🇺🇸US-198.62.62.194-0603
+  - 🇺🇸US-166.62.108.194-0697
+  - 🏁RELAY-185.162.231.194-0660
+  - 🏁RELAY-190.93.247.194-0631
+  - US_39495_0092
+  - 🏁RELAY-185.156.19.194-0666
+  - 🏁RELAY-205.233.181.194-0587
+  - 🇫🇷FR-185.16.110.194-0677
+  - 🏁RELAY-188.42.145.194-0639
+  - 🇺🇸US-209.94.90.194-0585
+  - 🇺🇸US-184.168.47.194-0680
+  - AE_39495_0001
+  - 🏁RELAY-185.193.28.194-0655
+  - 🇺🇸US_102 |3.7MB/s|NF
+  - RU_39495_0056
+  - 🇺🇸US_109 |3.0MB/s|NF
+  - 🏁RELAY-195.85.59.194-0607
+  - DE_39495_0006
+  - RU_39495_0053
+  - 🏁RELAY-185.18.250.194-0675
+  - KZ_39495_0034
+  - 🇺🇸US_75 |2.3MB/s|NF|D+
+  - FR_39495_0010
+  - 🏁RELAY-167.68.5.194-0688
+  - 🇯🇵JP_2 |1.0MB/s|NF|D+
+  - US_39495_0090
+  - 🇺🇸US_85 |1.4MB/s|GPT|D+
+  - 🇺🇸US-199.34.229.194-0592
+  - SI_39495_0068
+  - 🇯🇵JP_5 |1.6MB/s|NF|D+
+  - 🇺🇸US-166.62.111.194-0694
+  - 🇺🇸US_4 |1.2MB/s|NF|D+
+  - 🏁RELAY-195.13.54.194-0611
+  - 🏁RELAY-185.148.105.194-0670
+  - 🇺🇸US_113 |4.2MB/s
+  - 🇨🇦CA-79.127.233.170-0201 | 47.929MB
+  - US_39495_0085
+  - 🏁RELAY-181.214.1.194-0681
+  - 🇺🇸US_110 |4.2MB/s|GPT
+  - 🏁RELAY-194.152.44.194-0614
+  - 🏁RELAY-192.65.217.194-0628
+  - 🇺🇸US-192.200.160.194-0623
+  - 🇺🇸US_84 |2.9MB/s|GPT|D+|50%
+  - 🇺🇸US_114 |4.4MB/s|NF
+  - 🏁RELAY-185.135.9.194-0672
+  - 🇺🇸US-199.68.156.194-0590
+  - 🏁RELAY-188.164.158.194-0638
+  - 🏁RELAY-195.13.55.194-0610
+  - 🇺🇸US-199.34.228.194-0593
+  - 🇺🇸US_87 |1.7MB/s|GPT|NF|D+
+  - 🇺🇸US-198.71.189.194-0601
+  - 🏁RELAY-170.114.46.194-0683
+  - 🇺🇸US_58 |2.1MB/s
+  - 🇺🇸US_67 |3.0MB/s|NF|D+
+  - 🏁RELAY-185.238.228.194-0646
+  - 🏁RELAY-193.124.224.194-0620
+  - NL_39495_0043
+  - US_39495_0069
+  - 🇰🇷KR_2 |1.2MB/s
+  - 🇺🇸US-198.71.232.194-0598
+  - 🏁RELAY-213.241.198.194-0582
+  - 🇺🇸US-212.102.47.132-0205 | 46.757MB
+  - 🏁RELAY-195.13.45.194-0612
   - 🇺🇸US_78 |1.4MB/s|NF|D+
-  - CH-204.136.10.115-0287 | 2.325MB
-  - 🇳🇱NL-103.104.247.47-0338 | 0.302MB
-  - 🇪🇸ES-45.154.206.192-0290 | 3.081MB
-  - LT-45.87.175.22-0322 | 0.324MB
-  - 🇫🇷FR-81.19.137.222-0266 | 19.01MB
-  - 🇳🇱NL-103.104.247.49-0329 | 0.256MB
-  - CZ-195.181.160.6-0235 | 38.308MB
-  - 🇳🇱NL-193.29.139.202-0326 | 43.728MB
-  - NO-185.213.23.226-0248 | 35.283MB
-  - SE-121.127.46.147-0393 | 33.448MB
-  - 🇳🇱NL-193.29.139.251-0201
-  - AT-95.163.176.37-0301 | 15.825MB
-  - 🇫🇷FR-77.105.166.12-0296 | 1.091MB
-  - 🇩🇪DE-46.101.245.131-0314 | 0.688MB
-  - 🇺🇸US-137.175.124.167-0282 | 41.045MB
-  - AE-151.242.251.153-0267 | 41.613MB
-  - uk_manchester
-  - LT-45.87.175.166-0234 | 43.654MB
-  - FI-37.143.129.230-0276 | 7.464MB
-  - AT-152.53.2.128-0278 | 36.821MB
-  - BG-37.19.203.147-0270 | 31.821MB
-  - 🇩🇰DK-192.36.27.94-4076 | 1.339MB
-  - LT-45.87.175.171-0316 | 42.83MB
-  - 🇳🇱NL-213.109.147.242-0354 | 0.109MB
-  - SK-156.146.40.194-0244 | 36.56MB
-  - LT-45.87.175.92-0299 | 40.155MB
-  - LT-45.87.175.181-0361 | 44.128MB
-  - 🇺🇸US_49 |1.6MB/s|NF
+  - 🏁RELAY-185.251.83.194-0642
+  - 🏁RELAY-176.124.223.194-0682
+  - US_39495_0075
+  - 🇺🇸US_72 |1.1MB/s|GPT|NF
+  - 🏁RELAY-198.202.211.194-0594
+  - 🏁RELAY-185.18.184.194-0676
+  - 🇺🇸US_21 |3.3MB/s
+  - 🇺🇸US-173.244.56.9-0199 | 59.419MB
+  - 🏁RELAY-185.193.31.194-0652
+  - 🏁RELAY-188.42.88.194-0641
+  - 🇺🇸US-192.169.223.194-0624
+  - US_39495_0093
+  - 🏁RELAY-185.162.228.194-0663
+  - 🏁RELAY-188.164.159.194-0637
+  - 🇺🇸US-23.251.121.242-0206 | 43.061MB
+  - 🇺🇸US_99 |1.1MB/s|NF|D+
+  - US_39495_0070
+  - 🇺🇸US-192.0.54.194-0630
+  - 🇺🇸US_59 |1.3MB/s|NF|D+
+  - 🏁RELAY-185.148.104.194-0671
+  - 🇺🇸US_70 |1.1MB/s|NF|D+
+  - 🇺🇸US_100 |4.3MB/s|NF
+  - 🇦🇹AT-212.183.88.194-0584
+  - 🏁RELAY-185.251.82.194-0643
+  - 🏁RELAY-195.85.23.194-0608
+  - 🏁RELAY-188.42.89.194-0640
+  - 🇨🇦CA-79.127.233.170-0200 | 48.048MB
+  - 🇺🇸US-166.62.110.194-0695
+  - 🏁RELAY-194.53.53.194-0617
+  - 🇺🇸US-198.71.233.194-0597
+  - US_39495_0091
+  - 🇺🇸US_106 |4.2MB/s|NF
+  - 🇺🇸US_97 |2.6MB/s
+  - KZ_39495_0035
+  - 🇺🇸US_122 |3.3MB/s|NF|D+
+  - 🏁RELAY-185.162.230.194-0661
+  - ❓Other_1 |2.0MB/s
+  - 🏁RELAY-188.244.122.194-0635
+  - 🏁RELAY-185.148.106.194-0669
+  - RU_39495_0061
+  - 🇸🇬SG_11 |1.8MB/s|NF|D+
+  - 🇺🇸US_119 |1.1MB/s|NF|D+
+  - 🏁RELAY-185.193.29.194-0654
+  - 🏁RELAY-185.207.198.194-0649
+  - 🏁RELAY-185.207.196.194-0651
+  - 🇺🇸US_46 |3.6MB/s
+  - 🇺🇸US_79 |1.3MB/s|NF|D+
+  - 🇨🇦CA_1 |2.9MB/s|NF|D+
+  - 🇺🇸US_31 |4.3MB/s|D+
+  - 🇺🇸US_101 |1.6MB/s|NF|D+
+  - 🇸🇬SG_12 |2.1MB/s|GPT|NF|23%
+  - 🇺🇸US_43 |4.7MB/s|NF|D+
+  - 🇺🇸US-216.24.57.194-0581
+  - 🇺🇸US_105 |4.7MB/s|NF|50%
+  - 🇺🇸US_81 |2.2MB/s|GPT|D+
+  - ❓Other_4 |3.3MB/s|GPT|NF|D+
+  - RU_39495_0065
+  - 🇬🇧GB-212.102.53.193-0243 | 40.148MB
   - 🇺🇸US_91 |1.1MB/s|NF
-  - AE-151.242.251.144-0225 | 43.473MB
-  - AE-151.242.251.147-0232 | 0.0MB
-  - 🇬🇧GB-212.102.53.197-0264 | 17.89MB
-  - LT-45.87.175.188-0226 | 43.786MB
-  - 🇨🇦CA-142.4.216.225-0336 | 0.0MB
-  - CO-181.119.30.20-0291 | 3.055MB
-  - 🇮🇸IS-37.235.49.152-5010 | 0.201MB
-  - LT-45.87.175.178-0236 | 41.591MB
-  - 🇫🇷FR-51.195.202.129-4852
-  - MD-185.153.197.5-4932 | 28.753MB
-  - 🇨🇦CA-45.154.204.13-0285
-  - 🇯🇵JP-149.22.87.204-0216 | 13.168MB
-  - 🇯🇵 japan
-  - 🇳🇱NL-51.15.23.63-5014
-  - 🇨🇦CA-148.113.207.224-4830
-  - 🇫🇮FI-81.177.214.214-0524
-  - NO-185.213.23.226-0239 | 36.047MB
-  - 🇩🇪DE-51.195.101.222-4853
-  - LT-45.87.175.157-0325 | 44.094MB
-  - 🇳🇱NL-193.29.139.157-0203
-  - 🇮🇳IN-103.111.114.29-0320
-  - 🇵🇾PY-38.165.233.18-4934
-  - 🇺🇸US-43.162.125.204-4822
-  - 🇺🇸US_16 |1.1MB/s|NF
-  - RS-194.71.126.31-0295 | 1.319MB
-  - LT-45.87.175.35-0333 | 43.522MB
-  - 🇳🇱NL-193.29.139.179-0321 | 42.067MB
-  - AR-38.54.45.129-0311 | 0.599MB
+  - 🇺🇸US_69 |1.4MB/s|GPT|NF|0%
+  - 🏁RELAY-170.114.45.194-0684
+  - 🇬🇧GB-212.102.53.198-0244 | 39.323MB
+  - 🇬🇧GB-212.102.53.81-0241 | 34.164MB
+  - GB_39495_0027
+  - 🇬🇧GB-212.102.53.195-0247 | 39.177MB
+  - 🇬🇧GB-212.102.53.197-0246 | 38.062MB
+  - 🇬🇧GB-212.102.53.79-0248 | 30.874MB
+  - 🇬🇧GB-212.102.53.196-0242 | 40.218MB
+  - 🇬🇧GB-212.102.53.194-0081 | 39.872MB
+  - 🇳🇱NL-149.34.244.68-0251 | 36.07MB
+  - 🇺🇸US_22 |3.3MB/s|GPT|NF|46%
+  - 🏁RELAY-190.93.246.194-0632
+  - 🇬🇧GB-212.102.53.80-0267 | 36.126MB
+  - 🇳🇱NL-51.15.17.169-0271 | 42.917MB
+  - 🇫🇷FR-45.158.171.70-0229 | 0.345MB
+  - 🇬🇧GB-212.102.53.78-0239 | 0.0MB
+  - LT-45.87.175.92-0232 | 0.375MB
+  - 🇳🇱NL-193.29.139.202-0213 | 1.059MB
+  - 🇳🇱 nl
+  - 🇫🇷FR-45.158.171.66-0238 | 0.509MB
+  - 🇺🇸US_8 |1.8MB/s|NF|D+
+  - 🇳🇱NL-193.29.139.240-0233 | 0.343MB
+  - 🇫🇷FR-45.158.171.60-0221 | 0.422MB
+  - CO-154.223.16.212-0314 | 0.418MB
   - 🇺🇸US_1 |1.3MB/s|GPT|NF|40%
-  - RO-185.126.237.38-0283 | 9.171MB
-  - 🇺🇸US-71.19.148.74-0284
-  - 🇭🇰HK-18.162.146.85-5000
-  - 🇭🇰HK-18.162.146.85-5001
-  - 🇫🇷FR-51.178.42.187-4958
-  - SI-192.71.244.150-0348 | 0.162MB
-  - 🇩🇪DE-193.108.119.230-0298 | 3.299MB
+  - 🇳🇱NL-103.104.247.49-0337 | 0.495MB
+  - 🇦🇪AE-151.242.251.147-0230
+  - 🇫🇷FR-195.154.185.174-0259 | 38.0MB
+  - RU_39495_0066
+  - ❓Other_5 |1.5MB/s|NF|D+
+  - LT-45.87.175.65-0210 | 0.117MB
+  - 🇺🇸US_27 |2.8MB/s|NF
+  - 🇺🇸US_103 |4.0MB/s
+  - 🇳🇱NL-193.29.139.251-4933 | 0.296MB
+  - LT_39495_0039
+  - RU_39495_0052
+  - 🇳🇱NL-103.104.247.47-0335 | 0.457MB
+  - LT-45.87.175.199-0226 | 0.0MB
+  - 🇫🇷FR-195.154.169.198-0234 | 38.169MB
+  - 🏁RELAY-204.93.210.194-0588
+  - 🇩🇪DE-185.177.229.245-0292 | 6.484MB
+  - LT-45.87.175.69-0330 | 0.32MB
+  - CH-156.146.62.161-0276 | 33.482MB
+  - CH-156.146.62.163-0263 | 31.015MB
+  - 🇳🇱NL-193.29.139.217-0264 | 29.955MB
+  - LT-45.87.175.188-0212 | 0.131MB
+  - CH-156.146.62.162-0261 | 29.979MB
+  - CH-156.146.62.164-0278 | 32.841MB
+  - AT-95.163.176.37-0281 | 9.973MB
+  - AE-151.242.251.153-0223 | 43.133MB
+  - 🇨🇦CA-45.154.204.13-0285
+  - 🇯🇵JP-149.22.87.204-0283 | 17.643MB
+  - 🇯🇵 japan
+  - LT-45.87.175.58-0231 | 0.18MB
+  - 🇫🇷FR-77.105.166.12-0312 | 1.885MB
+  - 🇫🇷FR-81.19.137.222-0277 | 24.999MB
+  - 🇫🇷FR-51.195.119.47-0309 | 0.981MB
+  - 🇺🇸US_49 |1.6MB/s|NF
+  - 🇩🇪DE-46.101.245.131-0322 | 8.874MB
+  - 🇺🇸US-43.162.125.204-4822
+  - CZ-195.181.160.6-0237 | 37.981MB
+  - SE-121.127.46.147-0256 | 34.377MB
+  - BE-192.71.249.78-0305 | 1.346MB
+  - FI-37.143.129.230-0288 | 12.176MB
+  - CH-204.136.10.115-0302 | 3.781MB
+  - 🇵🇱PL-92.118.205.228-0300 | 0.191MB
+  - AT-152.53.2.128-0245 | 11.075MB
+  - LT-45.87.175.178-0225 | 35.429MB
+  - LT-45.87.175.35-0216 | 0.027MB
+  - AE-151.242.251.131-0222 | 30.296MB
+  - 🇫🇷FR-45.158.171.146-4882
+  - 🇪🇸ES-45.154.206.192-0296 | 0.651MB
+  - 🇺🇸US-71.19.148.74-5044 | 0.043MB
+  - 🇳🇱NL-193.29.139.157-0203
+  - uk_manchester
+  - SK-156.146.40.194-0249 | 36.143MB
+  - 🇺🇸US_45 |3.4MB/s|NF
+  - 🇬🇧GB-141.98.101.178-0273 | 5.887MB
+  - BG-37.19.203.147-0260 | 32.683MB
+  - 🇳🇱NL-193.29.139.227-0236 | 41.221MB
+  - BR-38.54.57.90-0323 | 0.062MB
+  - 🇳🇱NL-193.29.139.179-0219 | 0.186MB
+  - 🇨🇦CA-148.113.207.224-4830
+  - 🇺🇸US-2.58.87.221-5025
+  - 🇩🇰DK-192.36.27.94-0307 | 2.768MB
+  - 🇺🇸US-15.197.162.184-2518
+  - AR-38.54.45.129-0325 | 0.29MB
+  - CO-181.119.30.20-0297 | 3.757MB
+  - 🇭🇰HK-18.162.146.85-5025 | 0.336MB
+  - 🇭🇰HK-18.162.146.85-5024 | 0.336MB
+  - 🇭🇰HK-18.162.146.85-5022 | 0.336MB
+  - RS-194.71.126.31-0308 | 1.46MB
+  - LT-45.87.175.22-0334 | 0.082MB
+  - RO-185.126.237.38-0287 | 14.499MB
+  - 🇺🇸US_33 |2.5MB/s|GPT|NF|D+|33%
   - 🇩🇪DE-139.59.209.171-4828
-  - 🇫🇷FR_1 |1.0MB/s|GPT|0%
+  - NO-185.213.23.226-0250 | 13.033MB
+  - LT-45.87.175.157-0209 | 0.337MB
+  - 🇺🇸US-137.175.124.167-0227 | 31.178MB
+  - PY-38.165.233.18-4958 | 16.773MB
   - 🇸🇬 新加坡3|@stairnode
-  - 🇭🇰HK-154.197.26.237-5051 | 0.231MB
-  - 🇭🇰HK-203.23.128.33-0352 | 0.0MB
-  - 🇳🇱NL-92.112.126.90-0327 | 0.571MB
-  - 🇺🇸US-94.131.20.3-4950
-  - BR-38.54.57.90-0344 | 0.652MB
-  - HR-46.183.184.60-0308 | 0.79MB
-  - 🇫🇷FR-45.158.171.110-0257 | 43.539MB
-  - 🇰🇷KR-154.90.63.177-0307 | 1.048MB
-  - 🇻🇳VN-103.186.155.25-4987
-  - AE-151.242.251.137-0219 | 39.403MB
-  - 🇰🇷KR-218.237.185.230-0341 | 0.0MB
-  - 🇻🇳VN-103.186.155.18-5038
-  - 🇭🇰HK-18.162.146.85-4998
-  - 🇻🇳VN-103.186.154.38-4965
-  - 🇻🇳VN-103.186.154.37-4960
+  - PY-38.165.233.93-0303 | 2.464MB
+  - LT-45.87.175.154-0317 | 42.546MB
+  - NO-185.213.23.226-0253 | 12.129MB
+  - 🇸🇪SE-45.91.171.116-0366
+  - 🇬🇧GB-212.102.53.197-0279 | 38.025MB
+  - 🇮🇸IS-37.235.49.168-0327 | 0.146MB
+  - HR-46.183.184.60-0319 | 0.49MB
+  - MD-185.153.197.5-0268 | 27.615MB
+  - 🇻🇳VN-103.186.154.29-4978
+  - 🇻🇳VN-103.186.155.23-4986
+  - 🇻🇳VN-103.186.155.24-4971
+  - 🇻🇳VN-103.186.154.33-4980
   - 🇻🇳VN-103.186.154.31-4961
-  - VN_39495_0096
-  - 🇻🇳VN-103.186.155.19-4983
-  - 🇺🇸US-94.131.20.3-4953
-  - 🇰🇷KR-154.90.62.168-0332 | 0.366MB
-  - 🇻🇳VN-103.186.155.20-4972
-  - 🇻🇳VN-103.186.154.25-4981
-  - 🇻🇳VN-103.186.154.21-4964
-  - 🇻🇳VN-103.186.154.18-4975
-  - RELAY-172.67.131.27-0198 | 0.379MB
   - 🇻🇳VN-103.186.155.30-5040
-  - 🇻🇳VN-103.186.154.22-4962
-  - 🇻🇳VN_1 |2.2MB/s|GPT|0%
-  - 🇻🇳VN-103.186.154.27-4985
-  - 🇻🇳VN-103.186.154.24-4959
-  - VN_39495_0097
-  - 🇻🇳VN-103.186.154.23-4994
   - 🇻🇳VN-103.186.154.19-4967
+  - 🇻🇳VN-103.186.154.24-4959
+  - 🇻🇳VN-103.186.154.37-4960
+  - 🇻🇳VN-103.186.154.18-4975
+  - 🇻🇳VN-103.186.154.27-4985
+  - 🇻🇳VN-103.186.155.133-4982
+  - 🇻🇳VN-103.186.155.18-5038
+  - VN_39495_0096
+  - 🇻🇳VN_1 |2.2MB/s|GPT|0%
+  - 🇻🇳VN-103.186.155.25-4987
   - 🇻🇳VN-103.186.154.26-4970
+  - 🇻🇳VN-103.186.154.30-4973
+  - VN_39495_0099
+  - VN_39495_0098
+  - VN_39495_0095
+  - 🇻🇳VN-103.186.155.19-4983
+  - LT-45.87.175.181-0207 | 44.348MB
+  - 🇻🇳VN-103.186.155.20-4972
   - 🇻🇳VN-103.186.155.22-5037
   - 🇻🇳VN-103.186.154.35-4963
-  - 🇻🇳VN-103.186.154.29-4978
-  - 🇻🇳VN-103.186.155.133-4982
-  - VN_39495_0099
-  - VN_39495_0095
-  - VN_39495_0098
-  - 🇻🇳VN-103.186.154.30-4973
-  - 🇻🇳VN-103.186.154.33-4980
-  - 🇳🇱NL-134.209.90.171-4990
-  - 🇻🇳VN-103.186.155.23-4986
-  - GR-192.71.166.102-3674 | 0.763MB
-  - 🇻🇳VN-103.186.155.24-4971
-  - 🇭🇰HK-103.252.116.138-0344
-  - 🇰🇷KR-183.109.131.75-0288 | 0.027MB
-  - 🇺🇸US_18 |1.8MB/s|GPT|NF|32%
-  - 🇵🇱PL-92.118.205.228-0320 | 2.686MB
-  - VN-160.19.78.75-0355 | 0.035MB
-  - 🇮🇳IN-134.209.147.198-0328 | 0.324MB
-  - 🇫🇷FR-45.158.171.146-4882
-  - IR_39495_0032
-  - 🇨🇳TW-154.223.20.79-0356 | 0.0MB
-  - 🇳🇱NL-141.98.4.67-0351 | 0.0MB
+  - 🇻🇳VN-103.186.154.22-4962
+  - VN_39495_0097
   - 🇯🇵JP-35.77.91.152-5007
-  - NL_39495_0045
-  - SI-91.132.94.200-0345 | 0.056MB
-  - VN-161.248.30.3-0275 | 5.811MB
-  - 🏁RELAY-104.21.21.192-0966
-  - MK-46.183.185.37-0335 | 0.199MB
-  - 🇺🇸US-94.131.21.174-5036 | 0.0MB
-  - VN-160.19.78.75-0343 | 0.041MB
-  - 🇺🇸US-94.131.22.134-0300 | 0.254MB
-  - ID-154.205.159.100-5084 | 0.173MB
-  - 🇳🇱NL-193.29.139.235-0247 | 41.711MB
-  - BE-192.71.249.78-0294 | 1.392MB
-  - 🇭🇰 香港6|@stairnode
-  - 🇭🇰HK-116.49.109.153-0280 | 0.99MB
-  - 🇷🇺RU_2 |1.2MB/s|0%
-  - 🇦🇺AU-209.38.20.147-4834
+  - 🇨🇳TW-154.223.20.79-0384 | 0.42MB
+  - 🇻🇳VN-103.186.154.25-4981
+  - 🇻🇳VN-103.186.154.23-4994
+  - 🇻🇳VN-103.186.154.21-4964
+  - 🇻🇳VN-103.186.154.38-4965
+  - 🇺🇸US_16 |1.1MB/s|NF
+  - 🇰🇷KR-183.109.131.75-0371 | 0.27MB
+  - 🇮🇳IN-103.111.114.29-4896 | 0.486MB
   - NL_39495_0042
-  - 🇺🇸US_22 |3.3MB/s|GPT|NF|46%
-  - LT-45.87.175.164-0237 | 43.844MB
-  - VN-103.163.218.2-0313 | 4.157MB
-  - VN-103.163.218.2-0297 | 3.472MB
-  - TR-185.123.101.241-0350 | 0.0MB
+  - 🇫🇷FR-51.195.202.129-4852
+  - PR-185.47.255.22-0336 | 0.368MB
+  - TR-185.123.101.241-0378 | 0.026MB
+  - 🇰🇷KR-154.90.62.168-0331 | 0.977MB
+  - 🇭🇰HK-203.23.128.33-0383 | 0.277MB
+  - 🇺🇸US-94.131.20.3-4953
+  - 🇩🇪DE-51.195.101.222-4853
+  - 🇺🇸US-207.174.28.20-0202 | 0.0MB
+  - 🇰🇷KR-154.90.63.177-0313 | 0.261MB
+  - 🇺🇸US-206.206.80.227-0357 | 0.025MB
+  - 🇺🇸US-94.131.20.3-4950
+  - 🇫🇷FR-51.178.42.187-4958
+  - 🇳🇱NL-141.98.4.67-0380 | 0.022MB
+  - 🏁RELAY-185.159.247.194-0664
+  - 🇩🇪DE-193.108.119.230-0295 | 0.144MB
+  - 🇬🇷GR-192.71.166.100-0365
+  - 🇮🇳IN-134.209.147.198-0327
+  - 🇭🇰 香港6|@stairnode
+  - AE-151.242.251.144-0217 | 30.025MB
+  - 🇦🇺AU-209.38.20.147-4834
+  - GR-192.71.166.102-0320 | 0.044MB
+  - LT-45.87.175.166-0214 | 3.058MB
+  - 🇫🇷FR_1 |1.0MB/s|GPT|0%
+  - 🇮🇩ID-154.205.159.100-0351
+  - 🇩🇪DE-185.208.207.217-0369
+  - VN-160.19.78.75-0368 | 0.019MB
+  - 🇳🇱NL-208.67.105.196-4960 | 0.202MB
+  - 🇷🇺RU_2 |1.2MB/s|0%
+  - 🏁RELAY-104.21.21.192-0966
+  - 🇺🇸US-94.131.22.134-0338 | 1.0MB
+  - 🇭🇰HK-103.252.116.138-5028 | 0.034MB
+  - 🇭🇰HK-45.149.92.71-4952
+  - VN-160.19.78.75-0369 | 0.052MB
+  - EC-185.47.253.227-4885 | 0.094MB
+  - IR_39495_0032
+  - AE-151.242.251.131-0235 | 41.741MB
+  - LT-45.87.175.28-0224 | 0.042MB
+  - 🇮🇸IS-37.235.49.152-0340 | 0.317MB
+  - MK-46.183.185.15-0345 | 0.071MB
+  - 🇵🇱PL-217.30.10.18-0296
   - US_39495_0074
-  - 🇳🇱NL-164.92.156.41-0263 | 32.6MB
-  - 🇭🇰HK-150.107.46.21-0321
-  - 🇺🇸US-192.3.107.252-0346 | 0.0MB
-  - AT-77.110.110.117-4911 | 24.033MB
-  - 🇩🇪DE-185.208.207.217-4968 | 0.0MB
   - IR_39495_0033
-  - PY-38.165.233.93-0293 | 1.892MB
-  - 🇭🇰HK-45.149.92.71-4951
-  - LT-45.87.175.28-0331 | 41.606MB
-  - 🇺🇸US-206.206.80.227-0353 | 0.13MB
+  - 🇩🇪DE-84.200.91.228-0322
+  - 🇨🇦CA-142.4.216.225-0377 | 5.595MB
+  - 🇳🇱NL-193.29.139.138-0230 | 38.848MB
+  - VN-103.163.218.2-0293 | 1.851MB
   - 🇸🇬SG-202.79.161.188-4842
-  - 🇨🇳TW-103.61.139.137-5077 | 0.0MB
-  - LT-45.87.175.154-0218 | 0.957MB
-  - SE-45.91.171.116-4967 | 0.128MB
+  - VN-103.163.218.2-0294 | 0.312MB
+  - 🇭🇰HK-45.149.92.71-4951
+  - 🇵🇱PL-217.30.10.18-0301
+  - RELAY-172.67.131.27-0329 | 39.29MB
   - 🇭🇰HK-45.149.92.71-1866
   - 🇭🇰HK-45.149.92.71-1882
-  - 🇭🇰HK-45.149.92.71-4954
-  - 🇭🇰HK-45.149.92.71-4952
-  - 🇺🇸US-138.197.5.103-0214 | 53.144MB
+  - 🇭🇰HK-112.118.114.43-0315 | 0.258MB
   - 🇭🇰HK-45.149.92.71-1867
-  - 🇺🇸US-199.34.229.212-0990
-  - PR-185.47.255.22-5045 | 0.298MB
-  - LT-45.87.175.69-4918 | 0.368MB
-  - 🇺🇸US-216.24.57.214-0952
+  - 🇭🇰HK-45.149.92.71-4954
+  - 🇫🇷FR-45.158.171.110-0215 | 33.993MB
+  - 🇭🇰HK-150.107.46.21-0321
+  - 🇳🇱NL-193.29.139.235-0220 | 35.424MB
+  - 🇺🇸US-192.3.107.252-0374 | 0.044MB
+  - 🇫🇮FI-81.177.214.214-0524
+  - 🇳🇱NL-134.209.90.171-4990
 rules:
 - DOMAIN,app.adjust.com,DIRECT
 - DOMAIN,bdtj.tagtic.cn,DIRECT
