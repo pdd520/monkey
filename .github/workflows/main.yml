@@ -46,7 +46,12 @@ jobs:
 
       - name: Copy generated files to target repository
         run: |
-          cp *.txt target-repo/ 2>/dev/null || true
+          shopt -s extglob
+          for file in *.txt; do
+            if [[ "$file" != "requirements.txt" ]]; then
+              cp "$file" target-repo/ 2>/dev/null || true
+            fi
+          done
           ls -la target-repo/*.txt 2>/dev/null || echo "No txt files copied to target repository"
 
       - name: Commit and push to target repository
