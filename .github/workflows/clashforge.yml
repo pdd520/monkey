@@ -1,37 +1,36 @@
-name: Forge
+name: ClashForge
 
 on:
   schedule:
-    - cron: '0 */3 * * *'  # 每 3 小时运行一次
-  workflow_dispatch:  # 允许手动触发
+    - cron: '0 */3 * * *'
+  workflow_dispatch:
 
 jobs:
-  demo_actions:
+  run_demo_actions:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout source code
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}  # 使用 GITHUB_TOKEN 检出当前仓库代码
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.10.10'  # 指定 Python 版本
+          python-version: '3.10.10'
 
       - name: Install requirements.txt
         run: |
-          pip install -r ./requirements.txt  # 安装依赖
+          pip install -r ./requirements.txt
 
       - name: Run ClashForge.py
         env:
-          INPUT_URLS: ${{ secrets.INPUT_URLS }}  # 传递环境变量
+          INPUT_URLS: ${{ secrets.INPUT_URLS }}
         run: |
-          python ClashForge.py  # 运行脚本，生成 clash_config.yaml
+          python ClashForge.py
 
       - name: Checkout target repository
         run: |
-          # 克隆目标仓库到临时目录，使用 BOT Token 进行身份验证
           TARGET_URL="https://${{ secrets.BOT }}:x-oauth-basic@github.com/${{ secrets.TARGET_REPO }}.git"
           echo "Cloning target repository from $TARGET_URL (sensitive info masked)"
           git clone "$TARGET_URL" target-repo
@@ -41,18 +40,24 @@ jobs:
 
       - name: Copy generated file to target repository
         run: |
-          cp clash_config.yaml target-repo/clash_config.yaml  # 复制生成的配置文件到目标仓库目录
+          cp clash_config.yaml target-repo/clash_config.yaml
 
       - name: Commit and push to target repository
         run: |
           cd target-repo
-          git add clash_config.yaml  # 添加文件
+          git add clash_config.yaml
           if git diff --staged --quiet; then
             echo "No changes to commit in target repository"
           else
-            git commit -m "Update clash_config.yaml [ci skip]"  # 提交更新
+            git commit -m "Update clash_config.yaml [ci skip]"
             TARGET_URL="https://${{ secrets.BOT }}:x-oauth-basic@github.com/${{ secrets.TARGET_REPO }}.git"
             git push "$TARGET_URL"
             echo "Successfully pushed changes to target repository"
           fi
-        continue-on-error: true  # 如果提交或推送失败，继续执行
+        continue-on-error: true
+
+      - name: Delete workflow runs
+        uses: Mattraks/delete-workflow-runs@v2
+        with:
+          retain_days: 0
+          keep_minimum_runs: 3
