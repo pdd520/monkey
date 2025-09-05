@@ -49,7 +49,7 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes to commit in target repository"
           else
-            git commit -m "Update clash_config.yaml [ci skip]"
+            git commit -m "Update clash_config.yaml"
             TARGET_URL="https://${{ secrets.BOT }}:x-oauth-basic@github.com/${{ secrets.TARGET_REPO }}.git"
             git push "$TARGET_URL"
             echo "Successfully pushed changes to target repository"
