@@ -26,10 +26,10 @@ jobs:
 
       - name: Install requirements.txt
         run: |
-          pip install -r requirements.txt
+          pip install -r config/requirements.txt
 
       - name: Run main.py
-        run: python main.py
+        run: python config/main.py
 
       - name: Check generated files
         run: |
