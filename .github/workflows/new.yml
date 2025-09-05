@@ -1,0 +1,58 @@
+name: Forge
+
+on:
+  schedule:
+    - cron: '0 */3 * * *'  # 每 3 小时运行一次
+  workflow_dispatch:  # 允许手动触发
+
+jobs:
+  demo_actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}  # 使用 GITHUB_TOKEN 检出当前仓库代码
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.10.10'  # 指定 Python 版本
+
+      - name: Install requirements.txt
+        run: |
+          pip install -r ./requirements.txt  # 安装依赖
+
+      - name: Run ClashForge.py
+        env:
+          INPUT_URLS: ${{ secrets.INPUT_URLS }}  # 传递环境变量
+        run: |
+          python ClashForge.py  # 运行脚本，生成 clash_config.yaml
+
+      - name: Checkout target repository
+        run: |
+          # 克隆目标仓库到临时目录，使用 BOT Token 进行身份验证
+          TARGET_URL="https://${{ secrets.BOT }}:x-oauth-basic@github.com/${{ secrets.TARGET_REPO }}.git"
+          echo "Cloning target repository from $TARGET_URL (sensitive info masked)"
+          git clone "$TARGET_URL" target-repo
+          cd target-repo
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Copy generated file to target repository
+        run: |
+          cp clash_config.yaml target-repo/clash_config.yaml  # 复制生成的配置文件到目标仓库目录
+
+      - name: Commit and push to target repository
+        run: |
+          cd target-repo
+          git add clash_config.yaml  # 添加文件
+          if git diff --staged --quiet; then
+            echo "No changes to commit in target repository"
+          else
+            git commit -m "Update clash_config.yaml [ci skip]"  # 提交更新
+            TARGET_URL="https://${{ secrets.BOT }}:x-oauth-basic@github.com/${{ secrets.TARGET_REPO }}.git"
+            git push "$TARGET_URL"
+            echo "Successfully pushed changes to target repository"
+          fi
+        continue-on-error: true  # 如果提交或推送失败，继续执行
