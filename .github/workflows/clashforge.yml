@@ -27,7 +27,7 @@ jobs:
         env:
           INPUT_URLS: ${{ secrets.INPUT_URLS }}
         run: |
-          python ClashForge.py
+          python config/ClashForge.py
 
       - name: Checkout target repository
         run: |
