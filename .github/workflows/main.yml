@@ -17,7 +17,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.BOT }}
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up Python
         uses: actions/setup-python@v2
@@ -31,28 +31,37 @@ jobs:
       - name: Run main.py
         run: python data/main.py
 
-      - name: Commit and push file
+      - name: Check generated files
         run: |
-          # 检查文件是否生成
           ls -la *.txt 2>/dev/null || echo "No txt files in root directory"
-          ls -la data/*.txt 2>/dev/null || echo "No txt files in data directory"
-          
-          # 设置git配置
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          
-          # 添加所有可能位置的文件
-          git add *.txt data/*.txt 2>/dev/null || true
-          
-          # 检查是否有文件需要提交
-          if git status --porcelain | grep -q '^[MAD]'; then
-            git commit -m "update node files"
-            git pull --rebase
-            git push https://${{ secrets.BOT }}:x-oauth-basic@github.com/${GITHUB_REPOSITORY}.git HEAD:master
-            echo "Files committed and pushed successfully"
+
+      - name: Checkout target repository
+        run: |
+          TARGET_URL="https://${{ secrets.BOT }}:x-oauth-basic@github.com/${{ secrets.TARGET_REPO }}.git"
+          echo "Cloning target repository from $TARGET_URL (sensitive info masked)"
+          git clone "$TARGET_URL" target-repo
+          cd target-repo
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Copy generated files to target repository
+        run: |
+          cp *.txt target-repo/ 2>/dev/null || true
+          ls -la target-repo/*.txt 2>/dev/null || echo "No txt files copied to target repository"
+
+      - name: Commit and push to target repository
+        run: |
+          cd target-repo
+          git add *.txt
+          if git diff --staged --quiet; then
+            echo "No changes to commit in target repository"
           else
-            echo "No changes to commit"
+            git commit -m "Update node files"
+            TARGET_URL="https://${{ secrets.BOT }}:x-oauth-basic@github.com/${{ secrets.TARGET_REPO }}.git"
+            git push "$TARGET_URL"
+            echo "Successfully pushed changes to target repository"
           fi
+        continue-on-error: true
       -
         name: Delete workflow runs
         uses: Mattraks/delete-workflow-runs@v2
