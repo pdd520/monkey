@@ -64,6 +64,10 @@ def write_document():
         print("订阅为空请检查！")
         return
 
+    # 确保基础目录存在
+    if not os.path.exists(update_path):
+        os.makedirs(update_path, exist_ok=True)
+
     # 永久订阅
     random.shuffle(e_sub)
     for e in e_sub:
@@ -98,10 +102,8 @@ def write_document():
     date = time.strftime('%y%m', t)
     date_day = time.strftime('%y%m%d', t)
 
-    try:
-        os.mkdir(f'{update_path}{date}')
-    except FileExistsError:
-        pass
+    # 修改这里：使用 os.makedirs() 创建多级目录
+    os.makedirs(f'{update_path}{date}', exist_ok=True)
 
     txt_dir = update_path + date + '/' + date_day + '.txt'
     with open(txt_dir, 'w', encoding='utf-8') as file:
