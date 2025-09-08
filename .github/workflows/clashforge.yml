@@ -40,7 +40,7 @@ jobs:
 
       - name: Copy generated file to target repository
         run: |
-          cp clash_config.yaml target-repo/clash_config.yaml
+          cp clash.yaml target-repo/clash.yaml
 
       - name: Commit and push to target repository
         run: |
