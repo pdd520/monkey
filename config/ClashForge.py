@@ -42,7 +42,7 @@ SPEED_TEST_LIMIT = 5 # 只测试前30个节点的下行速度，每个节点测�
 results_speed = []
 MAX_CONCURRENT_TESTS = 100
 LIMIT = 10000 # 最多保留LIMIT个节点
-CONFIG_FILE = 'clash_config.yaml'
+CONFIG_FILE = 'clash.yaml'
 BAN = ["中国", "China", "CN", "电信", "移动", "联通"]
 headers = {
     'Accept-Charset': 'utf-8',
