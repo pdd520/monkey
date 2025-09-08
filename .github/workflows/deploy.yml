@@ -54,8 +54,8 @@ jobs:
         
     - name: 推送到远程仓库
       run: |
-        REMOTE_URL="https://${{ secrets.BOT }}:x-oauth-basic@github.com/${{ secrets.TARGET_REPO }}.git"
-        git push "$REMOTE_URL" HEAD:main
+        TARGET_URL="https://${{ secrets.BOT }}:x-oauth-basic@github.com/${{ secrets.TARGET_REPO }}.git"
+        git push "$TARGET_URL" HEAD:main
         echo "Successfully pushed changes to remote repository"
       continue-on-error: true
 
