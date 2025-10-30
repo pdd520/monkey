@@ -1,6 +1,6 @@
 import requests
 import time
-import re  # 用于解析 #EXTINF 中的标题
+import re
 
 def fetch_and_replace(urls, max_retries=3):
     all_entries = []  # 用于存储 (url, title) 元组列表
@@ -25,32 +25,57 @@ def fetch_and_replace(urls, max_retries=3):
                     while i < len(lines):
                         line = lines[i].strip()
 
-                        # 过滤无效行（保持原逻辑，但不过滤 #EXTINF）
+                        # 过滤无效行
                         if any(keyword in line for keyword in ['更新时间', time.strftime("%Y%m%d"), '关于', '公众号', '软件库']):
                             i += 1
                             continue
 
-                        # 处理 #EXTINF 行：提取标题
-                        if line.startswith('#EXTINF'):
-                            # 用正则提取标题：匹配 , 后的内容，直到结束
-                            title_match = re.search(r',(.+)$', line)
-                            title = title_match.group(1).strip() if title_match else "未知频道"
-                            i += 1  # 跳到下一行（URL）
+                        # 处理带逗号分隔的行（标题,链接）
+                        if ',' in line:
+                            parts = line.split(',', 1)
+                            title = parts[0].strip()
+                            url_candidate = parts[1].strip()
+                            
+                            # 验证链接是否有效
+                            if url_candidate.startswith(('http://', 'https://', 'rtmp://', 'rtmps://')):
+                                processed_url = url_candidate.replace('_', '')
+                                if processed_url not in seen_urls:
+                                    seen_urls.add(processed_url)
+                                    all_entries.append((processed_url, title))
+                                i += 1  # 移动到下一行
+                            else:
+                                # 如果第二部分不是有效链接，则尝试按原格式处理
+                                i += 1
+                                if i < len(lines):
+                                    next_line = lines[i].strip()
+                                    if next_line and not next_line.startswith('#'):
+                                        processed_url = next_line.replace('_', '')
+                                        if processed_url not in seen_urls:
+                                            seen_urls.add(processed_url)
+                                            all_entries.append((processed_url, title))
+                        # 处理 #EXTINF 行
+                        elif line.startswith('#EXTINF'):
+                            # 移行到下一行获取URL
+                            i += 1
                             if i < len(lines):
                                 url_line = lines[i].strip()
-                                if url_line and not url_line.startswith('#'):  # 假设是 URL
-                                    processed_url = url_line.replace('_', '')  # 去下划线
+                                if url_line and not url_line.startswith('#'):
+                                    # 尝试从EXTINF行中提取标题
+                                    title_match = re.search(r',(.+)$', line)
+                                    title = title_match.group(1).strip() if title_match else "未知频道"
+                                    processed_url = url_line.replace('_', '')
                                     if processed_url not in seen_urls:
                                         seen_urls.add(processed_url)
                                         all_entries.append((processed_url, title))
                         else:
-                            # 非 M3U 行：视为纯 URL，标题用默认
+                            # 非 M3U 行：视为纯 URL，从行内容提取标题
                             if line and not line.startswith('#') and '#genre#' not in line.lower():
+                                title = extract_title_from_url(line)
                                 processed_url = line.replace('_', '')
                                 if processed_url not in seen_urls:
                                     seen_urls.add(processed_url)
-                                    all_entries.append((processed_url, "未知频道"))
-
+                                    all_entries.append((processed_url, title))
+                            
                         i += 1
 
                     break  # 成功后跳出重试
@@ -82,8 +107,25 @@ def fetch_and_replace(urls, max_retries=3):
 
     print(f"Generated {len(all_entries)} unique entries. Files: my02.txt and my02.m3u")
 
+def extract_title_from_url(url):
+    """从 URL 中提取有意义的标题"""
+    # 移除协议和www
+    title = re.sub(r'https?://(www\.)?', '', url)
+    # 移除路径查询参数
+    title = re.sub(r'(/[^\?#]*)?.*', '', title)
+    # 替换特殊字符为空格
+    title = re.sub(r'[^\w\u4e00-\u9fa5]', ' ', title)
+    # 去除多余空格
+    title = ' '.join(title.split())
+    
+    # 如果提取的标题过短，使用默认值
+    if len(title) < 2:
+        return "未知频道"
+    
+    return title
+
 if __name__ == "__main__":
-    # 定义多个 URL（保持原样）
+    # 定义多个 URL
     urls = [
         'https://raw.githubusercontent.com/SSM0415/apptest/main/TVonline.txt',
         'https://raw.githubusercontent.com/jack2713/my/refs/heads/main/TMP/temp1.txt',
