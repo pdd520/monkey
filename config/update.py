@@ -2,7 +2,9 @@ import requests
 import time
 import re
 
-# 你的分类设置（即你提供的 JSON 文件内容，简化成 Python 格式）
+# ========================================
+# 分类关键词配置
+# ========================================
 category_keywords = {
     "影视": [
         "MV", "上傳", "Video", "影音", "片", "mv", "录像", "电影", "劇集",
@@ -87,66 +89,52 @@ category_keywords = {
     ]
 }
 
-# 你提供的番号封面与标签正则表达式（整理进 Python 语法版）
+# ========================================
+# 番号正则（已修复转义）
+# ========================================
 anime_id_patterns = [
-    r"\b([A-Z]{2,6}-?\\d{2,5})\b",
-    r"\b([A-Z]{2,6}[_-]?\\d{3,5})\b",
-    r"\b([A-Z]{3,6}-?\\d{2,4})\b",
-    r"\b(200GANA|SIRO|300NTK|300MAAN|345SIMM|259LUXU)-?\\d{3,5}\b",
-    r"\bFC2-?PPV-?\\d{6,8}\b",
-    r"\bheyzo.?\\d{4}\b",
-    r"\b\\d{5,6}-\\d{3}\b",
-    r"\b1pon.?\\d{6}_\\d{3}\b",
-    r"\b\\d{6}_\\d{2}\b",
-    r"\b[nk]\\d{4}\b",
-    r"\bS1|SSIS|SONE|IPX|IPZZ|STARS|ADN|ATID|SHKD|ADN|REBD|MIDE|TEKS|OFJE\b",
-    r"\bMIDV|MIDE|MIAA|MDBK|MDYD\b",
-    r"\bABW|ABF|CHN|DIC|SGA|LXVS|PPX\b",
-    r"\bSDAB|SDDE|SDMM|SDMT|START\b"
+    r"\b([A-Z]{2,6}-?\d{2,5})\b",
+    r"\b([A-Z]{2,6}[_-]?\d{3,5})\b",
+    r"\b([A-Z]{3,6}-?\d{2,4})\b",
+    r"\b(200GANA|SIRO|300NTK|300MAAN|345SIMM|259LUXU)-?\d{3,5}\b",
+    r"\bFC2-?PPV-?\d{6,8}\b",
+    r"\bheyzo.?\d{4}\b",
+    r"\b\d{5,6}-\d{3}\b",
+    r"\b1pon.?\d{6}_\d{3}\b",
+    r"\b\d{6}_\d{2}\b",
+    r"\b[NK]\d{4}\b",
+    r"\b(?:S1|SSIS|SONE|IPX|IPZZ|STARS|ADN|ATID|SHKD|REBD|MIDE|TEKS|OFJE)\b",
+    r"\b(?:MIDV|MIDE|MIAA|MDBK|MDYD)\b",
+    r"\b(?:ABW|ABF|CHN|DIC|SGA|LXVS|PPX)\b",
+    r"\b(?:SDAB|SDDE|SDMM|SDMT|START)\b"
 ]
 
-# 女优关键词（可考虑多语言识别）
-female_actress_keywords = [
-    "三上悠亚", "Yua Mikami", "深田えいみ", "Eimi Fukada", "桥本有菜",
-    "Ariana Hashimoto", "julia", "JULIA", "天使萌", "Tenshi Moe", 
-    "相泽南", "Minami Aizawa", "桃乃木香奈", "松本一香", "Ichika Matsumoto",
-    "河北彩花", "Saika Kawakita", "美谷朱里", "Airi Kijima", "波多野结衣", 
-    "Yui Hatano", "葵司", "Tsukasa Aoi", "明里紬", "Tsumugi Akari", 
-    "樱空桃", "Momo Sakura", "小仓由菜", "Yura Ogura", "白石茉莉奈", 
-    "Marina Shiraishi"
-]
+# ========================================
+# 辅助函数
+# ========================================
+def filter_bad_words(title):
+    bad_words = ["奶爸", "最(J)熱 NBVe", "如泥当"]
+    return not any(word in title for word in bad_words)
 
-# 场景/类型标签
-scene_keywords = [
-    "素人", "人妻", "OL", "女教师", "护士", "女仆", "泳装", "比基尼", 
-    "温泉", "按摩", "出张", "偷情", "寝取られ", "中出し", "ぶっかけ", 
-    "ごっくん", "痴女", "逆レイプ", "レズ", "3P", "4P", "乱交", "コスプレ",
-    "VR", "4K", "高画質", "無修正", "流出"
-]
+def extract_id_from_title(title):
+    text = title.upper()
+    for pattern in anime_id_patterns:
+        match = re.search(pattern, text)
+        if match:
+            return match.group(0)
+    return None
 
-# 以下为辅助整理转义字符和 Regex
-# 编辑核心关键词去重、优化、初始化规则
-def is_in_category(title, category, **kwargs):
-    # 支持模糊匹配和区域匹配
-    if title.startswith('#'):  # 忽略注释行
+def is_in_category(title, category):
+    if title.startswith('#'):
         return False
     keywords = category_keywords.get(category, [])
     return any(keyword in title for keyword in keywords)
 
-def extract_id_from_title(title):
-    for pattern in anime_id_patterns:
-        match = re.search(pattern, title)
-        if match:
-            return match.group(1)
-    return None
-
-def filter_bad_words(title):
-    if any(word in title for word in ["奶爸", "最(J)熱 NBVe", "如泥当"]:
-        return False
-    return True
-
+# ========================================
+# 主函数
+# ========================================
 def fetch_and_replace(urls):
-    all_processed = []  # 存储 (标题, URL)
+    all_processed = []
     seen_urls = set()
     current_time = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
 
@@ -163,107 +151,86 @@ def fetch_and_replace(urls):
             lines = content.splitlines()
 
             for line in lines:
-                # 清洗 (过滤掉无价值行、注释行、格式错误行)
-                if '更新时间' in line or '关于' in line or '公众号' in line or '软件库' in line:
+                # 跳过无用行
+                if any(skip in line for skip in ['更新时间', '关于', '公众号', '软件库', '#EXTM3U']):
                     continue
-                if not ',' in line or line.startswith('#EXTINF'):
-                    continue
-                title, url = line.split(',', 1)
-                title = title.strip()
-                url = url.strip()
-
-                # 去除标题中的番号部分（番号正则结构会提取 ID）
-                raw_id = extract_id_from_title(title)
-
-                # 增强清理（过滤敏感词、极少数国企内容）
-                if not filter_bad_words(title):
+                if ',' not in line or line.startswith('#EXTINF'):
                     continue
 
-                # 判断 URL 是否重复（重要）
-                if url in seen_urls:
+                try:
+                    title, url_part = line.split(',', 1)
+                    title = title.strip()
+                    url_part = url_part.strip()
+
+                    if not url_part or url_part in seen_urls:
+                        continue
+
+                    if not filter_bad_words(title):
+                        continue
+
+                    seen_urls.add(url_part)
+                    all_processed.append((title, url_part))
+
+                except ValueError:
                     continue
-                seen_urls.add(url)
-                all_processed.append((title, url))
 
         except requests.exceptions.Timeout:
             print(f"请求 {url} 超时，跳过。")
         except requests.exceptions.RequestException as e:
             print(f"请求 {url} 出现错误：{e}")
-            continue
+        except Exception as e:
+            print(f"处理行时出错：{e}")
 
-    # 生成 my02.txt（保留原始标题和 URL + 注意事项）
+    # 生成 my02.txt
     with open('my02.txt', 'w', encoding='UTF-8') as f:
         f.write(f"注意事项,#genre#\n{current_time} 仅供测试自用如有侵权请通知,https://codeberg.org/alantang/photo/raw/branch/main/Robot.mp4\n")
         for title, url in all_processed:
             f.write(f"{title},{url}\n")
 
-    # 分组逻辑（打法内关键词匹配 + ID提取）
+    # 分组逻辑
     grouped_entries = {
-        "🎬 影视": [],  # 包含「影视剧」关键词的标题
-        "🎤 综艺": [],   # 包含「综艺」相关内容
-        "📰 新闻": [],    # 包含「新闻」「资讯」等关键词的标题
-        "🏅 体育": [],    # 包含「体育」「赛事」「足球」等关键词
-        "🔞 成人": [],     # 包含「成人」「色情」「情色」等关键词
-        "🎞 经典": [],    # 包含「经典」「经典内容」等关键词
-        "📌 综合": [],     # 包含「综合」「生活」「搞笑」等关键词
-        "🌸 动画": [],    # 包含「动漫」「动画」等关键词的标题
-        "🎬 纪录片": [],   # 包含「纪录片」「纪实」的标题
-        "🎮 游戏": [],    # 包含「游戏」「电竞」「攻略」等关键词
-        "🎵 音乐": [],     # 包含「音乐」「MV」「演唱会」等关键词的标题
-        "📱 短视频": []     # 包含「短视频」「快手」「抖音」等关键词
+        "影视": [], "综艺": [], "新闻": [], "体育": [],
+        "成人": [], "经典": [], "综合": [], "动画": [],
+        "纪录片": [], "游戏": [], "音乐": [], "短视频": []
     }
 
-    # 判断格式是否匹配并归类
+    category_mapping = {
+        "影视": "影视", "综艺": "综艺", "新闻": "新闻", "体育": "体育",
+        "成人": "成人", "经典": "经典", "综合": "综合",
+        "动画动漫": "动画", "纪录片": "纪录片", "游戏电竞": "游戏",
+        "音乐": "音乐", "短视频生活": "短视频"
+    }
+
     for title, url in all_processed:
-        # 使用关键词匹配进行初步分类
-        categories = [
-            key for key, value in category_keywords.items()
-            if any(keyword in title for keyword in value)
-        ]
-        # 精确分类，避免模糊误判
-        category = "📢 默认组"
-        for c in categories:
-            # 若含「影视」或「动画」或「纪录片」，优先归类为主
-            if c == "影视":
-                category = "🎬 影视"
-            elif c == "综艺":
-                category = "🎤 综艺"
-            elif c == "新闻":
-                category = "📰 新闻"
-            elif c == "体育":
-                category = "🏅 体育"
-            elif c == "成人":
-                category = "🔞 成人"
-            elif c == "经典":
-                category = "🎞 经典"
-            elif c == "综合":
-                category = "📌 综合"
-            elif c == "动画动漫":
-                category = "🌸 动画"
-            elif c == "纪录片":
-                category = "🎬 纪录片"
-            elif c == "游戏电竞":
-                category = "🎮 游戏"
-            elif c == "音乐":
-                category = "🎵 音乐"
-            elif c == "短视频生活":
-                category = "📱 短视频"
-            break  # 只选一个匹配
+        matched = False
+        for src_cat, keywords in category_keywords.items():
+            if any(kw in title for kw in keywords):
+                target_cat = category_mapping.get(src_cat, "综合")
+                grouped_entries[target_cat].append((title, url))
+                matched = True
+                break
+        if not matched:
+            grouped_entries["综合"].append((title, url))
 
-        grouped_entries[category].append((title, url))
-
-    # 拼接 M3U 内容，并预留空间让用户看封面/logo
+    # 生成 M3U
     m3u_header = f"""#EXTM3U
 # Created by GitHub Actions: {current_time} Asia/Shanghai
 # Source: IPTV
 """
-
     m3u_lines = [m3u_header]
 
-    for category, entries in grouped_entries.items():
+    icon_map = {
+        "影视": "🎬", "综艺": "🎤", "新闻": "📰", "体育": "🏅",
+        "成人": "🔞", "经典": "🎞", "综合": "📌", "动画": "🌸",
+        "纪录片": "🎬", "游戏": "🎮", "音乐": "🎵", "短视频": "📱"
+    }
+
+    for cat, entries in grouped_entries.items():
+        if not entries:
+            continue
+        group_name = f"{icon_map.get(cat, '📺')} {cat}"
         for title, url in entries:
-            # 生成 M3U 格式
-            m3u_lines.append(f'#EXTINF:-1 tvg-name="{title}" group-title="{category}",{title}')
+            m3u_lines.append(f'#EXTINF:-1 tvg-name="{title}" group-title="{group_name}",{title}')
             m3u_lines.append(f'{url}\n')
 
     with open('my02.m3u', 'w', encoding='UTF-8') as f:
@@ -271,6 +238,9 @@ def fetch_and_replace(urls):
 
     print(f"已生成 {len(all_processed)} 条资源，归类后保存为 my02.txt 和 my02.m3u。")
 
+# ========================================
+# 入口
+# ========================================
 if __name__ == "__main__":
     urls = [
         'https://raw.githubusercontent.com/SSM0415/apptest/main/TVonline.txt',
@@ -280,5 +250,4 @@ if __name__ == "__main__":
         'https://raw.githubusercontent.com/SSM0415/apptest/refs/heads/main/TVbox2livefomi243.txt',
         'https://raw.githubusercontent.com/alenin-zhang/IPTV/4e8e4812168164ea11acc0617b814a7948b632f5/av'
     ]
-
     fetch_and_replace(urls)
