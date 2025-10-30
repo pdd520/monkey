@@ -1,13 +1,13 @@
 import requests
 import time
-import re  # 新增：用于解析 #EXTINF 中的标题
+import re  # 用于解析 #EXTINF 中的标题
 
 def fetch_and_replace(urls, max_retries=3):
     all_entries = []  # 用于存储 (url, title) 元组列表
     seen_urls = set()  # 用于跟踪 URL 去重（基于 URL）
 
     for url in urls:
-        for attempt in range(max_retries):  # 新增：重试机制
+        for attempt in range(max_retries):  # 重试机制
             try:
                 start_time = time.time()
                 response = requests.get(url, timeout=15)
@@ -65,25 +65,22 @@ def fetch_and_replace(urls, max_retries=3):
             if attempt < max_retries - 1:
                 time.sleep(2 ** attempt)  # 指数退避：1s, 2s, 4s
 
-    # 生成时间戳
-    timestamp = time.strftime("%Y%m%d%H%M%S")
-
     # 输出 1: 原格式 my02.txt（纯 URL 列表 + notice）
-    notice = f"注意事项,#genre#\n{timestamp}仅供测试自用如有侵权请通知,https://codeberg.org/alantang/photo/raw/branch/main/Robot.mp4\n"
-    with open(f'my02_{timestamp}.txt', 'w', encoding='UTF-8') as file:
+    notice = f"注意事项,#genre#\n仅供测试自用如有侵权请通知,https://codeberg.org/alantang/photo/raw/branch/main/Robot.mp4\n"
+    with open('my02.txt', 'w', encoding='UTF-8') as file:
         file.write(notice)
         for url, _ in all_entries:
             file.write(url + '\n')
 
-    # 新增输出 2: M3U 格式 my02.m3u（标准播放列表）
+    # 输出 2: M3U 格式 my02.m3u（标准播放列表）
     m3u_header = f'#EXTM3U\n#EXT-X-VERSION:3\n#PLAYLIST-TYPE:VOD\n'  # M3U8 兼容头
-    with open(f'my02_{timestamp}.m3u', 'w', encoding='UTF-8') as file:
+    with open('my02.m3u', 'w', encoding='UTF-8') as file:
         file.write(m3u_header)
         for url, title in all_entries:
             file.write(f'#EXTINF:-1 tvg-name="{title}" group-title="默认组",{title}\n')
             file.write(f'{url}\n')
 
-    print(f"Generated {len(all_entries)} unique entries. Files: my02_{timestamp}.txt and my02_{timestamp}.m3u")
+    print(f"Generated {len(all_entries)} unique entries. Files: my02.txt and my02.m3u")
 
 if __name__ == "__main__":
     # 定义多个 URL（保持原样）
