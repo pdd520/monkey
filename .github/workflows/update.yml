@@ -31,9 +31,11 @@ jobs:
         python config/update.py
 
     - name: List files in workspace
+      if: always()
       run: ls -la
 
     - name: Git status
+      if: always()
       run: git status
 
     - name: Configure Git
@@ -43,6 +45,6 @@ jobs:
 
     - name: Commit and Push changes
       run: |
-        git add my02.txt my02.m3u my02_unknown.m3u
+        git add my02.txt my02.m3u
         git commit -m "Update my02 files with new streams" --allow-empty
         git push origin HEAD:master  # 如果使用的是其他分支，请修改
