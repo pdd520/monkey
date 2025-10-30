@@ -1,125 +1,64 @@
 import requests
 import time
-import re
+import os
 
-def fetch_and_replace(urls, max_retries=3):
-    all_entries = []  # 用于存储 (url, title) 元组列表
-    seen_urls = set()  # 用于跟踪 URL 去重（基于 URL）
+def fetch_and_replace(urls):
+    all_processed = []  # 存储 (标题, URL)
+    seen_urls = set()
 
     for url in urls:
-        for attempt in range(max_retries):  # 重试机制
-            try:
-                start_time = time.time()
-                response = requests.get(url, timeout=15)
-                end_time = time.time()
+        try:
+            # 请求内容
+            response = requests.get(url, timeout=15)
+            print(f"已获取：{url}")
 
-                elapsed_time = end_time - start_time
-                print(f"Request to {url} (attempt {attempt + 1}) took {elapsed_time:.2f} seconds.")
+            if response.status_code == 200:
+                content = response.text
+                lines = content.splitlines()
 
-                if response.status_code == 200:
-                    response.encoding = 'utf-8'
-                    content = response.text
+                # 假设你的原始数据格式是：标题,URL（未包含`#EXTINF`）
+                for line in lines:
+                    if '更新时间' in line or '关于' in line or '公众号' in line or '软件库' in line:
+                        continue  # 忽略这些行
 
-                    lines = content.splitlines()
-                    i = 0
-                    while i < len(lines):
-                        line = lines[i].strip()
+                    # 分割成标题和 URL
+                    if ',' in line:
+                        title, url = line.split(',', 1)
+                        all_processed.append((title.strip(), url.strip()))
+                    else:
+                        continue  # 忽略格式不正确的行
 
-                        # 过滤无效行
-                        if any(keyword in line for keyword in ['更新时间', time.strftime("%Y%m%d"), '关于', '公众号', '软件库']):
-                            i += 1
-                            continue
+        except requests.exceptions.Timeout:
+            print(f"请求 {url} 超时。")
+        except requests.exceptions.RequestException as e:
+            print(f"请求 {url} 出现错误：{e}")
 
-                        # 处理带逗号分隔的行（标题,链接）
-                        if ',' in line:
-                            parts = line.split(',', 1)
-                            title = parts[0].strip()
-                            url_candidate = parts[1].strip()
-                            
-                            # 检查第二部分是否为有效URL
-                            if url_candidate.startswith(('http://', 'https://', 'rtmp://', 'rtmps://')):
-                                processed_url = url_candidate.replace('_', '')
-                                if processed_url not in seen_urls:
-                                    seen_urls.add(processed_url)
-                                    all_entries.append((processed_url, title))
-                            i += 1
-                        else:
-                            # 处理空格分隔的行（标题 链接）
-                            # 尝试从行中提取标题和URL
-                            url_match = re.search(r'(https?://|rtmp://|rtmps://[^\s]+)', line)
-                            if url_match:
-                                url_part = url_match.group(1)
-                                title_part = line.replace(url_part, '').strip()
-                                
-                                # 如果标题为空，则从URL提取
-                                if not title_part:
-                                    title_part = extract_title_from_url(url_part)
-                                
-                                processed_url = url_part.replace('_', '')
-                                if processed_url not in seen_urls:
-                                    seen_urls.add(processed_url)
-                                    all_entries.append((processed_url, title_part))
-                            i += 1
+    # 最终生成 my02.txt 文件（我们不需要 img 关联）
+    with open('my02.txt', 'w', encoding='UTF-8') as f:
+        f.write(f"注意事项,#genre#\n{time.strftime('%Y-%m-%d %H:%M:%S', time.localtime())} 仅供测试自用如有侵权请通知,https://codeberg.org/alantang/photo/raw/branch/main/Robot.mp4\n")
+        for title, url in all_processed:
+            f.write(f"{title},{url}\n")
 
-                    break  # 成功后跳出重试
-                else:
-                    print(f"Failed to retrieve {url} with status code {response.status_code}.")
+    # 生成 my02.m3u 文件，支持播放器
+    m3u_header = f"""#EXTM3U
+#Created by GitHub Actions: {time.strftime('%Y-%m-%d %H:%M:%S', time.localtime())} Asia/Shanghai
+#Source: iptv
+"""
 
-            except requests.exceptions.Timeout:
-                print(f"Request to {url} timed out (attempt {attempt + 1}).")
-            except requests.exceptions.RequestException as e:
-                print(f"An error occurred while requesting {url}: {e}")
+    m3u_lines = [m3u_header]
 
-            if attempt < max_retries - 1:
-                time.sleep(2 ** attempt)  # 指数退避：1s, 2s, 4s
+    for title, url in all_processed:
+        # 每个频道写入一个 M3U 行，不带 Logo，仅标题和链接
+        m3u_lines.append(f'#EXTINF:-1 tvg-name="{title}" group-title="默认组",{title}')
+        m3u_lines.append(f'{url}\n')
 
-    # 输出 1: my02.txt（纯 URL 列表 + notice）
-    notice = f"注意事项,#genre#\n仅供测试自用如有侵权请通知,https://codeberg.org/alantang/photo/raw/branch/main/Robot.mp4\n"
-    with open('my02.txt', 'w', encoding='UTF-8') as file:
-        file.write(notice)
-        for url, _ in all_entries:
-            file.write(url + '\n')
-    
-    print(f"Generated my02.txt with {len(all_entries)} entries")
+    # 保存为 `.m3u`（覆盖同名文件）
+    with open('my02.m3u', 'w', encoding='UTF-8') as f:
+        f.write('\n'.join(m3u_lines).rstrip('\n'))  # 去除最后多余的换行符
 
-    # 输出 2: M3U 格式 my02.m3u（标准播放列表）
-    m3u_header = f'#EXTM3U\n#EXT-X-VERSION:3\n#PLAYLIST-TYPE:VOD\n'
-    with open('my02.m3u', 'w', encoding='UTF-8') as file:
-        file.write(m3u_header)
-        for url, title in all_entries:
-            file.write(f'#EXTINF:-1 tvg-name="{title}" group-title="默认组",{title}\n')
-            file.write(f'{url}\n')
-    
-    # 输出 3: 未知频道的 M3U 文件
-    with open('my02_unknown.m3u', 'w', encoding='UTF-8') as file:
-        file.write(m3u_header)
-        for url, title in all_entries:
-            if title == "未知频道":
-                file.write(f'#EXTINF:-1 tvg-name="{title}" group-title="未知频道",{title}\n')
-                file.write(f'{url}\n')
-    
-    print(f"Generated my02.m3u with {len(all_entries)} entries")
-    print(f"Generated my02_unknown.m3u with unknown entries")
-
-def extract_title_from_url(url):
-    """从 URL 中提取有意义的标题"""
-    # 移除协议和www
-    title = re.sub(r'https?://(www\.)?|rtmp://(www\.)?|rtmps://(www\.)?', '', url)
-    # 移除路径查询参数
-    title = re.sub(r'(/[^\?#]*)?.*', '', title)
-    # 替换特殊字符为空格
-    title = re.sub(r'[^\w\u4e00-\u9fa5]', ' ', title)
-    # 去除多余空格
-    title = ' '.join(title.split())
-    
-    # 如果提取的标题过短，使用默认值
-    if len(title) < 2:
-        return "未知频道"
-    
-    return title
+    print(f"已生成 {len(all_processed)} 条记录，保存为 my02.txt 和 my02.m3u。")
 
 if __name__ == "__main__":
-    # 定义多个 URL
     urls = [
         'https://raw.githubusercontent.com/SSM0415/apptest/main/TVonline.txt',
         'https://raw.githubusercontent.com/jack2713/my/refs/heads/main/TMP/temp1.txt',
