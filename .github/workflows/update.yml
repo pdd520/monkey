@@ -9,7 +9,7 @@ permissions:
   contents: write  # 确保 GITHUB_TOKEN 具有写入权限
 
 jobs:
-  fetch_streams:
+  update:
     runs-on: ubuntu-latest
 
     steps:
