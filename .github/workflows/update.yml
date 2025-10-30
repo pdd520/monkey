@@ -46,5 +46,5 @@ jobs:
     - name: Commit and Push changes
       run: |
         git add my02.txt my02.m3u
-        git commit -m "Update my02 files with new streams" --allow-empty
+        git commit -m "Update my02: 精准分类脚本" --allow-empty
         git push origin HEAD:master  # 如果使用的是其他分支，请修改
