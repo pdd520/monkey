@@ -19,7 +19,7 @@
 - `get_content()` - 多线程内容获取引擎，支持并发控制和错误重试
 - `write_document()` - 文档写入和格式化，支持多种输出格式
 - `get_yaml()` - YAML配置生成器，自动生成Clash配置结构
-- `get_sub_url()` - 订阅URL获取和验证
+- `get_sub_url()` - 订阅URL获取和验证。
 - `get_kkzui()` - 特定站点内容获取，针对特殊格式优化
 
 **输出文件结构：**
