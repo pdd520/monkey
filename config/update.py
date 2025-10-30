@@ -30,39 +30,21 @@ def fetch_and_replace(urls, max_retries=3):
                             i += 1
                             continue
 
-                        # 处理带逗号分隔的行（标题,链接）
-                        if ',' in line:
-                            parts = line.split(',', 1)
-                            title = parts[0].strip()
-                            url_candidate = parts[1].strip()
-                            
-                            # 验证链接是否有效
-                            if url_candidate.startswith(('http://', 'https://', 'rtmp://', 'rtmps://')):
-                                processed_url = url_candidate.replace('_', '')
-                                if processed_url not in seen_urls:
-                                    seen_urls.add(processed_url)
-                                    all_entries.append((processed_url, title))
-                                i += 1  # 移动到下一行
-                            else:
-                                # 如果第二部分不是有效链接，则尝试按原格式处理
-                                i += 1
-                                if i < len(lines):
-                                    next_line = lines[i].strip()
-                                    if next_line and not next_line.startswith('#'):
-                                        processed_url = next_line.replace('_', '')
-                                        if processed_url not in seen_urls:
-                                            seen_urls.add(processed_url)
-                                            all_entries.append((processed_url, title))
                         # 处理 #EXTINF 行
-                        elif line.startswith('#EXTINF'):
-                            # 移行到下一行获取URL
-                            i += 1
+                        if line.startswith('#EXTINF'):
+                            # 提取标题：逗号后的内容直到行尾
+                            if ',' in line:
+                                # 找到第一个逗号后的内容作为标题
+                                title_part = line.split(',', 1)[1].strip()
+                                # 移除可能的 #genre# 标记
+                                title = re.sub(r'#genre#', '', title_part).strip()
+                            else:
+                                title = "未知频道"
+                            
+                            i += 1  # 跳到下一行获取URL
                             if i < len(lines):
                                 url_line = lines[i].strip()
                                 if url_line and not url_line.startswith('#'):
-                                    # 尝试从EXTINF行中提取标题
-                                    title_match = re.search(r',(.+)$', line)
-                                    title = title_match.group(1).strip() if title_match else "未知频道"
                                     processed_url = url_line.replace('_', '')
                                     if processed_url not in seen_urls:
                                         seen_urls.add(processed_url)
@@ -90,22 +72,55 @@ def fetch_and_replace(urls, max_retries=3):
             if attempt < max_retries - 1:
                 time.sleep(2 ** attempt)  # 指数退避：1s, 2s, 4s
 
-    # 输出 1: 原格式 my02.txt（纯 URL 列表 + notice）
+    # 生成时间戳（保持原代码中的时间戳功能）
+    timestamp = time.strftime("%Y%m%d%H%M%S")
+
+    # 输出 1: my02.txt（纯 URL 列表 + notice）
     notice = f"注意事项,#genre#\n仅供测试自用如有侵权请通知,https://codeberg.org/alantang/photo/raw/branch/main/Robot.mp4\n"
     with open('my02.txt', 'w', encoding='UTF-8') as file:
         file.write(notice)
         for url, _ in all_entries:
             file.write(url + '\n')
+    
+    print(f"Generated my02.txt with {len(all_entries)} entries")
 
+    # 基于 TXT 文件生成 M3U 文件
+    entries_from_txt = []
+    seen_urls_txt = set()
+    
+    with open('my02.txt', 'r', encoding='UTF-8') as file:
+        lines = file.readlines()
+        
+        # 跳过 notice 行
+        for line in lines[2:]:  # 前两行是注意事项
+            url = line.strip()
+            if url and url != '注意事项' and '#genre#' not in url:
+                # 如果是 .m3u8 文件，提取基础 URL
+                if url.endswith('.m3u8'):
+                    processed_url = re.sub(r'/[^/]+\.m3u8$', '', url)
+                else:
+                    processed_url = url
+                
+                if processed_url not in seen_urls_txt:
+                    seen_urls_txt.add(processed_url)
+                    entries_from_txt.append((processed_url, "未知频道"))
+    
     # 输出 2: M3U 格式 my02.m3u（标准播放列表）
-    m3u_header = f'#EXTM3U\n#EXT-X-VERSION:3\n#PLAYLIST-TYPE:VOD\n'  # M3U8 兼容头
+    m3u_header = f'#EXTM3U\n#EXT-X-VERSION:3\n#PLAYLIST-TYPE:VOD\n'
     with open('my02.m3u', 'w', encoding='UTF-8') as file:
         file.write(m3u_header)
-        for url, title in all_entries:
+        for url, title in entries_from_txt:
             file.write(f'#EXTINF:-1 tvg-name="{title}" group-title="默认组",{title}\n')
             file.write(f'{url}\n')
-
-    print(f"Generated {len(all_entries)} unique entries. Files: my02.txt and my02.m3u")
+    
+    # 输出 3: 未知频道的 M3U 文件
+    with open('my02_unknown.m3u', 'w', encoding='UTF-8') as file:
+        file.write(m3u_header)
+        for url, title in entries_from_txt:
+            file.write(f'#EXTINF:-1 tvg-name="{title}" group-title="未知频道",{title}\n')
+            file.write(f'{url}\n')
+    
+    print(f"Generated my02.m3u and my02_unknown.m3u with {len(entries_from_txt)} entries each")
 
 def extract_title_from_url(url):
     """从 URL 中提取有意义的标题"""
@@ -125,7 +140,7 @@ def extract_title_from_url(url):
     return title
 
 if __name__ == "__main__":
-    # 定义多个 URL
+    # 定义多个 URL（保持原样）
     urls = [
         'https://raw.githubusercontent.com/SSM0415/apptest/main/TVonline.txt',
         'https://raw.githubusercontent.com/jack2713/my/refs/heads/main/TMP/temp1.txt',
