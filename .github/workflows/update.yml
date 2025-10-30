@@ -28,7 +28,7 @@ jobs:
 
     - name: Run script
       run: |
-        python update1.py
+        python config/update.py
 
     - name: List files in workspace
       run: ls -la
@@ -45,4 +45,4 @@ jobs:
       run: |
         git add $(pwd)/my02.txt  # 使用绝对路径确保路径正确
         git commit -m "Update my02 with new streams" --allow-empty
-        git push origin HEAD:main  # 如果使用的是其他分支，请修改
+        git push origin HEAD:master  # 如果使用的是其他分支，请修改
