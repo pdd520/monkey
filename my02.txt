@@ -1,5 +1,5 @@
 注意事项,#genre#
-2025-12-13 03:46:37 仅供测试自用如有侵权请通知,https://codeberg.org/alantang/photo/raw/branch/main/Robot.mp4
+2025-12-14 03:57:35 仅供测试自用如有侵权请通知,https://codeberg.org/alantang/photo/raw/branch/main/Robot.mp4
 測試用,#genre#
 CNN new,http://125.227.210.55:8166/VideoInput/play.ts
 民視新聞,http://125.227.210.55:8157/VideoInput/play.ts
