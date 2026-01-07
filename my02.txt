@@ -1,6 +1,27 @@
 注意事项,#genre#
-2026-01-06 04:00:00 仅供测试自用如有侵权请通知,https://codeberg.org/alantang/photo/raw/branch/main/Robot.mp4
+2026-01-07 04:00:18 仅供测试自用如有侵权请通知,https://codeberg.org/alantang/photo/raw/branch/main/Robot.mp4
 測試用,#genre#
+TVBS新聞,https://www.youtube.com/watch?v=m_dhMSvUCIc
+民視新聞,https://www.youtube.com/watch?v=ylYJSBUgaMA
+三立新聞,https://www.youtube.com/watch?v=iNIy3lMuljU
+三立新聞,http://125.227.210.55:8162/VideoInput/play.ts
+三立新聞網,https://www.youtube.com/watch?v=XtllcS--JCs
+三立LIVE,https://www.youtube.com/watch?v=MV9mI0GChwo
+三立INEW,https://www.youtube.com/watch?v=pF507BLtbqU
+三立財經,https://www.youtube.com/watch?v=1mbhK0xfohY
+中天新聞,https://www.youtube.com/watch?v=vr3XyVCR4T0
+東森新聞,https://www.youtube.com/watch?v=V1p33hqPrUk
+東森財經,https://www.youtube.com/watch?v=AEBeWMM1atA
+華視新聞,https://www.youtube.com/watch?v=wM0g8EoUZ_E
+中視新聞,https://www.youtube.com/watch?v=TCnaIE_SAtM
+台視新聞,https://www.youtube.com/watch?v=xL0ch83RAK8
+寰宇新聞,https://www.youtube.com/watch?v=6IquAgfvYmc
+寰宇新聞台灣,https://www.youtube.com/watch?v=w87VGpgd90U
+寰宇財經,https://www.youtube.com/watch?v=WTRQiVWK1jY
+鏡新聞,https://www.youtube.com/watch?v=5n0y6b0Q25o
+公視新聞,https://www.youtube.com/watch?v=quwqlazU-c8
+公共電視,https://www.youtube.com/watch?v=C6gYqSHLRw4
+JapaNews24,https://www.youtube.com/watch?v=coYw-eVU0K
 CNN new,http://125.227.210.55:8166/VideoInput/play.ts
 民視新聞,http://125.227.210.55:8157/VideoInput/play.ts
 TVBS新聞,http://61.221.215.25:8800/hls/9/index.m3u8
@@ -1221,7 +1242,6 @@ CCTV4,http://61.219.170.95:18633/.m3u8
 扶桑花女孩,https://vip.lz-cdn7.com/20230223/14473_34758120/index.m3u8
 醜女大翻身,https://vip.lz-cdn7.com/20230223/14471_0a1ee6d8/index.m3u8
 聊齋畫壁,https://vip.lz-cdn7.com/20230226/14577_538d24e5/index.m3u8
-創-戰紀2025,https://192-168-1-104.hongyunas.direct.quickconnect.to:5001/fbdownload/%E5%89%B5-%E6%88%B0%E7%A5%9E2025.mp4?tid=%22oAtYE3G9sI3usV4hEphl3mWOgJTG888BUCSdFRekzWVlcDQtStzKPqfBGAExcbVi7lYRhJlTigKLypsh%22&mode=open&dlink=%222f7573627368617265312d322f4d4f5649452f3035302fe589b52de688b0e7a59e323032352e6d7034%22&stdhtml=true&SynoToken=kYcUOf6JyCrfs
 GOOD好消息,http://live.streamingfast.net/osmflivech1.m3u8
 GOOD2真理台,http://live.streamingfast.net/osmflivech2.m3u8
 GOOD真情部落格,http://live.streamingfast.net/osmflivech3.m3u8
@@ -21632,26 +21652,6 @@ Princessdolly58,https://w9n76.cdnedge.live/file/avple-images/hls/609d2da16fbca77
 すきで、すきで、すきで1-Sukide,Sukide,Sukide1 http://18.svi-studio.com:80/movie/271871095922/006886711863/82341.mp4
 韩国带有剧情的找大乳美女量奶头,奶子多大,量完拉到床上操非常爽 http://18.svi-studio.com:80/movie/271871095922/006886711863/82812.mp4
 韩国带有剧情的找大乳美女量奶头,奶子多大,量完拉到床上操非常爽 http://18.svi-studio.com:80/movie/271871095922/006886711863/82911.mp4
-TVBS新聞,https://www.youtube.com/watch?v=m_dhMSvUCIc
-民視新聞,https://www.youtube.com/watch?v=ylYJSBUgaMA
-三立新聞,https://www.youtube.com/watch?v=iNIy3lMuljU
-三立新聞,http://125.227.210.55:8162/VideoInput/play.ts
-三立新聞網,https://www.youtube.com/watch?v=XtllcS--JCs
-三立LIVE,https://www.youtube.com/watch?v=MV9mI0GChwo
-三立INEW,https://www.youtube.com/watch?v=pF507BLtbqU
-三立財經,https://www.youtube.com/watch?v=1mbhK0xfohY
-中天新聞,https://www.youtube.com/watch?v=vr3XyVCR4T0
-東森新聞,https://www.youtube.com/watch?v=V1p33hqPrUk
-東森財經,https://www.youtube.com/watch?v=AEBeWMM1atA
-華視新聞,https://www.youtube.com/watch?v=wM0g8EoUZ_E
-中視新聞,https://www.youtube.com/watch?v=TCnaIE_SAtM
-台視新聞,https://www.youtube.com/watch?v=xL0ch83RAK8
-寰宇新聞,https://www.youtube.com/watch?v=6IquAgfvYmc
-寰宇新聞台灣,https://www.youtube.com/watch?v=w87VGpgd90U
-寰宇財經,https://www.youtube.com/watch?v=WTRQiVWK1jY
-鏡新聞,https://www.youtube.com/watch?v=5n0y6b0Q25o
-公視新聞,https://www.youtube.com/watch?v=quwqlazU-c8
-公共電視,https://www.youtube.com/watch?v=C6gYqSHLRw4
 JapaNews24,https://www.youtube.com/watch?v=coYw-eVU0Ks
 ELTA影劇,https://www.chaojidianshi.net/zhibo/gangtaizhibo/aierdayingju.html
 amc電影台,udp://@224.1.4.43:11111

@@ -1,5 +1,5 @@
 #EXTM3U
-# Created by GitHub Actions: 2026-01-06 04:00:00 Asia/Shanghai
+# Created by GitHub Actions: 2026-01-07 04:00:18 Asia/Shanghai
 # Source: IPTV
 
 #EXTINF:-1 tvg-name="HBO" group-title="🎬 影视",HBO
@@ -418,6 +418,51 @@ http://125.227.210.55:50619/VideoInput/play.ts
 
 #EXTINF:-1 tvg-name="Part1 年齡看著不大的嫩妹子和男友賓館啪啪秀互舔下再操" group-title="🎤 综艺",Part1 年齡看著不大的嫩妹子和男友賓館啪啪秀互舔下再操
 https://18porn.cc/video/3228.html
+
+#EXTINF:-1 tvg-name="TVBS新聞" group-title="📰 新闻",TVBS新聞
+https://www.youtube.com/watch?v=m_dhMSvUCIc
+
+#EXTINF:-1 tvg-name="民視新聞" group-title="📰 新闻",民視新聞
+https://www.youtube.com/watch?v=ylYJSBUgaMA
+
+#EXTINF:-1 tvg-name="三立新聞" group-title="📰 新闻",三立新聞
+https://www.youtube.com/watch?v=iNIy3lMuljU
+
+#EXTINF:-1 tvg-name="三立新聞" group-title="📰 新闻",三立新聞
+http://125.227.210.55:8162/VideoInput/play.ts
+
+#EXTINF:-1 tvg-name="三立新聞網" group-title="📰 新闻",三立新聞網
+https://www.youtube.com/watch?v=XtllcS--JCs
+
+#EXTINF:-1 tvg-name="中天新聞" group-title="📰 新闻",中天新聞
+https://www.youtube.com/watch?v=vr3XyVCR4T0
+
+#EXTINF:-1 tvg-name="東森新聞" group-title="📰 新闻",東森新聞
+https://www.youtube.com/watch?v=V1p33hqPrUk
+
+#EXTINF:-1 tvg-name="華視新聞" group-title="📰 新闻",華視新聞
+https://www.youtube.com/watch?v=wM0g8EoUZ_E
+
+#EXTINF:-1 tvg-name="中視新聞" group-title="📰 新闻",中視新聞
+https://www.youtube.com/watch?v=TCnaIE_SAtM
+
+#EXTINF:-1 tvg-name="台視新聞" group-title="📰 新闻",台視新聞
+https://www.youtube.com/watch?v=xL0ch83RAK8
+
+#EXTINF:-1 tvg-name="寰宇新聞" group-title="📰 新闻",寰宇新聞
+https://www.youtube.com/watch?v=6IquAgfvYmc
+
+#EXTINF:-1 tvg-name="寰宇新聞台灣" group-title="📰 新闻",寰宇新聞台灣
+https://www.youtube.com/watch?v=w87VGpgd90U
+
+#EXTINF:-1 tvg-name="鏡新聞" group-title="📰 新闻",鏡新聞
+https://www.youtube.com/watch?v=5n0y6b0Q25o
+
+#EXTINF:-1 tvg-name="公視新聞" group-title="📰 新闻",公視新聞
+https://www.youtube.com/watch?v=quwqlazU-c8
+
+#EXTINF:-1 tvg-name="JapaNews24" group-title="📰 新闻",JapaNews24
+https://www.youtube.com/watch?v=coYw-eVU0K
 
 #EXTINF:-1 tvg-name="民視新聞" group-title="📰 新闻",民視新聞
 http://125.227.210.55:8157/VideoInput/play.ts
@@ -1003,48 +1048,6 @@ http://vl05t7es.rostelekom.xyz/iptv/QAX2K7HNCDZF2N/6266/index.m3u8
 
 #EXTINF:-1 tvg-name="SHKD-557c-新聞配達業かすみ果穂" group-title="📰 新闻",SHKD-557c-新聞配達業かすみ果穂
 http://videocdn.quweikm.com:8091/20180730/SHKD-557c/index.m3u8
-
-#EXTINF:-1 tvg-name="TVBS新聞" group-title="📰 新闻",TVBS新聞
-https://www.youtube.com/watch?v=m_dhMSvUCIc
-
-#EXTINF:-1 tvg-name="民視新聞" group-title="📰 新闻",民視新聞
-https://www.youtube.com/watch?v=ylYJSBUgaMA
-
-#EXTINF:-1 tvg-name="三立新聞" group-title="📰 新闻",三立新聞
-https://www.youtube.com/watch?v=iNIy3lMuljU
-
-#EXTINF:-1 tvg-name="三立新聞" group-title="📰 新闻",三立新聞
-http://125.227.210.55:8162/VideoInput/play.ts
-
-#EXTINF:-1 tvg-name="三立新聞網" group-title="📰 新闻",三立新聞網
-https://www.youtube.com/watch?v=XtllcS--JCs
-
-#EXTINF:-1 tvg-name="中天新聞" group-title="📰 新闻",中天新聞
-https://www.youtube.com/watch?v=vr3XyVCR4T0
-
-#EXTINF:-1 tvg-name="東森新聞" group-title="📰 新闻",東森新聞
-https://www.youtube.com/watch?v=V1p33hqPrUk
-
-#EXTINF:-1 tvg-name="華視新聞" group-title="📰 新闻",華視新聞
-https://www.youtube.com/watch?v=wM0g8EoUZ_E
-
-#EXTINF:-1 tvg-name="中視新聞" group-title="📰 新闻",中視新聞
-https://www.youtube.com/watch?v=TCnaIE_SAtM
-
-#EXTINF:-1 tvg-name="台視新聞" group-title="📰 新闻",台視新聞
-https://www.youtube.com/watch?v=xL0ch83RAK8
-
-#EXTINF:-1 tvg-name="寰宇新聞" group-title="📰 新闻",寰宇新聞
-https://www.youtube.com/watch?v=6IquAgfvYmc
-
-#EXTINF:-1 tvg-name="寰宇新聞台灣" group-title="📰 新闻",寰宇新聞台灣
-https://www.youtube.com/watch?v=w87VGpgd90U
-
-#EXTINF:-1 tvg-name="鏡新聞" group-title="📰 新闻",鏡新聞
-https://www.youtube.com/watch?v=5n0y6b0Q25o
-
-#EXTINF:-1 tvg-name="公視新聞" group-title="📰 新闻",公視新聞
-https://www.youtube.com/watch?v=quwqlazU-c8
 
 #EXTINF:-1 tvg-name="JapaNews24" group-title="📰 新闻",JapaNews24
 https://www.youtube.com/watch?v=coYw-eVU0Ks
@@ -5057,6 +5060,24 @@ https://www.goodiptv.club/douyu/74374
 #EXTINF:-1 tvg-name="測試用" group-title="📌 综合",測試用
 #genre#
 
+#EXTINF:-1 tvg-name="三立LIVE" group-title="📌 综合",三立LIVE
+https://www.youtube.com/watch?v=MV9mI0GChwo
+
+#EXTINF:-1 tvg-name="三立INEW" group-title="📌 综合",三立INEW
+https://www.youtube.com/watch?v=pF507BLtbqU
+
+#EXTINF:-1 tvg-name="三立財經" group-title="📌 综合",三立財經
+https://www.youtube.com/watch?v=1mbhK0xfohY
+
+#EXTINF:-1 tvg-name="東森財經" group-title="📌 综合",東森財經
+https://www.youtube.com/watch?v=AEBeWMM1atA
+
+#EXTINF:-1 tvg-name="寰宇財經" group-title="📌 综合",寰宇財經
+https://www.youtube.com/watch?v=WTRQiVWK1jY
+
+#EXTINF:-1 tvg-name="公共電視" group-title="📌 综合",公共電視
+https://www.youtube.com/watch?v=C6gYqSHLRw4
+
 #EXTINF:-1 tvg-name="CNN new" group-title="📌 综合",CNN new
 http://125.227.210.55:8166/VideoInput/play.ts
 
@@ -7705,9 +7726,6 @@ https://vip.lz-cdn7.com/20230223/14471_0a1ee6d8/index.m3u8
 
 #EXTINF:-1 tvg-name="聊齋畫壁" group-title="📌 综合",聊齋畫壁
 https://vip.lz-cdn7.com/20230226/14577_538d24e5/index.m3u8
-
-#EXTINF:-1 tvg-name="創-戰紀2025" group-title="📌 综合",創-戰紀2025
-https://192-168-1-104.hongyunas.direct.quickconnect.to:5001/fbdownload/%E5%89%B5-%E6%88%B0%E7%A5%9E2025.mp4?tid=%22oAtYE3G9sI3usV4hEphl3mWOgJTG888BUCSdFRekzWVlcDQtStzKPqfBGAExcbVi7lYRhJlTigKLypsh%22&mode=open&dlink=%222f7573627368617265312d322f4d4f5649452f3035302fe589b52de688b0e7a59e323032352e6d7034%22&stdhtml=true&SynoToken=kYcUOf6JyCrfs
 
 #EXTINF:-1 tvg-name="GOOD好消息" group-title="📌 综合",GOOD好消息
 http://live.streamingfast.net/osmflivech1.m3u8
@@ -65518,24 +65536,6 @@ Sukide,Sukide1 http://18.svi-studio.com:80/movie/271871095922/006886711863/82341
 
 #EXTINF:-1 tvg-name="韩国带有剧情的找大乳美女量奶头" group-title="📌 综合",韩国带有剧情的找大乳美女量奶头
 奶子多大,量完拉到床上操非常爽 http://18.svi-studio.com:80/movie/271871095922/006886711863/82911.mp4
-
-#EXTINF:-1 tvg-name="三立LIVE" group-title="📌 综合",三立LIVE
-https://www.youtube.com/watch?v=MV9mI0GChwo
-
-#EXTINF:-1 tvg-name="三立INEW" group-title="📌 综合",三立INEW
-https://www.youtube.com/watch?v=pF507BLtbqU
-
-#EXTINF:-1 tvg-name="三立財經" group-title="📌 综合",三立財經
-https://www.youtube.com/watch?v=1mbhK0xfohY
-
-#EXTINF:-1 tvg-name="東森財經" group-title="📌 综合",東森財經
-https://www.youtube.com/watch?v=AEBeWMM1atA
-
-#EXTINF:-1 tvg-name="寰宇財經" group-title="📌 综合",寰宇財經
-https://www.youtube.com/watch?v=WTRQiVWK1jY
-
-#EXTINF:-1 tvg-name="公共電視" group-title="📌 综合",公共電視
-https://www.youtube.com/watch?v=C6gYqSHLRw4
 
 #EXTINF:-1 tvg-name="ELTA影劇" group-title="📌 综合",ELTA影劇
 https://www.chaojidianshi.net/zhibo/gangtaizhibo/aierdayingju.html
